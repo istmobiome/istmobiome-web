@@ -3,30 +3,79 @@
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
-[[main]]
-  name = "Home"
-  url = "#about"
-  weight = 10
+##########################
+# NavBar Links
+##########################
 
 [[main]]
-  name = "Posts"
-  url = "#posts"
+  url = "#slider"
+  weight = 10
+  pre = "<i class=\"fas fa-home fa-lg\"></i>"
+
+[[main]]
+  name = "The Story"
+  url = "#the-story"
   weight = 20
 
 [[main]]
-  name = "Projects"
-  url = "#projects"
+  name = "The Geminates"
+  url = "#gallery"
   weight = 30
 
 [[main]]
-  name = "Publications"
-  url = "#featured"
+#  identifier = "projects"
+  name = "The Projects"
+  url = "#projects"
   weight = 40
 
 [[main]]
-  name = "Contact"
-  url = "#contact"
+  name = "Pubs"
+#  pre = "<i class=\"fa fa-users \"></i>"
+  url = "#publications"
+  weight = 50
+
+[[main]]
+  name = "Talks"
+  url = "#talks"
   weight = 60
+
+[[main]]
+#  identifier = "projects"
+  name = "About"
+  url = "#about-site"
+  weight = 80
+
+[[main]]
+  name = "People"
+#  pre = "<i class=\"fa fa-users \"></i>"
+  url = "#people"
+  weight = 90
+
+[[main]]
+  parent = "More"
+  name = "Workshops"
+  url = "workshops/"
+  weight = 100
+
+[[main_right]]
+  name = " "
+  url = "/projects/trans-water/"
+  weight = 1000
+  pre = "<i class=\"fas fa-water \"></i>"
+
+[[main_right]]
+  name = "<i class=\"fas fa-envelope fa-lg\"></i>"
+  url = "contact/"
+  post = ""
+  weight = 270
+
+[[main_right]]
+  name = " "
+  identifier = "github"
+  pre = "<i class=\"fab fa-github fa-lg\"></i>"
+  url = "https://github.com/istmobiome/web"
+  weight = 280
+
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
