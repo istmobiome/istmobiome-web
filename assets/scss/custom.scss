@@ -35,3 +35,15 @@ p#hero-lead {
 .navbar-brand img {
 	 max-height: 40px;
 }
+
+/*************************************************
+ *  Change From assets/scss/academic/_widgets.scss
+ **************************************************/
+.wg-hero.dark .hero-note > * {
+  color: #FAFAFA;
+  /*text-shadow: 1px 1px 4px rgba(0,0,0,0.5);*/ /* Uncomment to standout on complicated backgrounds. */
+}
+
+.wg-hero.dark a:not(.wg-hero .btn) {
+  color: #FAFAFA;
+}
