@@ -1,6 +1,6 @@
 ---
 title: Publications
-subtitle = By people involved in the Istmobiome Project
+subtitle: By people involved in the Istmobiome Project
 
 # View.
 #   1 = List
