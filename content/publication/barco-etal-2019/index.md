@@ -3,7 +3,7 @@ title: "A Genus definition for Bacteria and Archaea based on a Standard Genome R
 authors:
 - Roman A. Barco
 - George M. Garrity
-- Jarrod J. Scott
+- Jarrod J Scott
 - Jan P. Amend
 - Ken H. Nealson
 - David Emerson
