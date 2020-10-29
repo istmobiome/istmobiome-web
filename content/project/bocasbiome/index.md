@@ -1,6 +1,6 @@
 ---
-title: ProjectDigest
-subtitle: Intestinal microbes as an axis of functional diversity among large marine consumers
+title: BocasBiome
+subtitle: The gut microbiome stability of a butterflyfish is disrupted on severely degraded Caribbean reef habitats.
 authors: [Scott, Jarrod J and Adam, Thomas C and Duran, Alain and Burkepile, Deron E & Rasher, Douglas B]
 summary: Amplicon analysis of intenstinal microbiomes from five species of herbivorous fish of a Florida reef.
 tags: ["fish", "16S rRNA", "amplicon"]
@@ -17,25 +17,25 @@ image:
   preview_only: true
 links:
 - name: Go to Project Site
-  url: https://projectdigest.github.io/
-- icon: database
-  icon_pack: fas
-  name: Data
-  url: https://projectdigest.github.io/data_availability.html
-- icon: code
-  icon_pack: fas
-  name: Code
-  url: https://projectdigest.github.io/raw_code.txt
+  url: https://bocasbiome.github.io/
+#- icon: database
+#  icon_pack: fas
+#  name: Data
+#  url: https://projectdigest.github.io/data_availability.html
+#- icon: code
+#  icon_pack: fas
+#  name: Code
+#  url: https://projectdigest.github.io/raw_code.txt
 - icon: github
   icon_pack: fab
   name: GitHub
-  url: https://github.com/projectdigest/web/
+  url: https://github.com/bocasbiome/web/
 - icon: newspaper
   icon_pack: fas
   name: Publication
-  url: https://doi.org/10.1098/rspb.2019.2367
-- name: Authors
-  url: https://projectdigest.github.io/people.html
+  url: https://doi.org/10.1101/2020.09.21.306712
+#- name: Authors
+#  url: https://projectdigest.github.io/people.html
 publication: null
 slides:
 url_code: ""
@@ -43,14 +43,14 @@ url_pdf: ""
 url_slides: ""
 url_video: ""
 
-weight: 1
+weight: 15
 ---
 
 Welcome. This page provides a link to the <em>external</em> website for our study on the intestinal microbiome of herbivorous reef fish entitled <em>Intestinal microbes: as axis of functional diversity among large marine consumers</em>. Microbes are ubiquitous throughout the world’s ocean yet the extent of their influence on the ecology and evolution of large, mobile fauna is poorly understood.
 <br/>
 
 To access the complete bioinformatic workflow & raw data use the buttons at the top of the page or visit
->https://projectdigest.github.io/
+>https://bocasbiome.github.io/
 
 {{% alert synopsis %}}
 
@@ -58,10 +58,7 @@ SYNOPSIS
 <hr>
 In this study, we
 
-- Conducted field observations, which showed that five common Caribbean fish species display marked differences in where they feed and what they feed on.
-- Used 16S rRNA amplicon analysis of intestinal microbiomes from 50 individual fish across the 5 species to show a high degree of species-specific composition.
-- Performed phylogenetic comparison of  dominant microbiome members to show that intestinal microbiome are a mixture of  environmental generalists, animal-associates, and fish-specialists.
-- Found that the closest relatives of fish-specialists were microbes from intestines of ecologically and evolutionarily related fishes in other, distant oceans.
+ADD details
 
 {{% /alert %}}
 
