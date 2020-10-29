@@ -1,11 +1,11 @@
 ---
 title: HYPOCOLYPSE
-subtitle: Hypoxia driven coral bleaching & microbial shifts in Caribbean Panama
+subtitle: Intestinal microbes as an axis of functional diversity among large marine consumers
 authors: []
 summary: Field surveys, physiological analyses, & microbial sequencing during a hypoxic event in Bocas del Toro.
-tags: ["coral", "16S rRNA", "amplicon", "metagenomic", "water"]
+tags: ["fish", "16S rRNA", "amplicon"]
 categories: []
-date: "2019-12-05T00:00:00+01:00"
+date: "2020-04-05T00:00:00+01:00"
 external_link:
 bibliography: [cite.bib]
 header:
@@ -17,19 +17,19 @@ image:
   preview_only: true
 links:
 - name: Go to Project Site
-  url: https://hypocolypse.github.io/
+  url: https://projectdigest.github.io/
 - icon: database
   icon_pack: fas
   name: Data
-  url: https://hypocolypse.github.io/data-availability.html
+  url: https://projectdigest.github.io/data_availability.html
 - icon: code
   icon_pack: fas
   name: Code
-  url: https://hypocolypse.github.io/raw_code.txt
+  url: https://projectdigest.github.io/raw_code.txt
 - icon: github
   icon_pack: fab
   name: GitHub
-  url: https://github.com/hypocolypse/web/
+  url: https://github.com/projectdigest/web/
 #- icon: newspaper
 #  icon_pack: fas
 #  name: Publication
