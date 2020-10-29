@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Jarrod J. Scott
+title: Jarrod J Scott
 
 # Username (this should match the folder name)
 authors:
