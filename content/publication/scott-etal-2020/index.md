@@ -1,7 +1,7 @@
 ---
 title: "Intestinal microbes: an axis of functional diversity among large marine consumers"
 authors:
-- Jarrod J. Scott
+- Jarrod J Scott
 - Thomas C. Adam
 - Alain Duran
 - Deron E. Burkepile
