@@ -66,7 +66,3 @@ subtitle = "By people involved in the Istmobiome Project"
  # CSS class.
  css_class = ""
 +++
-
-{{% callout note %}}
-Quickly discover relevant content by [filtering publications](./publication/).
-{{% /callout %}}
