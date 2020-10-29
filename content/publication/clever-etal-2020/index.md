@@ -6,7 +6,7 @@ authors:
   - Richard F. Preziosi
   - Jonathan A. Eisen
   - E. Catalina Rodriguez Guerra
-  - Jarrod J. Scott
+  - Jarrod J Scott
   - Laetitia G.E. Wilkins
   - Andrew H. Altieri
   - W. Owen McMillan
