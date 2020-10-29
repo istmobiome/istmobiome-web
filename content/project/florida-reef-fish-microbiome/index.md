@@ -30,10 +30,10 @@ links:
   icon_pack: fab
   name: GitHub
   url: https://github.com/projectdigest/web/
-- icon: newspaper
-  icon_pack: fas
-  name: Publication
-  url: https://doi.org/10.1098/rspb.2019.2367
+#- icon: newspaper
+#  icon_pack: fas
+#  name: Publication
+#  url: https://doi.org/10.1098/rspb.2019.2367
 - name: Authors
   url: https://projectdigest.github.io/people.html
 publication: null
