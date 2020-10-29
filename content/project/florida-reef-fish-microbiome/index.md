@@ -34,6 +34,8 @@ links:
   icon_pack: fas
   name: Publication
   url: https://hypocolypse.github.io/publication.html
+- name: Authors
+  url: https://projectdigest.github.io/people.html
 publication: null
 slides:
 url_code: ""
