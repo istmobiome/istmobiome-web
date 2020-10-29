@@ -1,7 +1,7 @@
 ---
 title: ProjectDigest
 subtitle: Intestinal microbes as an axis of functional diversity among large marine consumers
-authors: [Scott, Jarrod J and Adam, Thomas C and Duran, Alain and Burkepile, Deron E & Rasher, Douglas B]
+authors: []
 summary: Amplicon analysis of intenstinal microbiomes from five species of herbivorous fish of a Florida reef.
 tags: ["fish", "16S rRNA", "amplicon"]
 categories: []
