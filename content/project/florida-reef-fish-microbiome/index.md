@@ -30,10 +30,10 @@ links:
   icon_pack: fab
   name: GitHub
   url: https://github.com/projectdigest/web/
-#- icon: newspaper
-#  icon_pack: fas
-#  name: Publication
-#  url: https://hypocolypse.github.io/publication.html
+- icon: newspaper
+  icon_pack: fas
+  name: Publication
+  url: https://hypocolypse.github.io/publication.html
 publication: null
 slides:
 url_code: ""
