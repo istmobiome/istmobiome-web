@@ -36,7 +36,7 @@ education:
     institution: University of Wisconsin—Madison
     year:
   - course: BSc Aquatic Biology/Archaeology
-    institution: University of  Texas—Austin
+    institution: University of Texas—Austin
     year:
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -45,12 +45,16 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: contact/
+  link: #contact
 - icon: github
   icon_pack: fab
   link: https://github.com/jarrodscott/
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+# Link to a PDF of your resume/CV.
+# To use: copy your resume to `static/media/resume.pdf`, enable `ai` icons in `params.toml`, 
+# and uncomment the lines below.
+# - icon: cv
+#   icon_pack: ai
+#   link: media/resume.pdf
 - icon: cv
   icon_pack: ai
   link: https://istmobiome.github.io/jarrod/jarrod-cv.html
@@ -58,8 +62,11 @@ social:
   icon_pack: ai
   link: https://orcid.org/0000-0001-9863-1318
 
-# Enter email to display Gravatar (if Gravatar enabled in Config)
+# Email for Contact widget or Gravatar
 email: ""
+
+# Highlight the author in author lists? (true/false)
+highlight_name: false
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
@@ -72,5 +79,6 @@ I am inspired by the tales of old-time naturalists who journeyed the world, iden
 
 Microorganisms are a major thread that weave through all systems, and microbial ecology serves as an intellectual bridge that connects numerous, often disparate disciplines. Following this thread has taken my research from the forest floor to the ocean floor. My long-term interests are to understand how collections of comparatively simple elements—-from nucleotides to genes, proteins, and individual cells—-coalesce into remarkably complex and dynamic communities. What mechanisms drive the establishment, organization, and development of these communities. My approach leverages a combination of marine and terrestrial fieldwork, advanced sequencing technologies, and bioinformatics, to reveal microbial assemblages that are functionally unified and adapted to specific habitats.
 
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "https://github.com/istmobiome/istmobiome.github.io/raw/master/jarrod/jarrod-cv.pdf" "newtab" >}}resumé{{< /staticref >}}.
 
 <i class="fa fa-download"></i><a href="https://github.com/istmobiome/istmobiome.github.io/raw/master/jarrod/jarrod-cv.pdf" download="jarrod-cv.pdf"> Download a PDF of my CV </a>or click the CV link on the left for an HTML version.
