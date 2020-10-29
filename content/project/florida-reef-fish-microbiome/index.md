@@ -10,7 +10,7 @@ external_link:
 bibliography: [cite.bib]
 header:
   caption: ""
-  image: "banners/florida_fish.png"
+  image: "featured.jpg"
 image:
   caption: ""
   focal_point:
