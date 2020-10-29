@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Jarrod J Scott
+title: Jarrod J Scott
 
 # Username (this should match the folder name)
 authors:
@@ -15,7 +15,7 @@ role: Postdoctoral Fellow
 # Organizations/Affiliations
 organizations:
 - name: Smithsonian Tropical Reseach Institute
-  url: ""
+  url: "https://stri.si.edu/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: I am interested in complexity, genomics, & natural history.
