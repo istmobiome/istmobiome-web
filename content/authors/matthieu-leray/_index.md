@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Matthieu Leray
+title: Matthieu Leray
 
 # Username (this should match the folder name)
 authors:
@@ -15,7 +15,7 @@ role: Postdoctoral Fellow
 # Organizations/Affiliations
 organizations:
 - name: Smithsonian Tropical Reseach Institute
-  url: ""
+  url: "https://stri.si.edu/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: Drivers, functions, and evolution of marine biodiversity.
