@@ -47,3 +47,31 @@ p#hero-lead {
 .wg-hero.dark a:not(.wg-hero .btn) {
   color: #FAFAFA;
 }
+
+/*************************************************
+ *  Alert box for projects
+ **************************************************/
+
+div.alert-synopsis > div:first-child::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 0;
+  color: #ff3860;
+  content: '';
+}
+
+div.alert-synopsis > div {
+  margin-left: 0.1rem;
+}
+
+.alert-synopsis {
+	color: #34495EFF;
+	font-family: 'Nunito Sans';
+	background-color: #F2F2F2FF;
+	border-color: #7c7c7cFF;
+	border-radius: 15px;
+	/*border-left-width: 30px;*/
+	margin-bottom: 2rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	padding-left: -1rem;
+}
