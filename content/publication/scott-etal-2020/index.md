@@ -34,11 +34,11 @@ summary: ""
 # links:
 # - name: ""
 #   url: ""
-url_pdf: https://royalsocietypublishing.org/doi/10.1098/rspb.2019.2367
+url_pdf: 'https://royalsocietypublishing.org/doi/pdf/10.1098/rspb.2019.2367'
 url_code: ''
 url_dataset: ''
 url_poster: ''
-url_project: https://projectdigest.github.io/
+url_project: 'https://projectdigest.github.io/'
 url_slides: ''
 url_source: ''
 url_video: ''
@@ -55,7 +55,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects: [content/project/projectdigest/index.md]
+projects: content/project/projectdigest/index.md
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
