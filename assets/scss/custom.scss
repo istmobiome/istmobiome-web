@@ -106,6 +106,28 @@ div.alert-synopsis > div {
 }
 
 /*************************************************
+ *  NAV LINKs 
+ **************************************************/
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+	color: #2962ff;
+}
+
+.navbar {
+  box-shadow: none;
+  text-transform: uppercase;
+	letter-spacing: .1em;
+	font-size: .9em;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  font-weight: 700;
+	letter-spacing: .1em;
+}
+
+/*************************************************
  *  NAV LINK HOVER ANIMATION
  **************************************************/
 
