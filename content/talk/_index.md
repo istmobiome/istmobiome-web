@@ -8,7 +8,7 @@ active = true  # Activate this widget? true/false
 weight = 70  # Order that this section will appear.
 
 title = "Presentations"
-subtitle = "Here you will find a gallery of talks & presentations created by members of the Istmobiome Project"
+subtitle = "A gallery of talks & presentations created by members of the Istmobiome Project"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
