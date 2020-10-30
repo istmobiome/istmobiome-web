@@ -24,7 +24,9 @@ abstract: A new alpheid shrimp genus, Pachelpheus gen. nov., is established to a
 summary: ""
 
 #tags:
-#- Source Themes
+- Pacific
+- shrimp
+- Pachelpheus
 #featured: false
 
 # links:
