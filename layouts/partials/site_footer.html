@@ -8,9 +8,17 @@
   <p class="powered-by">
     {{ with site.Copyright }}{{ replace . "{year}" now.Year | markdownify}} &middot; {{ end }}
 
-    Made with <i class="far fa-heart" style="color: #06805E"></i>, <a href="https://github.com/rbind/apreshill" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a>, the <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a> package, and the 
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+    Created with
+    <a href="https://wowchemy.com/" target="_blank" rel="noopener">Wowchemy</a>–the free,
+    <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.<br/>
+     Powered by
+    <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a> &
+    <a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener"> blogdown</a>.
+     Served & deployed by
+    <a href="https://www.netlify.com/" target="_blank" rel="noopener">netlify.</a>
+    Hosted by
+    <a href="https://support.rbind.io/about/" target="_blank" rel="noopener">Rbind.</a>
 
     {{ if ne .Type "docs" }}
     <span class="float-right" aria-hidden="true">
