@@ -22,6 +22,9 @@ authors:
 - William T Wcislo
 - Elizabeth G Wilbanks
 - Jonathan A Eisen
+author_notes:
+- "Equal contribution"
+- "Equal contribution"
 date: "2019-11-11T00:00:00Z"
 doi: "https://doi.org/10.1371/journal.pbio.3000533"
 
