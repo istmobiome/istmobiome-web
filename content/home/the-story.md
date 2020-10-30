@@ -68,5 +68,7 @@ subtitle = "### A bridge on land, a barrier in the sea <br/> <br/>  <small>[Clic
   <p><font size=4.5em>In this project, we make use of contrasting (a) <span class="callout">geographic regions</span>, (b) <span class="callout">benthic habitats</span>, (c) <span class="callout">environmental gradients</span>, and (d) <span class="callout">host biology</span>, to understand the evolutionary divergence of marine microbiomes in changing environments & their functional significance in different systems.
 
   We also look more generally at microbial communities from a variety of habitats and envrionments around Panama and beyond.
+  
+There are many great reviews about the effects the rise of the Isthmus of Panama had on the evolution of terrestrial and marine organisms, including <a href="https://doi.org/10.1146/annurev.ecolsys.38.091206.095815" >Lessios (2008)</a>, <a href="https://doi.org/10.1111/brv.12048" >Leigh et. al. (2013)</a>, and <a href="https://doi.org/10.1126/sciadv.1600883">O'Dea et al. (2016) </a>. 
   </font></p>
 </div>
