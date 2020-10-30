@@ -24,7 +24,7 @@
 
 [[main]]
 #  identifier = "projects"
-  name = "The Projects"
+  name = "Projects"
   url = "#projects"
   weight = 40
 
@@ -51,23 +51,23 @@
   url = "#people"
   weight = 90
 
-[[main]]
-  parent = "More"
-  name = "Workshops"
-  url = "workshops/"
-  weight = 100
+#[[main]]
+#  parent = "More"
+#  name = "Workshops"
+#  url = "workshops/"
+#  weight = 100
 
-[[main_right]]
-  name = " "
-  url = "/projects/trans-water/"
-  weight = 1000
-  pre = "<i class=\"fas fa-water \"></i>"
+#[[main_right]]
+#  name = " "
+#  url = "/projects/trans-water/"
+#  weight = 1000
+#  pre = "<i class=\"fas fa-water \"></i>"
 
-[[main_right]]
-  name = "<i class=\"fas fa-envelope fa-lg\"></i>"
-  url = "contact/"
-  post = ""
-  weight = 270
+#[[main_right]]
+#  name = "<i class=\"fas fa-envelope fa-lg\"></i>"
+#  url = "contact/"
+#  post = ""
+#  weight = 270
 
 [[main_right]]
   name = " "
