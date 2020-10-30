@@ -28,7 +28,7 @@ projects:
 publishDate: "2020-03-09T00:00:00Z"
 slides:
 summary: The key step in the formation of chocolate aroma precursors.
-tags: []
+tags: ["fermentation", "microbes", "cacao"]
 title: CACAO fermentation
 url_code: ""
 url_pdf: ""
