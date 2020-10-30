@@ -120,12 +120,12 @@ div.alert-synopsis > div {
 
 .navbar-brand {
   text-transform: uppercase;
-  font-weight: 1000;
+  font-weight: 700;
 	letter-spacing: .1em;
 }
 
 /*************************************************
- *  NAV LINK HOVER ANIMATION #2962ff
+ *  NAV LINK HOVER ANIMATION
  **************************************************/
 
 /* from https://github.com/dcossyleon/blogdown_desiree/blob/master/assets/scss/custom.scss */
@@ -151,7 +151,7 @@ a.nav-link:after {
   width: 0%;
   content: '.'; /* make invisible, dot beneath links */
   color: transparent;
-  background: #D55E00;
+  background: #2962ff;
   height: 2px;
 }
 
