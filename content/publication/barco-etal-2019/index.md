@@ -1,11 +1,11 @@
 ---
 title: "A Genus definition for Bacteria and Archaea based on a Standard Genome Relatedness Index"
 authors:
-- Roman A. Barco
-- George M. Garrity
+- Roman A Barco
+- George M Garrity
 - Jarrod J Scott
-- Jan P. Amend
-- Ken H. Nealson
+- Jan P Amend
+- Ken H Nealson
 - David Emerson
 date: "2020-02-11T00:00:00Z"
 doi: "https://doi.org/10.1128/mBio.02475-19"
