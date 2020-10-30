@@ -45,7 +45,7 @@ education:
 social:
 - icon: globe
   icon_pack: fa
-  link:https://metacrobe.github.io/
+  link: https://metacrobe.github.io/
 - icon: envelope
   icon_pack: fas
   link: #contact
