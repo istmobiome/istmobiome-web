@@ -42,6 +42,7 @@ tags:
 - intestinal
 - Bocas del Toro
 - coral
+- Caribbean
 #featured: false
 
 # links:
