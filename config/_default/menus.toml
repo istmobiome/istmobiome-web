@@ -40,10 +40,10 @@
   weight = 60
 
 [[main]]
-#  identifier = "projects"
-  name = "About"
-  url = "#about-site"
-  weight = 80
+##  identifier = "projects"
+#  name = "About"
+#  url = "#about-site"
+#  weight = 80
 
 [[main]]
   name = "People"
