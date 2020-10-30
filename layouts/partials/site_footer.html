@@ -11,6 +11,9 @@
   </p>
   {{ end }}
 
+  {{/* Display copyright license. */}}
+  {{ partial "site_footer_license" . }}
+
   <p class="powered-by">
     {{ with site.Copyright }}{{ replace . "{year}" now.Year | markdownify}} {{ end }}
     <br/>
@@ -21,7 +24,7 @@
      Powered by
     <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a> &
     <a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener"> blogdown</a>.
-     Built & deployed by
+     Served & deployed by
     <a href="https://www.netlify.com/" target="_blank" rel="noopener">netlify.</a>
     Hosted by
     <a href="https://support.rbind.io/about/" target="_blank" rel="noopener">Rbind.</a>
