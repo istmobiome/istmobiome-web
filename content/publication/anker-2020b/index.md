@@ -25,8 +25,11 @@ abstract: A new palaemonid shrimp genus, Unesconia gen. nov., is established to 
 # Summary. An optional shortened abstract.
 summary: ""
 
-#tags:
-#- Source Themes
+tags:
+- Unesconia
+- shrimp
+- Pacific
+- Coiba
 #featured: false
 
 # links:
