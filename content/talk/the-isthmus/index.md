@@ -29,7 +29,7 @@ projects:
 publishDate: "2020-03-09T00:00:00Z"
 slides:
 summary: A bridge that connected two continents and a barrier that split one ocean.
-tags: []
+tags: ["Isthmus of Panama"]
 title: How the Isthmus of Panama Changed the World
 url_code: ""
 url_pdf: ""
