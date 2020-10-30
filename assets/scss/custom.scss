@@ -4,7 +4,6 @@
  **************************************************/
  @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
-
 .callout {
 	font-size: 1.15em;
 }
@@ -22,10 +21,11 @@ blockquote p {
   font-size: 1.1em;
   font-weight: 800;
 }
-
+/*
 footer .powered-by {
     font-size: .9rem;
 }  
+*/
 /*************************************************
  *  Change from assets/scss/academic/_root.scss
  **************************************************/
@@ -94,7 +94,7 @@ div.alert-synopsis > div {
 
 .footer-license-icons {
   display: flex;
-  font-size: 1em;  // Hack to remove space characters between icons without using UL.
+  font-size: 0;  // Hack to remove space characters between icons without using UL.
   text-decoration: none;
 }
 
