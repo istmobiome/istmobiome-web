@@ -29,7 +29,7 @@ projects:
 publishDate: "2020-03-09T00:00:00Z"
 slides:
 summary:
-tags: []
+tags: ["Isthmus of Panama"]
 title: The formation of the Isthmus of Panama. An unrivaled opportunity to understand drivers, functions and evolution of marine host-associated microbiomes
 url_code: ""
 url_pdf: ""
