@@ -2,10 +2,10 @@
 title: "Intestinal microbes: an axis of functional diversity among large marine consumers"
 authors:
 - Jarrod J Scott
-- Thomas C. Adam
+- Thomas C Adam
 - Alain Duran
-- Deron E. Burkepile
-- Douglas B. Rasher
+- Deron E Burkepile
+- Douglas B Rasher
 date: "2020-04-01T00:00:00Z"
 doi: "https://doi.org/10.1098/rspb.2019.2367"
 
