@@ -28,7 +28,7 @@ projects:
 publishDate: "2020-03-09T00:00:00Z"
 slides:
 summary: A conceptual tour of the microbial world with an eye on genomics.
-tags: []
+tags: ["DNA", "metagenomics", "microbes"]
 title: Rethinking Diversity
 url_code: ""
 url_pdf: ""
