@@ -3,7 +3,7 @@ title: HYPOCOLYPSE
 subtitle: Hypoxia driven coral bleaching & microbial shifts in Caribbean Panama
 authors: []
 summary: Field surveys, physiological analyses, & microbial sequencing during a hypoxic event in Bocas del Toro.
-tags: ["coral", "16S rRNA", "metagenomic", "water", "hypoxia"]
+tags: ["coral", "16S rRNA", "metagenomic", "water", "hypoxia", "Bocas del Toro"]
 categories: ["studff"]
 date: "2019-12-05T00:00:00+01:00"
 external_link:
