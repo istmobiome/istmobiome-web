@@ -10,7 +10,18 @@ authors:
 - Holly M Bik
 - David A Coil
 - J Emmett Duffy
-- and others.
+- Edward Allen Herre
+- Harilaos A Lessios
+- Noelle M Lucey
+- Luis C Mejia
+- Douglas B Rasher
+- Koty H Sharp
+- Emilia M Sogin
+- Robert W Thacker
+- Rebecca Vega Thurber
+- William T Wcislo
+- Elizabeth G Wilbanks
+- Jonathan A Eisen
 date: "2019-11-11T00:00:00Z"
 doi: "https://doi.org/10.1371/journal.pbio.3000533"
 
