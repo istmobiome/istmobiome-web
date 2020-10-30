@@ -4,7 +4,7 @@ subtitle: The gut microbiome stability of a butterflyfish is disrupted on severe
 authors: []
 summary: Amplicon analysis of intenstinal microbiomes from butterflyfish in Bocas del Toro.
 tags: ["fish", "16S rRNA", "amplicon"]
-categories: ["fish", "16s rRNA", "microbes", "intestinal"]
+categories: ["fish", "16s rRNA", "microbes", "intestinal", "Bocas del Toro"]
 date: "2020-04-05T00:00:00+01:00"
 external_link:
 bibliography: [cite.bib]
