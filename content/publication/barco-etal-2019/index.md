@@ -29,11 +29,8 @@ abstract: Genus assignment is fundamental in the characterization of microbes, y
 summary: ""
 
 tags:
-- microbial genomics
-- genome relatedness
-- average nucleotide identity
-- genome alignment fraction
-- type & non-type species
+- genomics
+- ANI
 
 #featured: false
 
