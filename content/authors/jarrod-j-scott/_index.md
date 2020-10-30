@@ -21,11 +21,11 @@ organizations:
 bio: I am interested in complexity, genomics, & natural history.
 
 interests:
-- Ants
-- Panama
 - Complex systems
 - Microbiomes
 - Coral reefs
+- Ants
+- Panama
 - Hydrothermal vents
 - Archaeology
 - Knots
@@ -43,6 +43,9 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
+- icon: globe
+  icon_pack: fa
+  link:https://metacrobe.github.io/
 - icon: envelope
   icon_pack: fas
   link: #contact
