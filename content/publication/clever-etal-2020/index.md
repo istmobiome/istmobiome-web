@@ -43,6 +43,7 @@ tags:
 - Bocas del Toro
 - coral
 - Caribbean
+- Chaetodon
 #featured: false
 
 # links:
