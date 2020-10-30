@@ -2,14 +2,14 @@
 title: "The gut microbiome stability of a butterflyfish is disrupted on severely degraded Caribbean coral reefs"
 authors:
   - Friederike Clever
-  - Jade M. Sourisse
-  - Richard F. Preziosi
-  - Jonathan A. Eisen
-  - E. Catalina Rodriguez Guerra
+  - Jade M Sourisse
+  - Richard F Preziosi
+  - Jonathan A Eisen
+  - E Catalina Rodriguez Guerra
   - Jarrod J Scott
-  - Laetitia G.E. Wilkins
-  - Andrew H. Altieri
-  - W. Owen McMillan
+  - Laetitia GE Wilkins
+  - Andrew H Altieri
+  - W Owen McMillan
   - Matthieu Leray
 date: "2020-09-21T00:00:00Z"
 doi: "https://doi.org/10.1101/2020.09.21.306712"
