@@ -22,9 +22,9 @@ organizations:
 bio: Interested in host-microbe interactions, their evolution, and their role in ecosystem function and stability.
 
 interests:
-- host-microbe interactions
-- host-microbe evolution
-- host-microbes in ecosystem function & stability
+- Host-microbe interactions
+- Host-microbe evolution
+- Host-microbes in ecosystem function & stability
 
 education:
   courses:
