@@ -87,3 +87,20 @@ div.alert-synopsis > div {
 	padding-bottom: 1.5rem;
 	padding-left: -1rem;
 }
+
+/*************************************************
+ *  Footer copyright license
+ **************************************************/
+
+.footer-license-icons {
+  display: flex;
+  font-size: 1em;  // Hack to remove space characters between icons without using UL.
+  text-decoration: none;
+}
+
+.footer-license-icons img {
+  display: inline-flex;
+  margin-right: 8px;
+  height: 22px;
+  vertical-align: text-bottom;
+}
