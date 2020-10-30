@@ -35,8 +35,13 @@ abstract: Environmental degradation has the potential to alter key mutualisms th
 # Summary. An optional shortened abstract.
 summary: ""
 
-#tags:
-#- Source Themes
+tags:
+- fish
+- 16s rRNA
+- microbes
+- intestinal
+- Bocas del Toro
+- coral
 #featured: false
 
 # links:
