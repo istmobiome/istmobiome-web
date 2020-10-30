@@ -29,7 +29,7 @@
   weight = 40
 
 [[main]]
-  name = "Pubs"
+  name = "Publications"
 #  pre = "<i class=\"fa fa-users \"></i>"
   url = "#publications"
   weight = 50
