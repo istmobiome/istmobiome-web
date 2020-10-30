@@ -11,6 +11,9 @@ authors:
   - Andrew H Altieri
   - W Owen McMillan
   - Matthieu Leray
+author_notes:
+- "Equal contribution"
+- "Equal contribution"
 date: "2020-09-21T00:00:00Z"
 doi: "https://doi.org/10.1101/2020.09.21.306712"
 
