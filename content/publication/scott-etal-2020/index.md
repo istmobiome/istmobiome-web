@@ -27,8 +27,12 @@ abstract: Microbes are ubiquitous throughout the world’s oceans, yet the manne
 # Summary. An optional shortened abstract.
 summary: ""
 
-#tags:
-#- Source Themes
+tags:
+- fish 
+- 16S rRNA
+- microbes
+- intestinal
+
 #featured: false
 
 # links:
