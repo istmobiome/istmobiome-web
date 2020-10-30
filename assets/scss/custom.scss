@@ -125,7 +125,7 @@ div.alert-synopsis > div {
 }
 
 /*************************************************
- *  NAV LINK HOVER ANIMATION
+ *  NAV LINK HOVER ANIMATION #2962ff
  **************************************************/
 
 /* from https://github.com/dcossyleon/blogdown_desiree/blob/master/assets/scss/custom.scss */
@@ -151,7 +151,7 @@ a.nav-link:after {
   width: 0%;
   content: '.'; /* make invisible, dot beneath links */
   color: transparent;
-  background: #2962ff;
+  background: #D55E00;
   height: 2px;
 }
 
