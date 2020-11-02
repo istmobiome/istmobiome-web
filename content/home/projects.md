@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
 title = "Project Portal"
-subtitle = "Use the cards to access individual project pages or [Click here](/project/) to see a list of projects."
+subtitle = "Use the cards to access individual project pages or [Click here](/project/) to see a list of projects. On each project page you will find links to the project site, raw data and data products, code, & associated publications"
 
 [content]
   # Page type to display. E.g. project.
