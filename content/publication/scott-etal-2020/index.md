@@ -30,7 +30,7 @@ summary: ""
 tags:
 - fish 
 - 16S rRNA
-- microbes
+- microbiome
 - intestinal
 - Caribbean
 - Scarus

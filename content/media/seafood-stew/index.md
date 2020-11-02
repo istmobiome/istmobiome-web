@@ -2,7 +2,11 @@
 title: Seafood Stew
 summary: A story about a new shrimp species from Panama’s Coiba National Park featuring Matt Leray. 
 tags:
-- Demo
+- shrimp
+- Coiba
+- Strianassa
+- Unesconia
+- Triacanthoneus
 date: "2020-08-13T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

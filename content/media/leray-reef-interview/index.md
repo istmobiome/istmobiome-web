@@ -2,7 +2,8 @@
 title: The future of Coiba coral reefs
 summary: An interview with Matt Leray
 tags:
-- Demo
+- coral reefs
+- Coiba
 date: "2020-08-12T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

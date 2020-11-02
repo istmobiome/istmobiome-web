@@ -3,7 +3,7 @@ title: Hypocolypse
 subtitle: Hypoxia driven coral bleaching & microbial shifts in Caribbean Panama
 authors: [Maggie D Johnson, Jarrod J Scott, Matthieu Leray, Noelle Lucey, Lucia Rodriguez, William Wied, Andrew H Altieri]
 summary: Field surveys, physiological analyses, & microbial sequencing during a hypoxic event in Bocas del Toro.
-tags: ["coral", "16S rRNA", "metagenomics", "water", "hypoxia", "Bocas del Toro"]
+tags: ["coral reefs", "16S rRNA", "metagenomics", "water", "hypoxia", "Bocas del Toro", "microbes"]
 categories: []
 date: "2019-12-05T00:00:00+01:00"
 external_link:

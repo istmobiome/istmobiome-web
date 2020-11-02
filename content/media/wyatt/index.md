@@ -1,8 +1,8 @@
 ---
-title: Coiba&#58; From Prison to Biodiversity Sanctuary
+title: Coiba From Prison to Biodiversity Sanctuary
 summary: A short documentary piece about Isla Coiba by one of our students.
 tags:
-- Demo
+- Coiba
 date: "2019-02-15T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

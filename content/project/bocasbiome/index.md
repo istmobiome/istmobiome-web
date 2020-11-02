@@ -3,7 +3,7 @@ title: BocasBiome
 subtitle: The gut microbiome stability of a butterflyfish is disrupted on severely degraded Caribbean reef habitats.
 authors: [Friederike Clever, Jade M Sourisse, Richard F Preziosi, Jonathan A Eisen, E Catalina Rodriguez Guerra, Jarrod J Scott, Laetitia GE Wilkins, Andrew H Altieri, W Owen McMillan, Matthieu Leray]
 summary: Intestinal microbiomes from butterflyfish on degraded reefs in Bocas del Toro.
-tags: ["fish", "16s rRNA", "microbes", "intestinal", "Bocas del Toro", "coral"]
+tags: ["fish", "16s rRNA", "microbiome", "intestinal", "Bocas del Toro", "coral reefs"]
 categories: []
 date: "2020-04-05T00:00:00+01:00"
 external_link:
