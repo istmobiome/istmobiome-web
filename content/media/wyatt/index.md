@@ -6,7 +6,7 @@ tags:
 date: "2019-02-15T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: https://stri.si.edu/story/seafood-stew
+external_link: https://www.youtube.com/watch?v=Pl11OsmO0C0
 
 image:
   caption: Photo by Toa Heftiba on Unsplash
