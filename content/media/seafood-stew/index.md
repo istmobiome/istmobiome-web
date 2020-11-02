@@ -9,6 +9,6 @@ date: "2020-08-13T00:00:00Z"
 external_link: https://stri.si.edu/story/seafood-stew
 
 image:
-  caption: Photo by Toa Heftiba on Unsplash
+  caption: Photo by Arthur Anker
   focal_point: Smart
 ---
