@@ -1,6 +1,6 @@
 ---
-title: Interview with Matt Leray
-summary: Matt talks about the future of coral reefs in Coiba.
+title: The future of Coiba coral reefs
+summary: An interview with Matt Leray
 tags:
 - Demo
 date: "2020-08-12T00:00:00Z"
