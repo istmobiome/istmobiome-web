@@ -44,9 +44,9 @@ tags:
 #   url: ""
 url_pdf: https://royalsocietypublishing.org/doi/pdf/10.1098/rspb.2019.2367
 url_code: ''
+url_project: https://projectdigest.github.io/
 url_dataset: https://projectdigest.github.io/data_availability.html
 url_poster: ''
-url_project: https://projectdigest.github.io/
 url_slides: ''
 url_source: ''
 url_video: ''
