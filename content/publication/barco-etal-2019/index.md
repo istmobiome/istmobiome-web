@@ -68,4 +68,8 @@ projects: []
 slides: example
 ---
 
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+<div data-badge-popover="right" data-badge-type="medium-donut" data-doi="10.1128/mBio.02475-19" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div>
+
 In recent decades, the taxonomy of Bacteria and Archaea, and therefore genus designation, has been largely based on the use of a single ribosomal gene, the 16S rRNA gene, as a taxonomic marker. We propose an approach to delineate genera that excludes the direct use of the 16S rRNA gene and focuses on a standard genome relatedness index, the average nucleotide identity. Our findings are of importance to the microbiology community because the emergent properties of Bacteria and Archaea that are identified in this study will help assign genera with higher taxonomic resolution.
