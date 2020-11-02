@@ -3,7 +3,7 @@ title: "Unesconia coibensis, gen. et sp. nov., a miniature sponge-associated shr
 authors:
 - Arthur Anker
 date: "2020-01-11T00:00:00Z"
-doi: "http://dx.doi.org/10.11646/zootaxa.4731.1.8"
+doi: "10.11646/zootaxa.4731.1.8"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2020-01-11T00:00:00Z"
@@ -65,3 +65,7 @@ projects: []
 #   Otherwise, set `slides: ""`.
 slides: example
 ---
+
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+<div data-badge-popover="right" data-badge-type="medium-donut" data-doi="10.11646/zootaxa.4731.1.8" data-condensed="true" data-hide-no-mentions="true" data-hide-less-than="50" class="altmetric-embed"></div>
