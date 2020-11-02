@@ -46,8 +46,8 @@ abstract: The significance of symbioses between eukaryotic hosts and microbes ex
 # Summary. An optional shortened abstract.
 summary: ""
 
-#tags:
-#- Source Themes
+tags:
+- microbiome
 #featured: false
 
 # links:

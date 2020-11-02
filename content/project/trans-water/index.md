@@ -3,7 +3,7 @@ title: Transisthmian Water Microbiomes
 subtitle: Assembly-based metagenomics of coral reef & mangrove water samples from both sides of the Isthmus of Panama.
 summary: Assembly-based metagenomics of coral reef & mangrove water samples from both sides of the Isthmus of Panama.
 authors: [Jarrod J Scott, Matthieu Leray]
-tags: ["metagenomics", "coral", "mangroves", "microbes", "Isthmus of Panama", "water"]
+tags: ["metagenomics", "coral reefs", "mangroves", "microbes", "Isthmus of Panama", "water"]
 categories: []
 date: "2019-12-05T00:00:00+01:00"
 external_link:

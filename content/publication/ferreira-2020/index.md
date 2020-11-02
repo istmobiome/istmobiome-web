@@ -25,8 +25,10 @@ abstract: The spongicolid genus <em>Microprosthema</em> Stimpson, 1860 is curren
 # Summary. An optional shortened abstract.
 summary: ""
 
-#tags:
-#- Source Themes
+tags:
+- shrimp
+- Microprosthema
+
 #featured: false
 
 # links:

@@ -38,7 +38,7 @@ summary: ""
 tags:
 - fish
 - 16s rRNA
-- microbes
+- microbiome
 - intestinal
 - Bocas del Toro
 - coral

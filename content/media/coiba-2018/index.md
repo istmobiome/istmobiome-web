@@ -2,7 +2,7 @@
 title: Eastern Tropical Pacific
 summary: A story about our first expedition to Panama’s Coiba National Park. 
 tags:
-- Demo
+- Coiba
 date: "2018-05-09T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

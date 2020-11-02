@@ -2,7 +2,10 @@
 title: Reef Fish & their Microbes
 summary: Study finds fish have diverse, distinct gut microbiomes.
 tags:
-- Demo
+- fish
+- microbiome
+- coral reefs
+
 date: "2020-04-02T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
