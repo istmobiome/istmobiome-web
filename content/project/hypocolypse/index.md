@@ -7,7 +7,7 @@ tags: ["coral", "16S rRNA", "metagenomics", "water", "hypoxia", "Bocas del Toro"
 categories: []
 date: "2019-12-05T00:00:00+01:00"
 external_link:
-bibliography: [cite.bib]
+bibliography: []
 header:
   caption: ""
   image: "featured.jpg"
