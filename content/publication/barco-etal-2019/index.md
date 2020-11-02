@@ -8,7 +8,7 @@ authors:
 - Ken H Nealson
 - David Emerson
 date: "2020-02-11T00:00:00Z"
-doi: "https://doi.org/10.1128/mBio.02475-19"
+doi: "10.1128/mBio.02475-19"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2020-02-11T00:00:00Z"
