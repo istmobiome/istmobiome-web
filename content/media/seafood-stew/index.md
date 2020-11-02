@@ -1,6 +1,6 @@
 ---
 title: Seafood Stew
-summary: Strianassa lerayi Anker, new shrimp species from Panama’s Coiba National Park
+summary: A story about a new shrimp species from Panama’s Coiba National Park featuring Matt Leray. 
 tags:
 - Demo
 date: "2020-08-13T00:00:00Z"
