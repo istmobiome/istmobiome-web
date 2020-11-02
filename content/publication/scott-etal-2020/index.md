@@ -7,7 +7,7 @@ authors:
 - Deron E Burkepile
 - Douglas B Rasher
 date: "2020-04-01T00:00:00Z"
-doi: "https://doi.org/10.1098/rspb.2019.2367"
+doi: "10.1098/rspb.2019.2367"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2020-04-01T00:00:00Z"
