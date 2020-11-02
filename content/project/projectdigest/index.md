@@ -36,7 +36,7 @@ links:
   url: https://doi.org/10.1098/rspb.2019.2367
 - name: Authors
   url: https://projectdigest.github.io/people.html
-publication: null
+publication: [scott-etal-2020]
 slides:
 url_code: ""
 url_pdf: ""
