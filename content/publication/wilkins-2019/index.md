@@ -3,7 +3,7 @@ title: "Can interspecies affairs in the dark lead to evolutionary innovation?"
 authors:
 - Laetitia GE Wilkins
 date: "2019-10-28T00:00:00Z"
-doi: "https://doi.org/10.1111/mec.15262"
+doi: "10.1111/mec.15262"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2019-10-28T00:00:00Z"
@@ -60,3 +60,7 @@ projects: []
 #   Otherwise, set `slides: ""`.
 slides: example
 ---
+
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+<div data-badge-popover="right" data-badge-type="medium-donut" data-doi="10.1111/mec.15262" data-condensed="true" data-hide-no-mentions="true" data-hide-less-than="50" class="altmetric-embed"></div>
