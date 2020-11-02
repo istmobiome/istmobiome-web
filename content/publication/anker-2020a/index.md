@@ -62,3 +62,7 @@ projects: []
 #   Otherwise, set `slides: ""`.
 slides: example
 ---
+
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+<div data-badge-popover="right" data-badge-type="medium-donut" data-doi="10.11646/zootaxa.4731.1.5" data-condensed="true" data-hide-no-mentions="true" data-hide-less-than="50" class="altmetric-embed"></div>
