@@ -51,6 +51,11 @@
   url = "#people"
   weight = 90
 
+[[main]]
+  name = "Media"
+  url = "#media"
+  weight = 100
+
 #[[main]]
 #  parent = "More"
 #  name = "Workshops"
