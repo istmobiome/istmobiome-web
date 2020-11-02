@@ -36,7 +36,7 @@ links:
   url: https://doi.org/10.1101/2020.09.21.306712
 - name: Authors
 #  url: https://projectdigest.github.io/people.html
-publication: null
+publication: [clever-etal-2020]
 slides:
 url_code: ""
 url_pdf: ""
