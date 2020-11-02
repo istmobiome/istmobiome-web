@@ -30,6 +30,8 @@ links:
   icon_pack: fab
   name: GitHub
   url: https://github.com/hypocolypse/web/
+- name: Interactive Data
+  url: https://anvi-server.org/jscott/hypocolypse_16s_rrna_indicator_species_analysis
 #- icon: newspaper
 #  icon_pack: fas
 #  name: Publication
