@@ -1,6 +1,6 @@
 ---
 title: Eastern Tropical Pacific
-summary: A story about our first trip to Panama’s Coiba National Park. 
+summary: A story about our first expedition to Panama’s Coiba National Park. 
 tags:
 - Demo
 date: "2018-05-09T00:00:00Z"
@@ -9,6 +9,6 @@ date: "2018-05-09T00:00:00Z"
 external_link: https://stri.si.edu/story/eastern-tropical-pacific
 
 image:
-  caption: Photo by Toa Heftiba on Unsplash
+  caption: Photo by Sean Mattson
   focal_point: Smart
 ---
