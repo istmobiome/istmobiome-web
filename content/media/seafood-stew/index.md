@@ -1,6 +1,6 @@
 ---
-title: Strianassa lerayi Anker, new shrimp species from Panama’s Coiba National Park
-summary: 
+title: Seafood Stew
+summary: Strianassa lerayi Anker, new shrimp species from Panama’s Coiba National Park
 tags:
 - Demo
 date: "2020-08-13T00:00:00Z"
