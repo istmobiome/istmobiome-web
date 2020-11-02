@@ -53,9 +53,9 @@ url_pdf: https://www.biorxiv.org/content/10.1101/2020.09.21.306712v1.full.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''
-url_project: https://bocasbiome.github.io/
+url_project: 
 url_slides: ''
-url_source: ''
+url_source: https://github.com/bocasbiome/web/
 url_video: ''
 
 # Featured image
@@ -70,7 +70,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects: []
+projects: [bocasbiome]
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
