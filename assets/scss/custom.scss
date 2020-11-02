@@ -162,11 +162,12 @@ a.nav-link:hover:after {
 /*************************************************
  *  Metric layouts
  **************************************************/
+
 div.altmetric-embed {
-     display: inline;
+  display: inline-block;
+  float: left;
 }
 
-.__dimensions_badge_embed__ {
-    display: inline;
+span.__dimensions_badge_embed__ {
+  padding-left: 150px;
 }
-
