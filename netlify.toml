@@ -24,3 +24,27 @@
   for = "index.xml"
   [headers.values]
     Content-Type = "application/rss+xml"
+
+[[redirects]]
+  from = "http://istmobiome.netlify.app/*"
+  to = "https://istmobiome.rbind.io/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://istmobiome.netlify.app/*"
+  to = "https://istmobiome.rbind.io/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://istmobiome.rbind.io/*"
+  to = "https://istmobiome.rbind.io/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://istmobiome.github.io/index.html"
+  to = "https://istmobiome.rbind.io/:splat"
+  status = 301
+  force = true
