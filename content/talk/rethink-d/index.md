@@ -1,5 +1,5 @@
 ---
-abstract: INSERT abstract
+abstract: 
 address:
   city: Bocas del Toro
   country: Panama
@@ -38,4 +38,3 @@ draft: false
 
 ---
 
-Use the `Cite` button above to access a BibTeX formatted bibliography for liturature used in researching & preparing this presentation.
