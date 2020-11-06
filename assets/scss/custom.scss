@@ -171,3 +171,35 @@ div.altmetric-embed {
 span.__dimensions_badge_embed__ {
   padding-left: 150px;
 }
+
+/*************************************************
+ *  Code
+ **************************************************/
+
+ .hljs {
+  font-size: 1em;
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+	border-left: 6px solid #2962ff;
+	border-top: 0.5px solid #333332;
+	border-bottom: 0.5px solid #333332;
+	border-right: 1px solid #333332;
+	border-radius: 4px;
+}
+
+.hljs.apache {
+  font-size: 1em;
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+	border-left: 1px solid #333332;
+	border-top: 0.5px solid #333332;
+	border-bottom: 0.5px solid #333332;
+	border-right: 1px solid #333332;
+	border-radius: 4px;
+}
