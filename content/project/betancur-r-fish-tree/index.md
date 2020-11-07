@@ -40,8 +40,6 @@ url_video: ""
 weight: 20
 ---
 
-{{% toc %}}
-
 My goal here is to extend the functionality of the phylogeny of bony fishes by [Betancur-R et. al., (2017)](https://link.springer.com/article/10.1186/s12862-017-0958-3) by using [anvi'o](http://merenlab.org/software/anvio/) and metadta scraped from [FishBase](https://www.fishbase.se/search.php) to create an interactive phylogeny. I am *not a fish biologist* and my hope  
 
 ## Background
