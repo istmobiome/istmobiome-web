@@ -2,7 +2,7 @@
 title: Hypocolypse
 subtitle: Hypoxia driven coral bleaching & microbial shifts in Caribbean Panama
 authors: [Maggie D Johnson, Jarrod J Scott, Matthieu Leray, Noelle Lucey, Lucia Rodriguez, William Wied, Andrew H Altieri]
-summary: Field surveys, physiological analyses, & microbial sequencing during a hypoxic event in Bocas del Toro.
+summary: Field surveys, physiological analyses, & microbial communities during a marine hypoxic event.
 tags: ["coral reefs", "16S rRNA", "metagenomics", "water", "hypoxia", "Bocas del Toro", "microbes"]
 categories: []
 date: "2019-12-05T00:00:00+01:00"
@@ -10,7 +10,7 @@ external_link:
 bibliography: []
 header:
   caption: ""
-  image: "featured.jpg"
+  image: "hypocolypse.png"
 image:
   caption: ""
   focal_point:
@@ -53,7 +53,7 @@ To access the complete bioinformatic workflow & raw data use the buttons at the 
 
 <br/>
 
-{{% alert synopsis %}}
+{{% callout synopsis %}}
 
 SYNOPSIS
 <hr>
@@ -64,7 +64,7 @@ In this study, we
 - Conducted extensive field measurements to quantify environmental conditions &  corresponding effects on coral physiology.
 - Used 16S rRNA amplicon & metagenomic sequencing determine the effects of hypoxia on microbial communities.
 
-{{% /alert %}}
+{{% /callout %}}
 
 On this site you will find details on our reproducible bioinformatics workflow and how to access all data/data products. We also provide numerous data tables and figures including all tables, figures, and supplementary information from the original publiation.
 

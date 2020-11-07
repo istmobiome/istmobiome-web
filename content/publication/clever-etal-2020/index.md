@@ -27,7 +27,7 @@ publishDate: "2020-09-21T00:00:00Z"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Proceedings of the Royal Society B: Biological Sciences (2020) 287 20192367"
+publication: "BioRxiv"
 publication_short: ""
 
 abstract: Environmental degradation has the potential to alter key mutualisms that underline the structure and function of ecological communities. While it is well recognized that the global loss of coral reefs alters fish communities, the effects of habitat degradation on microbial communities associated with fishes remain largely unknown despite their fundamental roles in host nutrition and immunity. Using a gradient of reef degradation, we show that the gut microbiome of a facultative, coral-feeding butterflyfish (Chaetodon capistratus) is significantly more variable among individuals at degraded reefs with very low live coral cover (~0%) than reefs with higher coral cover (~30%), mirroring a known pattern of microbial imbalance observed in immunodeficient humans and other stressed or diseased animals. We demonstrate that fish gut microbiomes on severely degraded reefs have a lower abundance of Endozoicomonas and a higher diversity of anaerobic fermentative bacteria, which suggests a broader and less coral dominated diet. The observed shifts in fish gut bacterial communities across the habitat gradient extend to a small set of potentially beneficial host associated bacteria (i.e., the core microbiome) suggesting essential fish-microbiome interactions are vulnerable to severe coral degradation.
@@ -46,9 +46,13 @@ tags:
 - Chaetodon
 #featured: false
 
-# links:
+links:
 # - name: ""
 #   url: ""
+- icon: open-access
+  icon_pack: ai
+  name: Open Access
+
 url_pdf: https://www.biorxiv.org/content/10.1101/2020.09.21.306712v1.full.pdf
 url_code: ''
 url_dataset: ''
@@ -61,7 +65,7 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Figure 1 (modified)'
+  caption: 'publication Figure 2'
   focal_point: ""
   preview_only: false
 

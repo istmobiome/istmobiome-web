@@ -27,9 +27,13 @@ tags:
 - mutualism
 #featured: false
 
-# links:
+links:
 # - name: ""
 #   url: ""
+- icon: open-access
+  icon_pack: ai
+  name: Open Access
+
 url_pdf: https://onlinelibrary.wiley.com/doi/pdf/10.1111/mec.15262
 url_code: ''
 url_dataset: ''
@@ -42,7 +46,7 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Figure 1 (modified)'
+  caption: 'publication Figure 1 (modified)'
   focal_point: ""
   preview_only: false
 
