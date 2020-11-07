@@ -1,42 +1,36 @@
 ---
-title: Betancur-R interactive fish phylogeny in anvi'o
-subtitle: Coming Soon
+title: Interactive fish phylogeny 
+subtitle: The Betancur-R bony fish phylogeny, visualized in anvi'o, with metadata scraped from FishBase using rvest. 
 authors: [Jarrod J Scott]
-summary: Coming Soon
-tags: ["fish", "16s rRNA", "microbiome", "intestinal", "Bocas del Toro", "coral reefs"]
+summary: Betancur-R fish phylogeny, anvi'o, and rvest webscraping
+tags: ["fish", "phylogenetics"]
 categories: []
-date: "2020-04-05T00:00:00+01:00"
+date: "2020-11-09T00:00:00+01:00"
 external_link:
 bibliography: [cite.bib]
 header:
   caption: ""
-  image: "featured.jpg"
+  image: "betancur.png"
 image:
   caption: ""
   focal_point:
   preview_only: true
 links:
-- name: Go to Project Site
-  url: https://bocasbiome.github.io/
-- icon: database
-  icon_pack: fas
-  name: Data
+- name: Click here for the Interactive tree
+  url: 
+#- icon: database
+#  icon_pack: fas
+#  name: Data
 #  url: https://projectdigest.github.io/data_availability.html
-- icon: code
-  icon_pack: fas
-  name: Code
+#- icon: code
+#  icon_pack: fas
+#  name: Code
 #  url: https://projectdigest.github.io/raw_code.txt
 - icon: github
   icon_pack: fab
   name: GitHub
-  url: https://github.com/bocasbiome/web/
-- icon: newspaper
-  icon_pack: fas
-  name: Publication
-  url: https://doi.org/10.1101/2020.09.21.306712
-- name: Authors
-#  url: https://projectdigest.github.io/people.html
-publication: [clever-etal-2020]
+  url: https://github.com/projectdigest/betancur_r-fish-tree/
+publication: []
 slides:
 url_code: ""
 url_pdf: ""
@@ -46,43 +40,52 @@ url_video: ""
 weight: 20
 ---
 
-As part of an analysis for [another project](project/projectdigest/), I needed a phylogenetic tree of five fish species. To construct the tree I also needed an appropriate out group but given that I know little about fish, I wasn't sure which species would be most appropriate. My search for an out group lead to [DeepFin](https://sites.google.com/site/guilleorti/) and the amazing paper by [Betancur-R et. al., (2017)](https://link.springer.com/article/10.1186/s12862-017-0958-3) about the phylogenetic classification of bony fishes. 
+{{% toc %}}
 
-Anyway, I used the tree from the paper to choose Gerreidae as the out group for the analysis. Then, just for the fun of it, I decided to make my own interactive representation of the Betancur-R et. al., tree. How I did this and what the tree looks like is the subject of this post. 
+My goal here is to extend the functionality of the phylogeny of bony fishes by [Betancur-R et. al., (2017)](https://link.springer.com/article/10.1186/s12862-017-0958-3) by using [anvi'o](http://merenlab.org/software/anvio/) and metadta scraped from [FishBase](https://www.fishbase.se/search.php) to create an interactive phylogeny. I am *not a fish biologist* and my hope  
+
+## Background
+
+As part of an analysis for [another project](https://istmobiome.rbind.io/project/projectdigest/), I needed to create a phylogenetic tree of five fish species. To construct the tree I also needed an appropriate out group, but given that I know little about fish, I wasn't sure which species would be most appropriate. My search for an out group lead to [DeepFin](https://sites.google.com/site/guilleorti/) and the amazing paper by [Betancur-R et. al., (2017)](https://link.springer.com/article/10.1186/s12862-017-0958-3) about the phylogenetic classification of bony fishes. 
+
+Anyway, I used the tree from the paper to choose Gerreidae as the out group for the analysis. Just for the fun of it, I decided to make my own interactive representation of the Betancur-R tree using [anvi'o](http://merenlab.org/software/anvio/). Anvi'o *is an open-source, community-driven analysis and visualization platform for ‘omics data.* One of the best aspects of anvi'o is it's interactive interface, which is amazing for data exploration---including phylogenetic trees. Another strength of the interface is that you can overlay all types of metadata. I decided to capitilize on this functionality and gathered as metadata as I could for each species. For this part I used the R package [`rvest`](https://rvest.tidyverse.org/) to scrape species pages on [FishBase](https://www.fishbase.se/search.php) for metadata.
+
+How I did all of this is the subject of this post. 
 
 <br/>
 
-{{% alert synopsis %}}
+{{% callout synopsis %}}
 
 Workflow overview
 <hr>
-1) Retrieve Betancur-R tree data. Modify the data to be compatible with anvi'o. <br/> 
-2) Scrape FishBase for metadata.  <br/>
-3) Curate metadata.  <br/>
+1) Get the Betancur-R tree data.  <br/> 
+2) Modify the data to be compatible with anvi'o. <br/> 
+3) Scrape FishBase for metadata using rvest in R.  <br/>
+4) Curate metadata. Some manual manipulation required.  <br/>
+5) Build anvi'o profile data base.  <br/>
 
-{{% /alert %}}
+{{% /callout %}}
 
 <hr/>
 
-# Modifying the Betancur-R Data
+## The Betancur-R Fish Phylogeny Data
 
-The Betancur-R bony fish phylogeny from the paper is the 4th version (the original dates back to 2013) and contains 1992 species encompassing 72 orders and 410 families. Wow. At the time of publication this tree encompassed roughly 80% of recognized bony fish families. The study uses molecular and genomic data to base classification on inferred phylogenies. From the abstract the author states:
+The Betancur-R bony fish phylogeny from the paper is the 4th version (the original dates back to 2013) and contains 1992 species encompassing 72 orders and 410 families. Wow. The tree has representatives from roughly 80% of recognized bony fish families. The study used molecular and genomic data to base classification on inferred phylogenies. From the abstract the author states:
 
 *The first explicit phylogenetic classification of bony fishes was published in 2013, based on a comprehensive molecular phylogeny (www.deepfin.org). We here update the first version of that classification by incorporating the most recent phylogenetic results.*
 
 The authors provide many files with the paper but for the purposes of this visualization I used two files from the [Supplementary material](https://link.springer.com/article/10.1186/s12862-017-0958-3#SupplementaryMaterial), specifically **Additional file 2** ([complete tree in newick format](https://static-content.springer.com/esm/art%3A10.1186%2Fs12862-017-0958-3/MediaObjects/12862_2017_958_MOESM2_ESM.tre)) and **Additional file 4** (Table S1. spreadsheet with full classification). 
 
-I first modified the tree file slightly---in the original file, the Family name was used as a prefix for each species. I removed the Family names from all leaves. To do this you could of course use the command line but I prefer using the [BBEdit](http://www.barebones.com/products/bbedit/index.html) text editor because it allows grep pattern matching and I can see what is being replaced before I do anything. The free version of BBEdit has this functionality but if you like the software I recommend purchacing a lisence. Anyway, this simple regular expression will relace all the Family names in the tree. 
+I first modified the tree file slightly---in the original file, the Family name was used as a prefix for each species. I removed the Family names from all leaves. To do this you could of course use the command line but I prefer using the [BBEdit](http://www.barebones.com/products/bbedit/index.html) text editor because it allows grep pattern matching and I can see what is being replaced before I do anything. Plus for some reason I still absolutely terrible at using the command line for find and replace functions. So there's that too. The free version of BBEdit has this functionality but if you like the software I recommend purchacing a one-time lisence. Anyway, this simple regular expression will relace all the Family names in the tree. 
 
 `[A-Z]\w+ae_`
 
-Basically, the command says look for a capital letter (`[A-Z]`), followed by any word character (`\w`) any number of times (`+`), then the letters `ae`, and finally an underscore (`_`). The `ae` is important because all of the Family names end in `ae`. 
+Basically, the command says look for a single capital letter (`[A-Z]`), followed by any word character (`\w`) any number of times (`+`), then the letters `ae`, and finally an underscore (`_`). The `ae` is important because all of the Family names end in `ae`. 
 
-ADD DETAILS ABOUT Additional file 4 
 
-# Scraping FishBase
+## Scraping FishBase
 
-The next step was to collect metadata about each fish to include in the visualization. [FishBase](https://www.fishbase.se/search.php) is a huge online data base and as of this writing had information on over 34,000 fish species. Here is an example page about [*Herichthys minckleyi* ](https://www.fishbase.se/summary/Herichthys-minckleyi.html) or Minkley's cichlid, a freshwater fish endemic to Cuatro Cienegas, Mexico. There is a lot of  metadata on these pages but I was specifically interested in the following pieces:
+The next step was to collect metadata about each fish to include in the visualization. [FishBase](https://www.fishbase.se/search.php) is a huge online data base and as of this writing had information on over 34,000 fish species. Here is an example page about [*Herichthys minckleyi* ](https://www.fishbase.se/summary/Herichthys-minckleyi.html) or Minkley's cichlid, a freshwater fish endemic to Cuatro Cienegas, Mexico. There is a lot of metadata on these pages but I was specifically interested in the following pieces:
 
 1) the scientific and common names.
 2) the Environment metadata.
@@ -98,8 +101,6 @@ Given the size of the tree, doing all of this by hand was simply out of the ques
 - [Web Scraping Reference: Cheat Sheet for Web Scraping using R](https://github.com/yusuzech/r-web-scraping-cheat-sheet) by [yifyan](https://github.com/yusuzech). 
 - [R Web Scraping Cheat Sheet](https://awesomeopensource.com/project/yusuzech/r-web-scraping-cheat-sheet) from Awesome Open Source. 
 - [Functions with R and rvest: A Laymen’s Guide](https://towardsdatascience.com/functions-with-r-and-rvest-a-laymens-guide-acda42325a77) by [@peterjgensler](https://medium.com/@peterjgensler). This artcile was key in helping me design the functions described below. 
-
-## Workflow
 
 This workflow uses [`rvest`](https://www.rdocumentation.org/packages/rvest/versions/0.3.6), an R package for scraping web pages. I will keep the explaination here to a minimum since there are many authoratative sources online.  
 
@@ -120,15 +121,15 @@ library(httr)
 
 ### Scrape Species Pages
 
-Moving on. I found out after I ran everything that dealing with the Distribution metadata my scripts parsed from the web pages was huge pain. The amount of manual manipulation I was doing was unacceptable. So the first thing I did was to grab all of the other metadata before returning to the Distribution data. This does make the code longer but it also makes data cleanup at the end a lot easier. 
+Moving on. I soon found out that dealing with the *Distribution* metadata my scripts were parsing was huge pain. The amount of manual manipulation I had to do was unacceptable. So the first thing I did was to grab all of the other metadata before returning to the *Distribution* data. This does make the code longer but it also makes data cleanup at the end a lot easier. 
 
-The first thing I need are URLs to scrape. FishBase being the awesome resourse that it is has a very simple URL structure, for example:
+To scrape you need a list of URLs. FishBase being the awesome resourse that it is has a very simple URL structure, for example:
 
 `https://www.fishbase.se/summary/Herichthys-minckleyi.html`
 
-Every species follows the same format. The only file I needed to start was a list of all species in the tree so I grabbed the names from my modifed Betancur-R tree file. The only change I had to make was swapping the underscore (`_`) in the tree names for a dash (`-`). 
+Every species follows the same format. So the only thing I needed was a list of all species in the tree, so I grabbed the names from my modifed Betancur-R tree file. I had to swap the underscore (`_`) in the tree names for a dash (`-`) to make it fit the FishBase URL naming scheme.  
 
-From that list of species names I made a data frame containing each species name and the corresponding FishBase URL. This code reads in the file and writes a complete URL for each species.
+From this list of species names I made a data frame containing each species name and the corresponding FishBase URL. The code reads in the file and writes a complete URL for each species.
 
 ```{r}
 rm(list = ls())
@@ -164,7 +165,7 @@ Now it was time to write my scrape function, called simply `scrape_fish_base`. D
 
 I won't try to explain what each `XPATH` code means but I will show you how I found the right ones. Let's use our old friend [*Herichthys minckleyi*](https://www.fishbase.se/summary/Herichthys-minckleyi.html) as an example. When you open up this page you need to find the Developer Tools of your browser, the location of which is slightly different depending on your browser. In Chrome for example, you go to `View > Developer > Inspect Elements`. When you do this, a new window  pops up showing the Developer Tools. Use your cursor to find the element of interest, right click, and hit `Copy XPath`. You need to be in the `Elements` tab when you do this. I have found in some cases using the `Selector` instead works better. I am not sure why that is but keep it in mind.
 
-
+{{< figure src = "images/scrape_1.png">}}
 
 
 Let's say I am interested in the Environments where *Herichthys minckleyi* is typically found. I run through these steps and end up with this `XPATH`:
@@ -177,6 +178,8 @@ I  use this code to select the information I need and then repeat the process fo
 2) Reads a URL from the list & navigates to the site.
 3) Goes through each of the tags, retreives and stores the data in a dataframe called `article`.
 4) Moves on to the next URL and repeats.
+
+For this function I use the command `html_text`, which tells `rvest` that I am after text. 
 
 ```{r}
 scrape_fish_base <- function(url) {
@@ -240,7 +243,6 @@ scrape_fish_base <- function(url) {
   return(article)
 }
 ```
-
 And here is where I actually call the function. 
 
 ```{r}
@@ -260,12 +262,15 @@ Downloading 4 of 1992 URL: https://www.fishbase.se/summary/Neoceratodus-forsteri
 Downloading 5 of 1992 URL: https://www.fishbase.se/summary/Protopterus-aethiopicus.html 
 ```
 
+```{r}
+saveRDS(all_fish_data, "scrape_fish_base.rds")
+save.image("scrape_fish_base.rdata")
+```
+
 Now I have a dataframe called `all_fish_data` where each row is a fish species and each column is one of the metadata categories. This took a little over an hour to run through all 1992 species but I have the slowest internet connection in the world. I expect the process would be much faster with a better connection.  
 
-Next, it is time to clean up the data. I there is a better way to code the scrape (e.g., more specific `XPATHs`) so less cleanup is required. Anyway, I will go through the cleanup steps for each piece of metadata. 
- 
 
-## Human Uses
+Next, it is time to clean up the data. I there is a better way to code the scrape (e.g., more specific `XPATHs`) so less cleanup is required. Anyway, I will go through the cleanup steps for each piece of metadata. 
 
 I start with the Human Uses data. First I will make a copy of the raw dataframe just in case. Here is an example of what these data look like. Remember, I had to use two different `XPATHs` for this metadata because of the structure of the web pages. This gets a little messy because the code picks up none-target metadata. Ok, in this example, we see that the Human uses for #4 and 5 were picked up by the first `XPATH`, #1, 2, and 6 by the second `XPATH`, while #3 returned no results. 
 
@@ -322,28 +327,230 @@ tmp_fish_data <- tmp_fish_data %>% tidyr::separate(threat_to_humans,
                                                    into = c("threat_to_humans"), 
                                                    sep = "[(]",  remove = TRUE)
 
+all_fish_meta_final <- tmp_fish_data
 ```
 
+At this point I am sad to say that I had to do the rest of the cleanup by hand, depite my best efforts to code the cleanup. The data is still pretty complicated for me to devise a suitable automated method. 
+
+```{r}
+write.table(tmp_fish_data, "tmp_fish_data.txt", sep = "\t", quote = FALSE) 
+```
+
+```{r}
+saveRDS(all_fish_meta_final, "all_fish_meta_final.rds")
+```
+
+### Scrape IDs & Stock Codes
+
+Ok, I mentioned earlier that the *Distribution* metadata from the main page was too difficult to parse so I decided to scrape *FAO areas* subpage. These pages contain a simple table that looks like this. 
 
 
+| FAO Area              | Status  | Note                         |
+|-----------------------|---------|------------------------------|
+| Indian Ocean, Western	| native	| 30° E - 80° E; 45° S - 30° N | 
+| Indian Ocean, Eastern	| native	| 77°E - 150°E; 55°S - 24°N    | 
+| Pacific, Northwest	  | native	|                              | 
 
-https://www.fishbase.se/search.php
-To construct the tree above we first downloaded the newick file from the paper’s supplementary material ([download link](https://static-content.springer.com/esm/art%3A10.1186%2Fs12862-017-0958-3/MediaObjects/12862_2017_958_MOESM2_ESM.tre)), parsed out the Family data from the tree file (included in the name of each leaf), and finally visualized the tree in anvi’o. Within the anvi’o interface we visualized the tree as a circular phylogram and collapsed any Family represented by two or more species. The size of each triangle is proportional to the number of species in that family while the colors are somewhat arbitrary. Originally we thought it would be cool to color leaves by the taxa but that was too complicated. So the colors are really just for looks. The families we studied in this project are in the lower left, marked by asterisks. In the future we would like to identify which fish families have been the subject of microbial investigations and use the phylogenetic framework to identify gaps in knowledge and patterns of associations.
 
+Now, the issue is that the URL for the *FAO areas* subpage was a bit harder to code because the links have species specific `ID codes`  and `StockCodes`. Turns out that I actually needed to first scrape the main page to get the *FAO areas* URL then use that URL to scrape the tables. 
 
+{{< figure src = "images/scrape_2.png">}}
 
+Basically, I want to scrape the URL that is sitting under the highlighted link. 
 
+As before, I first turn my list of species to FishBase URLs.
 
+```{r}
+rm(list = ls())
+base_url <- "https://www.fishbase.se/summary/"
+fish <- scan('fish_list.txt', what = "character", sep = "\n")
+rm(list = ls(pattern = "sample_data"))
+sample_data <- data.frame()
+for (name in fish) {
+     tmp_link <- paste(base_url, name, ".html", sep = "")
+     tmp_entry <- cbind(name, tmp_link)
+     sample_data <- rbind(sample_data, tmp_entry)
+     rm(list = ls(pattern = "tmp_"))
+
+}
+sample_data <- sample_data %>% dplyr::rename("link" = "tmp_link")
+```
+
+```{r}
+all_links <- sample_data$link
+all_names <- sample_data$name
+```
+
+```{r}
+pjs_instance <- run_phantomjs()
+pjs_session <- Session$new(port = pjs_instance$port)
+```
+
+Then I create a new function called `scrape_fish_code_urls` which uses the XPATH `//*[@id="ss-main"]/h1[3]/span/span[2]/a` to grab that subpage link. Here I use `html_attr` in my code to indicate that the scrape is specifically looking for a URL and not plain text. 
+
+```{r}
+scrape_fish_code_urls <- function(url) {
+  
+  pjs_session$go(url)
+  rendered_source <- pjs_session$getSource()
+  html_document <- read_html(rendered_source)
+
+  codes_xpath <- '//*[@id="ss-main"]/h1[3]/span/span[2]/a'
+  codes_text <- html_document %>%
+    html_node(xpath = codes_xpath) %>%
+    html_attr(name = "href", default = "https://www.fishbase.se/Country/FaoAreaList.php?ID=6320&GenusName=Herichthys&SpeciesName=minckleyi&fc=349&StockCode=6633&Scientific=Herichthys+minckleyi")
+
+  fish_codes <- data.frame(
+    url = url,
+    codes = codes_text
+  )
+  
+  return(fish_codes)
+}
+```
+
+You should notice that for `html_attr` I used the `default` option and set it to a specific URL. This is an actual *FAO areas* page but for a species not in the list. The reason I do this is to avoid downstream errors with species that do not have a FishBase page, an *FAO areas* page, and/or an empty table. That way, if the code encounters a page that doesn't exist, it will use this one instead. Poor man's workaround to what I can only assume is a simple fix using an `ifelse` statement. 
+
+Again, I run the function. This time, instead of a bunch of metadata I should end up with just a new list of URLs.  
+
+```{r}
+all_fish_codes <- data.frame()
+for (i in 1:length(all_links)) {
+  cat("Downloading", i, "of", length(all_links), "URL:", all_links[i], "\n")
+  fish_codes <- scrape_fish_code_urls(all_links[i])
+  # Append current article data.frame to the data.frame of all articles
+  all_fish_codes <- rbind(all_fish_codes, fish_codes)
+}
+```
+
+```
 Downloading 1 of 1992 URL: https://www.fishbase.se/summary/Leucoraja-erinacea.html 
 Downloading 2 of 1992 URL: https://www.fishbase.se/summary/Callorhinchus-milii.html 
 Downloading 3 of 1992 URL: https://www.fishbase.se/summary/Latimeria-chalumnae.html 
 Downloading 4 of 1992 URL: https://www.fishbase.se/summary/Neoceratodus-forsteri.html 
-Downloading 5 of 1992 URL: https://www.fishbase.se/summary/Protopterus-aethiopicus.html 
+Downloading 5 of 1992 URL: https://www.fishbase.se/summary/Protopterus-aethiopicus.html
+```
+
+A little clean-up is required before proceeding. I expected a full URL to the FAO pages, but instead I just got extensions. No big deal, I will just add the base URL name and make a few other changes for downstream analysis.
+
+```{r}
+
+all_fish_codes$codes <- stringr::str_replace(all_fish_codes$codes, "\\.\\./Country/FaoAreaList.php", "https://www.fishbase.se/Country/FaoAreaList.php")
+all_fish_codes$url <- stringr::str_replace(all_fish_codes$url, "https://www.fishbase.se/summary/", "")
+all_fish_codes$url <- stringr::str_replace(all_fish_codes$url, ".html", "") 
+all_fish_codes <- all_fish_codes %>% dplyr::rename("name" = "url")
+all_fish_codes <- all_fish_codes %>% dplyr::rename("link" = "codes")
+saveRDS(all_fish_codes, "all_fish_codes_fixed.rds")
+```
+
+### Scrape Distribution Tables
+
+So now I have a new list of URLs for each species that I can use to download the FAO table data. 
+
+```{r}
+all_links <- all_fish_codes$link
+all_names <- all_fish_codes$name
+```
+
+```{r}
+pjs_instance <- run_phantomjs()
+pjs_session <- Session$new(port = pjs_instance$port)
+```
+
+Pretty much the same function as above except this time  I use the command `html_table` to tell `rvest` that I am after a table. One tricky thing is that if the table is empty the script will fail. The onky way around this I could find was setting `header = FALSE` which treats table headers as actual data. Not a huge deal since one line of code can remove these later on. 
 
 
+```{r}
+scrape_fish_dist_tabs <- function(url) {
+  
+  pjs_session$go(url)
+  rendered_source <- pjs_session$getSource()
+  html_document <- read_html(rendered_source)
+  dist_xpath <- '//*[@id="dataTable"]'
+  dist_text <- html_document %>%
+    html_node(xpath = dist_xpath) %>%
+    html_table(header = FALSE, fill = TRUE, trim = TRUE)
+# If header = TRUE job will fail with empty tables, makes downstream more of a pain  
+  fish_dist <- data.frame(
+    url = url,
+    dist = dist_text
+  )
+  
+  return(fish_dist)
+}
+```
 
+
+```{r}
+all_fish_dist <- data.frame()
+for (i in 1:length(all_links)) {
+  cat("Downloading", i, "of", length(all_links), "URL:", all_links[i], "\n")
+  fish_dist <- scrape_fish_dist_tabs(all_links[i])
+  # Append current article data.frame to the data.frame of all articles
+  all_fish_dist <- rbind(all_fish_dist, fish_dist)
+}
+saveRDS(all_fish_dist, "all_fish_dist_raw.rds")
+```
+
+```
 Downloading 1 of 1992 URL: https://www.fishbase.se/Country/FaoAreaList.php?ID=2557&GenusName=Leucoraja&SpeciesName=erinacea&fc=19&StockCode=2753&Scientific=Leucoraja+erinacea 
 Downloading 2 of 1992 URL: https://www.fishbase.se/Country/FaoAreaList.php?ID=4722&GenusName=Callorhinchus&SpeciesName=milii&fc=24&StockCode=4944&Scientific=Callorhinchus+milii 
 Downloading 3 of 1992 URL: https://www.fishbase.se/Country/FaoAreaList.php?ID=2063&GenusName=Latimeria&SpeciesName=chalumnae&fc=30&StockCode=2258&Scientific=Latimeria+chalumnae 
 Downloading 4 of 1992 URL: https://www.fishbase.se/Country/FaoAreaList.php?ID=4512&GenusName=Neoceratodus&SpeciesName=forsteri&fc=27&StockCode=4705&Scientific=Neoceratodus+forsteri 
 Downloading 5 of 1992 URL: https://www.fishbase.se/Country/FaoAreaList.php?ID=8734&GenusName=Protopterus&SpeciesName=aethiopicus&fc=552&StockCode=9056&Scientific=Protopterus+aethiopicus 
+```
+
+What we end up with is a dataframe where each line is the species URL plus a single line from the table. This means that if a table has more than one entry (like the example above), a species will have multiple entries in the dataframe. I want a single entry for each species so I need to concatonate instances of table entries. 
+
+First a little cleanup. I do not need the *Note* data from the tables, and I also want to change the names of the columns. I can also remove any `Herichthys minckleyi` since this was used as dummy data. Come to think of it, I should have removed it from the URL list *before* running `scrape_fish_dist_tabs`. Oh well, live and learn.
+
+```{r}
+all_fish_dist <- readRDS("all_fish_dist_raw.rds")
+all_fish_dist$dist.X3 <- NULL
+all_fish_dist <- all_fish_dist[all_fish_dist$dist.X1 != "FAO Area", ]
+all_fish_dist <- dplyr::distinct(all_fish_dist)
+
+all_fish_dist <- all_fish_dist %>% dplyr::rename("dist.FAO.Area" = "dist.X1")
+all_fish_dist <- all_fish_dist %>% dplyr::rename("dist.Status" = "dist.X2")
+```
+
+Now I merge all mutiple entries so I end up with a single line per species containing the FAO area and Status. 
+
+```{r}
+
+all_fish_dist_agg <- all_fish_dist %>%
+                     group_by(url) %>%
+                 #mutate(row = row_number()) %>%
+                     tidyr::pivot_wider(names_from = dist.FAO.Area, 
+                                    values_from = c("dist.FAO.Area", 
+                                                    "dist.Status"))
+                 #select(-row) %>%
+                 #ungroup()
+fao_area <- all_fish_dist_agg %>% 
+                  ungroup() %>%
+                  dplyr::select(matches("^dist.FAO.Area_.*")) %>% 
+                  tidyr::unite("fao_area", na.rm = TRUE, 
+                               remove = TRUE, sep = "; ")
+
+fao_status <- all_fish_dist_agg %>% 
+                  ungroup() %>%
+                  dplyr::select(matches("^dist.Status_.*")) %>%
+                  tidyr::unite("fao_status", na.rm = TRUE, remove = TRUE, sep = "; ") %>%
+                  tidyr::separate(fao_status, "fao_status")
+
+all_fish_dist_final <- cbind(all_fish_dist_agg$url, fao_area, fao_status)
+```
+
+## Building the anvi'o Profile database
+
+At this point I have four items to put together. The goal is to put all of these together in a single file. 
+
+1) The original species list from the Betancur-R tree (`fish_list.txt`). 
+2) Various metadata scraped from FishBase for each species (`all_fish_meta_final`).
+3) Distribution data scraped from the FAO page for each species (`all_fish_dist_final`).
+4) Additional file 4 from Betancur-R paper. 
+
+The key is that this table needs to have row names that natch the names in the tree. 
+
+
+Anvi'o is really easy to install using conda in the [Miniconda](https://docs.conda.io/en/latest/miniconda.html) environment. See the installation instructions [here](http://merenlab.org/2016/06/26/installation-v2/). 

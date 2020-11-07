@@ -2,7 +2,7 @@
 title: ProjectDIGEST
 subtitle: Intestinal microbes as an axis of functional diversity among large marine consumers
 authors: [Jarrod J Scott, Thomas A Adam, Alain Duran, Deron E Burkepile, Douglas B Rasher]
-summary: Intestinal microbiomes from five species of herbivorous fish on a Florida reef.
+summary: Intestinal microbiomes of herbivorous fish from a Florida reef.
 tags: ["fish", "16S rRNA", "microbiome", "intestinal"]
 categories: []
 date: "2020-04-05T00:00:00+01:00"
@@ -10,7 +10,7 @@ external_link:
 bibliography: [cite.bib]
 header:
   caption: ""
-  image: "featured.jpg"
+  image: "projectdigest.png"
 image:
   caption: ""
   focal_point:
@@ -53,7 +53,7 @@ To access the complete bioinformatic workflow & raw data use the buttons at the 
 
 <br/>
 
-{{% alert synopsis %}}
+{{% callout synopsis %}}
 
 SYNOPSIS
 <hr>
@@ -64,7 +64,7 @@ In this study, we
 - Performed phylogenetic comparison of  dominant microbiome members to show that intestinal microbiome are a mixture of  environmental generalists, animal-associates, and fish-specialists.
 - Found that the closest relatives of fish-specialists were microbes from intestines of ecologically and evolutionarily related fishes in other, distant oceans.
 
-{{% /alert %}}
+{{% /callout %}}
 
 On this site you will find details on our reproducible bioinformatics workflow and how to access all data/data products. We also provide numerous data tables and figures including all tables, figures, and supplementary information from the original publiation.
 

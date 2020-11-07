@@ -35,9 +35,13 @@ tags:
 
 #featured: false
 
-# links:
+links:
 # - name: ""
 #   url: ""
+- icon: open-access
+  icon_pack: ai
+  name: Open Access
+
 url_pdf: https://mbio.asm.org/content/mbio/11/1/e02475-19.full-text.pdf
 url_code: ''
 url_dataset: ''

@@ -9,12 +9,11 @@ date: "2019-12-05T00:00:00+01:00"
 external_link:
 header:
   caption: ""
-  image: "banners/trans.png"
+  image: "transwater.png"
 image:
   caption: ""
-  focal_point: ""
-  preview_only: True
-  placement:
+  focal_point:
+  preview_only: true
 links:
 - name: Go to the Workflow
   url: projects/trans-water/
@@ -71,7 +70,7 @@ To access the complete bioinformatic workflow & raw data use the buttons at the 
 
 <br/>
 
-{{% alert synopsis %}}
+{{% callout synopsis %}}
 
 SYNOPSIS
 <hr>
@@ -83,7 +82,7 @@ In this study, we
 - Performed separate co-assemblies for EP samples and for WA samples.
 - Used automatic and manual binning to generate metagenome assembled genomes (MAGs) from each assembly.
 
-{{% /alert %}}
+{{% /callout %}}
 
 Use the buttons at the top of the page or [this link](/projects/trans-water/1-1-intro/) to access the molecular data and complete bioinformatic workflow.
 

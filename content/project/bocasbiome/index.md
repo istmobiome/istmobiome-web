@@ -53,7 +53,7 @@ To access the complete bioinformatic workflow & raw data use the buttons at the 
 
 <br/>
 
-{{% alert synopsis %}}
+{{% callout synopsis %}}
 
 SYNOPSIS
 <hr>
@@ -61,7 +61,7 @@ In this study, we
 
 DETAILS
 
-{{% /alert %}}
+{{% /callout %}}
 
 On this site you will find details on our reproducible bioinformatics workflow and how to access all data/data products. We also provide numerous data tables and figures including all tables and figures.
 
