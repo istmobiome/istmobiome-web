@@ -17,7 +17,7 @@ image:
   preview_only: true
 links:
 - name: Click here for the Interactive tree
-  url: 
+#  url: 
 #- icon: database
 #  icon_pack: fas
 #  name: Data
@@ -37,7 +37,7 @@ url_pdf: ""
 url_slides: ""
 url_video: ""
 
-weight: 20
+weight: 5
 ---
 
 My goal here is to extend the functionality of the phylogeny of bony fishes by [Betancur-R et. al., (2017)](https://link.springer.com/article/10.1186/s12862-017-0958-3) by using [anvi'o](http://merenlab.org/software/anvio/) and metadta scraped from [FishBase](https://www.fishbase.se/search.php) to create an interactive phylogeny. 
@@ -130,7 +130,7 @@ Every species follows the same format. So the only thing I needed was a list of 
 
 From this list of species names I made a data frame containing each species name and the corresponding FishBase URL. The code reads in the file and writes a complete URL for each species.
 
-```{r}
+```{bash}
 rm(list = ls())
 base_url <- "https://www.fishbase.se/summary/"
 fish <- scan('fish_list.txt', what = "character", sep = "\n")
@@ -148,14 +148,14 @@ sample_data <- sample_data %>% dplyr::rename("link" = "tmp_link")
 
 Now I have a two-column dataframe with the species name and FishBase URL.
 
-```{r}
+```{bash}
 all_names <- sample_data$name
 all_links <- sample_data$link
 ```
 
 To understand what this next step is about, please read the [Web crawling and scraping](https://tm4ss.github.io/docs/Tutorial_1_Web_scraping.html) tutorial. 
 
-```{r}
+```{bash}
 pjs_instance <- run_phantomjs()
 pjs_session <- Session$new(port = pjs_instance$port)
 ```
@@ -180,7 +180,7 @@ I  use this code to select the information I need and then repeat the process fo
 
 For this function I use the command `html_text`, which tells `rvest` that I am after text. 
 
-```{r}
+```{bash}
 scrape_fish_base <- function(url) {
   
   pjs_session$go(url)
@@ -242,9 +242,10 @@ scrape_fish_base <- function(url) {
   return(article)
 }
 ```
+
 And here is where I actually call the function. 
 
-```{r}
+```{bash}
 all_fish_data <- data.frame()
 for (i in 1:length(all_links)) {
   cat("Downloading", i, "of", length(all_links), "URL:", all_links[i], "\n")
@@ -261,7 +262,7 @@ Downloading 4 of 1992 URL: https://www.fishbase.se/summary/Neoceratodus-forsteri
 Downloading 5 of 1992 URL: https://www.fishbase.se/summary/Protopterus-aethiopicus.html 
 ```
 
-```{r}
+```{bash}
 saveRDS(all_fish_data, "scrape_fish_base.rds")
 save.image("scrape_fish_base.rdata")
 ```
@@ -284,7 +285,7 @@ I start with the Human Uses data. First I will make a copy of the raw dataframe 
 
 So what I needed to do was replace the non-target results with `NA` and then merge the two columns. 
 
-```{r}
+```{bash}
 tmp_fish_data <- all_fish_data
 
 tmp_fish_data$human_uses2  <- gsub(x = tmp_fish_data$human_uses2, 
@@ -309,7 +310,7 @@ Vulnerable (VU) (B1+2abc, D2); Date assessed: 01 August 1996
 
 What I want to do is remove the unwanted data and then make two columns, one for the status and another for the status abbreviation. 
 
-```{r}
+```{bash}
 tmp_fish_data$IUCN_red_list_status <- stringr::str_replace(tmp_fish_data$IUCN_red_list_status, 
                                                            "; Date assessed.*", "")
 tmp_fish_data <- tmp_fish_data %>% tidyr::separate(IUCN_red_list_status, 
@@ -320,7 +321,7 @@ tmp_fish_data$IUCN_abr <- stringr::str_replace(tmp_fish_data$IUCN_abr, "[)].*", 
 
 Moving on. Some of the Threats to Humans data has references appended (e.g., `(Ref. 4537)`). I am not intertered in these references for my visualization. 
 
-```{r}
+```{bash}
 ## threat_to_humans
 tmp_fish_data <- tmp_fish_data %>% tidyr::separate(threat_to_humans, 
                                                    into = c("threat_to_humans"), 
@@ -331,11 +332,11 @@ all_fish_meta_final <- tmp_fish_data
 
 At this point I am sad to say that I had to do the rest of the cleanup by hand, depite my best efforts to code the cleanup. The data is still pretty complicated for me to devise a suitable automated method. 
 
-```{r}
+```{bash}
 write.table(tmp_fish_data, "tmp_fish_data.txt", sep = "\t", quote = FALSE) 
 ```
 
-```{r}
+```{bash}
 saveRDS(all_fish_meta_final, "all_fish_meta_final.rds")
 ```
 
@@ -359,7 +360,7 @@ Basically, I want to scrape the URL that is sitting under the highlighted link.
 
 As before, I first turn my list of species to FishBase URLs.
 
-```{r}
+```{bash}
 rm(list = ls())
 base_url <- "https://www.fishbase.se/summary/"
 fish <- scan('fish_list.txt', what = "character", sep = "\n")
@@ -375,19 +376,19 @@ for (name in fish) {
 sample_data <- sample_data %>% dplyr::rename("link" = "tmp_link")
 ```
 
-```{r}
+```{bash}
 all_links <- sample_data$link
 all_names <- sample_data$name
 ```
 
-```{r}
+```{bash}
 pjs_instance <- run_phantomjs()
 pjs_session <- Session$new(port = pjs_instance$port)
 ```
 
 Then I create a new function called `scrape_fish_code_urls` which uses the XPATH `//*[@id="ss-main"]/h1[3]/span/span[2]/a` to grab that subpage link. Here I use `html_attr` in my code to indicate that the scrape is specifically looking for a URL and not plain text. 
 
-```{r}
+```{bash}
 scrape_fish_code_urls <- function(url) {
   
   pjs_session$go(url)
@@ -412,7 +413,7 @@ You should notice that for `html_attr` I used the `default` option and set it to
 
 Again, I run the function. This time, instead of a bunch of metadata I should end up with just a new list of URLs.  
 
-```{r}
+```{bash}
 all_fish_codes <- data.frame()
 for (i in 1:length(all_links)) {
   cat("Downloading", i, "of", length(all_links), "URL:", all_links[i], "\n")
@@ -432,7 +433,7 @@ Downloading 5 of 1992 URL: https://www.fishbase.se/summary/Protopterus-aethiopic
 
 A little clean-up is required before proceeding. I expected a full URL to the FAO pages, but instead I just got extensions. No big deal, I will just add the base URL name and make a few other changes for downstream analysis.
 
-```{r}
+```{bash}
 
 all_fish_codes$codes <- stringr::str_replace(all_fish_codes$codes, "\\.\\./Country/FaoAreaList.php", "https://www.fishbase.se/Country/FaoAreaList.php")
 all_fish_codes$url <- stringr::str_replace(all_fish_codes$url, "https://www.fishbase.se/summary/", "")
@@ -446,12 +447,12 @@ saveRDS(all_fish_codes, "all_fish_codes_fixed.rds")
 
 So now I have a new list of URLs for each species that I can use to download the FAO table data. 
 
-```{r}
+```{bash}
 all_links <- all_fish_codes$link
 all_names <- all_fish_codes$name
 ```
 
-```{r}
+```{bash}
 pjs_instance <- run_phantomjs()
 pjs_session <- Session$new(port = pjs_instance$port)
 ```
@@ -459,7 +460,7 @@ pjs_session <- Session$new(port = pjs_instance$port)
 Pretty much the same function as above except this time  I use the command `html_table` to tell `rvest` that I am after a table. One tricky thing is that if the table is empty the script will fail. The onky way around this I could find was setting `header = FALSE` which treats table headers as actual data. Not a huge deal since one line of code can remove these later on. 
 
 
-```{r}
+```{bash}
 scrape_fish_dist_tabs <- function(url) {
   
   pjs_session$go(url)
@@ -480,7 +481,7 @@ scrape_fish_dist_tabs <- function(url) {
 ```
 
 
-```{r}
+```{bash}
 all_fish_dist <- data.frame()
 for (i in 1:length(all_links)) {
   cat("Downloading", i, "of", length(all_links), "URL:", all_links[i], "\n")
@@ -503,7 +504,7 @@ What we end up with is a dataframe where each line is the species URL plus a sin
 
 First a little cleanup. I do not need the *Note* data from the tables, and I also want to change the names of the columns. I can also remove any `Herichthys minckleyi` since this was used as dummy data. Come to think of it, I should have removed it from the URL list *before* running `scrape_fish_dist_tabs`. Oh well, live and learn.
 
-```{r}
+```{bash}
 all_fish_dist <- readRDS("all_fish_dist_raw.rds")
 all_fish_dist$dist.X3 <- NULL
 all_fish_dist <- all_fish_dist[all_fish_dist$dist.X1 != "FAO Area", ]
@@ -515,7 +516,7 @@ all_fish_dist <- all_fish_dist %>% dplyr::rename("dist.Status" = "dist.X2")
 
 Now I merge all mutiple entries so I end up with a single line per species containing the FAO area and Status. 
 
-```{r}
+```{bash}
 
 all_fish_dist_agg <- all_fish_dist %>%
                      group_by(url) %>%
