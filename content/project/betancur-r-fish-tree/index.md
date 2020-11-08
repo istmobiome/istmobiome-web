@@ -40,11 +40,11 @@ url_video: ""
 weight: 20
 ---
 
-My goal here is to extend the functionality of the phylogeny of bony fishes by [Betancur-R et. al., (2017)](https://link.springer.com/article/10.1186/s12862-017-0958-3) by using [anvi'o](http://merenlab.org/software/anvio/) and metadta scraped from [FishBase](https://www.fishbase.se/search.php) to create an interactive phylogeny. I am *not a fish biologist* and my hope  
+My goal here is to extend the functionality of the phylogeny of bony fishes by [Betancur-R et. al., (2017)](https://link.springer.com/article/10.1186/s12862-017-0958-3) by using [anvi'o](http://merenlab.org/software/anvio/) and metadta scraped from [FishBase](https://www.fishbase.se/search.php) to create an interactive phylogeny. 
 
 ## Background
 
-As part of an analysis for [another project](https://istmobiome.rbind.io/project/projectdigest/), I needed to create a phylogenetic tree of five fish species. To construct the tree I also needed an appropriate out group, but given that I know little about fish, I wasn't sure which species would be most appropriate. My search for an out group lead to [DeepFin](https://sites.google.com/site/guilleorti/) and the amazing paper by [Betancur-R et. al., (2017)](https://link.springer.com/article/10.1186/s12862-017-0958-3) about the phylogenetic classification of bony fishes. 
+As part of an analysis for [another project](https://istmobiome.rbind.io/project/projectdigest/), I needed to create a phylogenetic tree of five fish species. To construct the tree I also needed an appropriate out group, but given that I know little about fish, I wasn't sure which species would be most appropriate. My search for an out group lead to [DeepFin](https://sites.google.com/site/guilleorti/) and the amazing paper by [Betancur-R et. al.](https://link.springer.com/article/10.1186/s12862-017-0958-3)(2017) about the phylogenetic classification of bony fishes. 
 
 Anyway, I used the tree from the paper to choose Gerreidae as the out group for the analysis. Just for the fun of it, I decided to make my own interactive representation of the Betancur-R tree using [anvi'o](http://merenlab.org/software/anvio/). Anvi'o *is an open-source, community-driven analysis and visualization platform for ‘omics data.* One of the best aspects of anvi'o is it's interactive interface, which is amazing for data exploration---including phylogenetic trees. Another strength of the interface is that you can overlay all types of metadata. I decided to capitilize on this functionality and gathered as metadata as I could for each species. For this part I used the R package [`rvest`](https://rvest.tidyverse.org/) to scrape species pages on [FishBase](https://www.fishbase.se/search.php) for metadata.
 
@@ -56,6 +56,7 @@ How I did all of this is the subject of this post.
 
 Workflow overview
 <hr>
+
 1) Get the Betancur-R tree data.  <br/> 
 2) Modify the data to be compatible with anvi'o. <br/> 
 3) Scrape FishBase for metadata using rvest in R.  <br/>
