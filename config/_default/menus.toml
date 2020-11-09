@@ -51,14 +51,14 @@
 #  weight = 80
 
 [[main]]
-  name = "People"
-#  pre = "<i class=\"fa fa-users \"></i>"
-  url = "#people"
+  name = "Media"
+  url = "#media"
   weight = 90
 
 [[main]]
-  name = "Media"
-  url = "#media"
+  name = "People"
+#  pre = "<i class=\"fa fa-users \"></i>"
+  url = "#people"
   weight = 100
 
 #[[main]]
