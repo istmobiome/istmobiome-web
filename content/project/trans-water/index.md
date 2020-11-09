@@ -16,7 +16,7 @@ image:
   preview_only: true
 links:
 - name: Go to the Workflow
-  url: projects/trans-water/
+#  url: projects/trans-water/
 - name: Authors
   url:
 #- icon: database
@@ -30,7 +30,7 @@ links:
 - icon: github
   icon_pack: fab
   name: GitHub
-  url: https://github.com/istmobiome/web/
+#  url: https://github.com/istmobiome/web/
 #- icon: newspaper
 #  icon_pack: fas
 #  name: Publication
@@ -66,7 +66,7 @@ weight: 4
 Welcome. This site provides the reproducible bioinformatics workflow for our study on the Transisthmian water column microbiome project. Here you will find details on how we setup our computational environment, program names and exact parameters we used throughout every step of the analysis, and how to access raw data. In addition we provide field/lab methods, summary data products, and other (potentially) useful information.
 
 To access the complete bioinformatic workflow & raw data use the buttons at the top of the page or visit
->https://istmobiome.rbind.io/projects/trans-water/1-1-intro/
+>COMING SOON
 
 <br/>
 
