@@ -82,5 +82,5 @@ I am inspired by the tales of old-time naturalists who journeyed the world, iden
 
 Microorganisms are a major thread that weave through all systems, and microbial ecology serves as an intellectual bridge that connects numerous, often disparate disciplines. Following this thread has taken my research from the forest floor to the ocean floor. My long-term interests are to understand how collections of comparatively simple elements—-from nucleotides to genes, proteins, and individual cells—-coalesce into remarkably complex and dynamic communities. What mechanisms drive the establishment, organization, and development of these communities. My approach leverages a combination of marine and terrestrial fieldwork, advanced sequencing technologies, and bioinformatics, to reveal microbial assemblages that are functionally unified and adapted to specific habitats.
 
-{{< icon name="download" pack="fas" >}} Download a {{< staticref "https://github.com/istmobiome/istmobiome.github.io/raw/master/jarrod/jarrod-cv.pdf" "newtab" >}}PDF of my CV{{< /staticref >}} or click the CV link on the left for an HTML version..
+{{% icon name="download" pack="fas" %}} Download a {{< staticref "https://github.com/istmobiome/istmobiome.github.io/raw/master/jarrod/jarrod-cv.pdf" "newtab" >}}PDF of my CV{{< /staticref >}} or click the CV link on the left for an HTML version..
 
