@@ -10,7 +10,7 @@ external_link:
 bibliography: [cite.bib]
 header:
   caption: ""
-  image: "betancur.png"
+  image: "betancur_banner.png"
 image:
   caption: ""
   focal_point:
