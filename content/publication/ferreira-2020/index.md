@@ -17,7 +17,7 @@ publishDate: "2020-02-21T00:00:00Z"
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Zootaxa (2020) 4729(3): 445-450."
+publication: "[Zootaxa (2020) 4729(3): 445-450.](https://www.biotaxa.org/Zootaxa/article/view/zootaxa.4729.3.11)"
 publication_short: ""
 
 abstract: The spongicolid genus <em>Microprosthema</em> Stimpson, 1860 is currently composed of 16 species inhabiting tropical and subtropical marine shallow waters worldwide, with six species found in the western Atlantic (one of them also present in the central and eastern Atlantic), one species in the eastern Pacific, and nine species in the Indo-West Pacific (Saito & Okuno 2011; Goy & Martin 2013; Saito & Anker 2014; De Grave et al. 2016). The genus is characterised by the somewhat depressed body; the carapace more or less densely covered by spines (except in one species); the third maxilliped with a long exopod; the first pereopod with a setiferous organ on the carpus and propodus; the third pereopod greatly enlarged and elongate; and the telson with one tooth on the lateral margin (Holthuis 1946; Poore 2004; Saito & Okuno 2011).

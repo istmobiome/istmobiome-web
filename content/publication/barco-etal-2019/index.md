@@ -20,7 +20,7 @@ publishDate: "2020-02-11T00:00:00Z"
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "mBio (2020) 11(1) e02475-19"
+publication: "[mBio (2020) 11(1) e02475-19](https://mbio.asm.org/content/11/1/e02475-19)"
 publication_short: ""
 
 abstract: Genus assignment is fundamental in the characterization of microbes, yet there is currently no unambiguous way to demarcate genera solely using standard genomic relatedness indices. Here, we propose an approach to demarcate genera that relies on the combined use of the average nucleotide identity, genome alignment fraction, and the distinction between type- and non-type species. More than 3,500 genomes representing type strains of species from >850 genera of either bacterial or archaeal lineages were tested. Over 140 genera were analyzed in detail within the taxonomic context of order/family. Significant genomic differences between members of a genus and type species of other genera in the same order/family were conserved in 94% of the cases. Nearly 90% (92% if polyphyletic genera are excluded) of the type strains were classified in agreement with current taxonomy. The 448 type strains that need reclassification directly impact 33% of the genera analyzed in detail. The results provide a first line of evidence that the combination of genomic indices provides added resolution to effectively demarcate genera within the taxonomic framework that is currently based on the 16S rRNA gene. We also identify the emergence of natural breakpoints at the genome level that can further help in the circumscription of taxa, increasing the proportion of directly impacted genera to at least 43% and pointing at inaccuracies on the use of the 16S rRNA gene as a taxonomic marker, despite its precision. Altogether, these results suggest that genomic coherence is an emergent property of genera in Bacteria and Archaea.
@@ -41,6 +41,7 @@ links:
 - icon: open-access
   icon_pack: ai
   name: Open Access
+  url: https://mbio.asm.org/content/11/1/e02475-19
 
 url_pdf: https://mbio.asm.org/content/mbio/11/1/e02475-19.full-text.pdf
 url_code: ''
