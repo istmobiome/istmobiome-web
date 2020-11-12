@@ -45,12 +45,6 @@
   weight = 60
 
 [[main]]
-##  identifier = "projects"
-#  name = "About"
-#  url = "#about-site"
-#  weight = 80
-
-[[main]]
   name = "Media"
   url = "#media"
   weight = 90
@@ -85,11 +79,3 @@
   pre = "<i class=\"fab fa-github fa-lg\"></i>"
   url = "https://github.com/istmobiome/istmobiome-web"
   weight = 280
-
-
-# Link to a PDF of your resume/CV from the menu.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# [[main]]
-#    name = "CV"
-#    url = "files/cv.pdf"
-#    weight = 70

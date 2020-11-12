@@ -7,7 +7,7 @@ authors:
 - Matthieu Leray
 
 date: "2020-01-20T00:00:00Z"
-doi: "https://doi.org/10.6084/m9.figshare.11664012.v1"
+doi: "10.6084/m9.figshare.11664012.v1"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2020-01-11T00:00:00Z"

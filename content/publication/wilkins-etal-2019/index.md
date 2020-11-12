@@ -38,7 +38,7 @@ publishDate: "2019-11-11T00:00:00Z"
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "PLoS Biology (2019) 17(11) e3000533"
+publication: "[PLoS Biology (2019) 17(11) e3000533](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000533)"
 publication_short: ""
 
 abstract: The significance of symbioses between eukaryotic hosts and microbes extends from the organismal to the ecosystem level and underpins the health of Earth’s most threatened marine ecosystems. Despite rapid growth in research on host-associated microbes, from individual microbial symbionts to host-associated consortia of significantly relevant taxa, little is known about their interactions with the vast majority of marine host species. We outline research priorities to strengthen our current knowledge of host–microbiome interactions and how they shape marine ecosystems. We argue that such advances in research will help predict responses of species, communities, and ecosystems to stressors driven by human activity and inform future management strategies.
@@ -56,6 +56,7 @@ links:
 - icon: open-access
   icon_pack: ai
   name: Open Access
+  url: https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000533
 
 url_pdf: https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.3000533&type=printable
 url_code: ''
