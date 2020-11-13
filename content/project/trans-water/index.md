@@ -87,3 +87,11 @@ In this study, we
 Use the buttons at the top of the page or [this link](/projects/trans-water/1-1-intro/) to access the molecular data and complete bioinformatic workflow.
 
 Use the `Cite` button above to access a BibTeX formatted bibliography for the references we used in this study.
+
+<hr>
+
+<p><small>
+Banner photo credits, Sean Mattson.
+</small></p>
+
+<hr>

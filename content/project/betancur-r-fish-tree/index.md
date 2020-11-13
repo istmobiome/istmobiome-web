@@ -10,7 +10,7 @@ external_link:
 bibliography: [cite.bib]
 header:
   caption: ""
-  image: "betancur_banner.png"
+  image: "betancur_r_banner.png"
 image:
   caption: ""
   focal_point:
@@ -41,6 +41,15 @@ weight: 5
 ---
 
 {{% toc %}}
+
+<hr>
+
+<p><small>
+
+**All banner images from** <em>The Fishes of Porto Rico (1902) </em> by Everman & Marsh, Bulletin of the United States Fish Commission, v.20, pt.1, for 1900, Washington, DC: Government Printing Office. Retrieved from <a href="https://commons.wikimedia.org/wiki/Category:The_Fishes_of_Porto_Rico_(1902)">Wikimedia Commons</a> and licenced under <a href="https://creativecommons.org/share-your-work/public-domain/cc0">CC-0</a>. Yes, that is how they spelled Puerto Rico in 1902.
+</small></p>
+
+<hr>
 
 My goal in this project is to extend the functionality of the phylogeny of bony fishes by [Betancur-R et. al., (2017)](https://link.springer.com/article/10.1186/s12862-017-0958-3). I use [anvi'o](http://merenlab.org/software/anvio/) to visualize the tree and metadata scraped from [FishBase](https://www.fishbase.se/search.php) to create an interactive phylogeny. 
 
