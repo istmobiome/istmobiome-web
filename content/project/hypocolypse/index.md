@@ -70,4 +70,10 @@ On this site you will find details on our reproducible bioinformatics workflow a
 
 Use the `Cite` button above to access a BibTeX formatted bibliography for the references we used in this study.
 
-<hr/>
+<hr>
+
+<p><small>
+Banner photo credits, Maggie Johnson & Noelle Lucey. 
+</small></p>
+
+<hr>
