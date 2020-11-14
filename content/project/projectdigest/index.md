@@ -33,7 +33,7 @@ links:
 - icon: newspaper
   icon_pack: fas
   name: Publication
-  url: https://doi.org/10.1098/rspb.2019.2367
+  url: publication/scott-etal-2020/
 - name: Authors
   url: https://projectdigest.github.io/people.html
 publication: [scott-etal-2020]

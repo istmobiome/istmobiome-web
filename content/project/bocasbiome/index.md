@@ -25,7 +25,7 @@ links:
 - icon: code
   icon_pack: fas
   name: Code
-#  url: https://projectdigest.github.io/raw_code.txt
+  url: https://bocasbiome.github.io/raw_code.txt
 - icon: github
   icon_pack: fab
   name: GitHub
@@ -33,8 +33,8 @@ links:
 - icon: newspaper
   icon_pack: fas
   name: Publication
-  url: https://doi.org/10.1101/2020.09.21.306712
-- name: Authors
+  url: publication/clever-etal-2020/
+#- name: Authors
 #  url: https://projectdigest.github.io/people.html
 publication: [clever-etal-2020]
 slides:
