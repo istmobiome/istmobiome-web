@@ -4,7 +4,7 @@ widget: "blank"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless: false  # This file represents a page section.
 active: true  # Activate this widget? true/false
 weight: 40  # Order that this section will appear.
-
+editable: false
 title:  "Geminate Gallery"
 subtitle: "Gallery of geminates by taxa. Each card contains a species pair; top panels (peach) are Western Atlantic and bottom panels (royal blue) are Eastern Pacific."
 # Featured image
@@ -15,16 +15,28 @@ image:
   placement: 2
 ---
 
-# Geminate shrimp
+{{< toc >}}
 
+
+## Geminate *Alpheus* shrimp
+
+<br/>
 
 {{< gallery album = "shrimp">}}
 
 
-# Geminate fish
+## Geminate Fish
 
+<br/>
 
 {{< gallery album = "fish">}}
 
 
+## Geminate Lucinidae Clams
+
+<br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{< gallery album = "clams">}}
+
+<hr>
 

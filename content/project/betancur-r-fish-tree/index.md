@@ -13,7 +13,7 @@ header:
   image: "betancur_banner.png"
 image:
   caption: ""
-  focal_point:
+  focal_point: "BottomLeft"
   preview_only: true
 links:
 - name: Click here for the Interactive tree
