@@ -7,10 +7,10 @@
 # NavBar Links
 ##########################
 
-[[main]]
-  url = "#slider"
-  weight = 10
-  pre = "<i class=\"fas fa-home fa-lg\"></i>"
+#[[main]]
+#  url = "#slider"
+#  weight = 10
+#  pre = "<i class=\"fas fa-home fa-lg\"></i>"
 
 [[main]]
   name = "The Story"
@@ -56,10 +56,36 @@
   weight = 100
 
 #[[main]]
-#  parent = "More"
-#  name = "Workshops"
-#  url = "workshops/"
+#  name = "Workshop"
+#  pre = "<i class=\"fa fa-users \"></i>"
+#  url = "workshop-2018/"
 #  weight = 100
+
+[[main]]
+  parent = "More"
+  name = "About the Project"
+  url = "about/"
+  weight = 110
+[[main]]
+  parent = "More"
+  name = "Marine Microbiome Workshop"
+  url = "workshop-2018/"
+  weight = 120
+[[main]]
+  parent = "More"
+  name = "License"
+  url = "license/"
+  weight = 130
+#[[main]]
+#  parent = "More"
+#  name = "Terms"
+#  url = "terms/"
+#  weight = 140
+#[[main]]
+#  parent = "More"
+#  name = "Privacy"
+#  url = "privacy/"
+#  weight = 150
 
 #[[main_right]]
 #  name = " "
