@@ -57,6 +57,8 @@ links:
   icon_pack: ai
   name: Open Access
   url: https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000533
+- name: Workshop
+  url: workshop-2018/
 
 url_pdf: https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.3000533&type=printable
 url_code: ''

@@ -29,16 +29,18 @@ Bocas del Toro Research Station, Panama<br/>
 
 Here you will find information for a workshop we created and organized to explore the nature of host-microbiome associations in marine environments. The workshop was jointly funded by [The Gordon & Betty Moore Foundation](https://www.moore.org/) and [The Smithsonian Tropical Research Institute](https://stri.si.edu/). We hosted 25 researchers from 16 different institutions in Bocas del Toro, Panama, during the winter of 2018 for 5 days of presentations, discussions, and breakout sessions. 
 
-> You can learn more about the resulting [publication here]({{< ref "/publication/wilkins-etal-2019/index.md" >}}).
+{{% callout note %}}
 
-> For an awesome write-up about the workshop, check out Laetitia Wilkins' post on [RCN for Evolution in Changing Seas](https://rcn-ecs.github.io/2019-01-03-istmobiome/)
+A fantastic publication entitled  [*Host-associated microbiomes drive structure and function of marine ecosystems*]({{< ref "/publication/wilkins-etal-2019/index.md" >}}) resulted from the workshop.
 
+For an awesome write-up about the workshop, check out Laetitia Wilkins' post on [RCN for Evolution in Changing Seas](https://rcn-ecs.github.io/2019-01-03-istmobiome/)
 
+{{% /callout %}}
 
 ## Motivation
 
 Animals serve as ecosystems for a suite of bacteria, archaea, viruses and fungi with which they interact in various ways. These host-microbe interactions have played a fundamental role in the diversification, evolution and ecology of all animals on Earth. They may also play a crucial role for the future of biodiversity by mediating the effects of perturbations on individuals and communities of hosts. Considerable knowledge on the underpinnings of microbial symbiosis originates from integrative research programs on model systems (e.g., squid-vibrio, gutless worm), and there is an urgent need to understand if and how these concepts can be generalized across the tree of life.
 
-During this workshop we will summarize and synthesize the current state of our knowledge on the mechanisms and the role of animal-microbe interactions in the sea. As anthropogenic activities affect the dynamics of our oceans, we will discuss how the field can become more unified and predictive. How do we go about understanding the role of environmental stress on host-microbe interactions and the future of marine communities?
+During this workshop we summarized and synthesized the current state of our knowledge on the mechanisms and the role of animal-microbe interactions in the sea. As anthropogenic activities affect the dynamics of our oceans, we discussed how the field can become more unified and predictive. How do we go about understanding the role of environmental stress on host-microbe interactions and the future of marine communities?
 
-The result of these discussions will be summarized into a manuscript that will be submitted for peer-review in an international journal. All participants in the workshop will be invited to participate.
+The result of these discussions were summarized in a peer-reviewed manuscript (see above).

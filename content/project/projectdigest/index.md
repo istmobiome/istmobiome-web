@@ -48,8 +48,12 @@ weight: 3
 
 Welcome. This page provides a link to the website for our study on the intestinal microbiome of herbivorous reef fish entitled <em>Intestinal microbes: as axis of functional diversity among large marine consumers</em>. Microbes are ubiquitous throughout the world’s ocean yet the extent of their influence on the ecology and evolution of large, mobile fauna is poorly understood.
 
+{{% callout note %}}
+
 To access the complete bioinformatic workflow & raw data use the buttons at the top of the page or visit
->https://projectdigest.github.io/
+https://projectdigest.github.io/
+
+{{% /callout %}}
 
 <br/>
 
