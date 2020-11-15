@@ -63,7 +63,7 @@ height = "250px"
 
 [[item]]
   title = ""
-  content = "To learn more about the project & the website click here.<br/>"
+  content = "Learn more about this website & the grant that supports the work---*Divergence of Marine Symbiosis After the Rise of the Isthmus of Panama*.<br/>"
   align = "center"  # Choose `center`, `left`, or `right`.
 
   overlay_color = "#1f4e74FF"  # An HTML color value.
