@@ -60,4 +60,18 @@ height = "250px"
   overlay_color = "#333"  # An HTML color value.
   overlay_img = "sea.jpg"  # Image path relative to your `static/media/` folder.
   overlay_filter = 0.3  # Darken the image. Value in range 0-1.
+
+[[item]]
+  title = ""
+  content = "To learn more about the project & the website click here.<br/>"
+  align = "center"  # Choose `center`, `left`, or `right`.
+
+  overlay_color = "#1f4e74FF"  # An HTML color value.
+  overlay_img = ""  # Image path relative to your `static/media/` folder.
+  overlay_filter = 0.0  # Darken the image. Value in range 0-1.
+
+  cta_label = "More Information"
+  cta_url = "about/"
+  cta_icon_pack = "fas"
+  cta_icon = "info"
 +++

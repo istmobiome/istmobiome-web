@@ -7,8 +7,9 @@
 
   <p class="powered-by">
     {{ with site.Copyright }}{{ replace . "{year}" now.Year | markdownify}} &middot; {{ end }}
-
-    Created with
+    This work is funded by a grant to UC Davis & STRI by the Gordon and Betty Moore Foundation 
+    <a href="http://doi.org/10.37807/GBMF5603" target="_blank" rel="noopener">doi:10.37807/GBMF5603</a><br/>
+    Site created with
     <a href="https://wowchemy.com/" target="_blank" rel="noopener">Wowchemy</a>–the free,
     <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder for
     <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.<br/>
@@ -22,14 +23,5 @@
     <a href="https://support.rbind.io/about/" target="_blank" rel="noopener"> Rbind.</a>
 
     
-    {{ if ne .Type "docs" }}
-    <span class="float-right" aria-hidden="true">
-      <a href="#" id="back_to_top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
-    {{ end }}
-  </p>
+ </p>
 </footer>
