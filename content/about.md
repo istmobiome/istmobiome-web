@@ -20,7 +20,7 @@ author = "admin"
 The Istmobiome Project, more formally known as the ***Divergence of Marine Symbiosis After the Rise of the Isthmus of Panama***, is a collaborative project funded by the Gordon and Betty Moore Foundation between the University of California---Davis and the Smithsonian Tropical Research Institute. 
 
 {{% callout note %}}
-The grant DOI is: http://doi.org/10.37807/GBMF5603
+The grant DOI is: <a href="http://doi.org/10.37807/GBMF5603" target="_blank">doi:10.37807/GBMF5603</a>.
 {{% /callout %}}
 
 
