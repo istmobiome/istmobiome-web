@@ -56,7 +56,7 @@ social:
 # and uncomment the lines below.
 - icon: cv
   icon_pack: ai
-  link: media/laetitia-ge-wilkins-cv.pdf
+  link: files/laetitia-ge-wilkins-cv.pdf
 - icon: orcid
   icon_pack: ai
   link: https://orcid.org/0000-0003-3632-2063

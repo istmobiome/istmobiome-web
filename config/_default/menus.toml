@@ -18,7 +18,7 @@
   weight = 20
 
 [[main]]
-  name = "The Geminates"
+  name = "Geminates"
   url = "#geminates"
   weight = 30
 
@@ -29,20 +29,25 @@
   weight = 40
 
 [[main]]
-  name = "Publications"
+  name = "Papers"
 #  pre = "<i class=\"fa fa-users \"></i>"
   url = "#publications"
   weight = 50
 
 [[main]]
+  name = "Workshops"
+  url = "#workshops"
+  weight = 55
+
+[[main]]
   name = "Guides"
   url = "#field-guides"
-  weight = 55
+  weight = 60
 
   [[main]]
   name = "Talks"
   url = "#talks"
-  weight = 60
+  weight = 65
 
 [[main]]
   name = "Media"
@@ -68,14 +73,14 @@
   weight = 110
 [[main]]
   parent = "More"
-  name = "Marine Microbiome Workshop"
-  url = "workshop-2018/"
-  weight = 120
+  name = "Blog"
+  url = "http://istmobiome.net/"
+  weight = 140
 [[main]]
   parent = "More"
   name = "License"
   url = "license/"
-  weight = 130
+  weight = 140
 #[[main]]
 #  parent = "More"
 #  name = "Terms"
