@@ -63,6 +63,9 @@ social:
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/Matt_Leray
+- icon: instagram
+  icon_pack: fab
+  link: https://www.instagram.com/marine.ecology.panama/
   
 highlight_name: true  
 

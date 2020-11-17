@@ -24,18 +24,20 @@ blockquote p {
 
 footer .powered-by {
     font-size: .9rem;
-}  
+}
 
 /*************************************************
  *  Change from assets/scss/academic/_root.scss
  **************************************************/
-.hero-title {
+
+/*.hero-title {
   color: #E1E1E1;
 }
 
 p#hero-lead {
   color: #414141;
 }
+*/
 
 /*************************************************
  *  Change From assets/scss/academic/_widgets.scss
@@ -50,8 +52,8 @@ p#hero-lead {
 }
 
 .wg-hero {
-  background-size: cover;	
-  background-repeat: no-repeat;	
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: 50%;
 }
 
@@ -101,13 +103,13 @@ div.alert-synopsis > div {
 }
 
 /*************************************************
- *  NAV LINKs 
+ *  NAV LINKs
  **************************************************/
 
 /*************************************************
  *  Change From assets/scss/academic/_nav.scss
  **************************************************/
- 
+
 .navbar-brand img {
 	 max-height: 40px;
 }
