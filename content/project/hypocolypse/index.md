@@ -10,7 +10,7 @@ external_link:
 bibliography: []
 header:
   caption: ""
-  image: "hypocolypse.png"
+  image: "banners/hypocolypse.png"
 image:
   caption: ""
   focal_point:

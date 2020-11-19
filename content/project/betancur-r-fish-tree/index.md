@@ -10,14 +10,14 @@ external_link:
 bibliography: [cite.bib]
 header:
   caption: ""
-  image: "betancur_banner.png"
+  image: "banners/betancur_banner.png"
 image:
   caption: ""
   focal_point: "BottomLeft"
   preview_only: true
 links:
 - name: Click here for the Interactive tree
-#  url: 
+  url: http://anvi-server.org/jscott/betancur_r_bony_fish_phylogeny
 #- icon: database
 #  icon_pack: fas
 #  name: Data
@@ -128,7 +128,7 @@ This workflow uses [`rvest`](https://www.rdocumentation.org/packages/rvest/versi
 
 The first thing to do is load the required packages. 
 
-```{r, eval=FALSE}
+```r
 library(tidyverse)
 library(webdriver)
 library(magrittr) 
@@ -172,8 +172,8 @@ sample_data <- sample_data %>% dplyr::rename("link" = "tmp_link")
 Now I have a two-column data frame with the species name and FishBase URL.
 
 ```r
-all_names <- sample_data$name
 all_links <- sample_data$link
+all_names <- sample_data$name
 ```
 
 To understand what this next step is about, please read the [Web crawling and scraping](https://tm4ss.github.io/docs/Tutorial_1_Web_scraping.html) tutorial. 
@@ -287,7 +287,6 @@ Downloading 5 of 1992 URL: https://www.fishbase.se/summary/Protopterus-aethiopic
 
 ```r
 saveRDS(all_fish_data, "rdata/1_scrape_fish_base.rds")
-save.image("rdata/1_scrape_fish_base.rdata")
 ```
 
 Now I have a data frame called `all_fish_data` where each row is a fish species and each column is one of the metadata categories. This took a little over an hour to run through all 1992 species, but I have the slowest internet connection in the world. I expect the process would be much faster with a better connection.  
@@ -355,7 +354,7 @@ tmp_fish_data <- tmp_fish_data %>% tidyr::separate(threat_to_humans,
 At this point I am sad to say that I had to do the rest of the cleanup by hand, despite my best efforts to code the cleanup. The data is still pretty complicated for me to devise a suitable automated method. 
 
 ```r
-write.table(tmp_fish_data, "tmp_fish_data_fixed_to_manual.txt", sep = "\t", quote = FALSE) 
+write.table(tmp_fish_data, "tables/tmp_fish_data_fixed_to_manual.txt", sep = "\t", quote = FALSE) 
 saveRDS(tmp_fish_data, "rdata/2_scrape_fish_base_fixed_to_manual.rds")
 ```
 
@@ -447,7 +446,6 @@ Downloading 5 of 1992 URL: https://www.fishbase.se/summary/Protopterus-aethiopic
 
 ```r
 saveRDS(all_fish_codes, "rdata/3_scrape_fish_code_urls.rds")
-save.image("rdata/3_scrape_fish_code_urls.rdata")     
 ```
 
 A little clean-up is required before proceeding. I expected a full URL to the FAO pages, but instead I just got extensions. No big deal, I will just add the base URL name and make a few other changes for downstream analysis.
@@ -520,7 +518,6 @@ for (i in 1:length(all_links)) {
   all_fish_dist <- rbind(all_fish_dist, fish_dist)
 }
 saveRDS(all_fish_dist, "rdata/5_scrape_fish_dist_tabs.rds")
-save.image("rdata/5_scrape_fish_dist_tabs.rdata")
 ```
 
 ```
@@ -550,12 +547,9 @@ Now I merge all multiple entries, so I end up with a single line per species con
 ```r
 all_fish_dist_agg <- all_fish_dist %>%
                      group_by(url) %>%
-                 #mutate(row = row_number()) %>%
                      tidyr::pivot_wider(names_from = dist.FAO.Area, 
                                     values_from = c("dist.FAO.Area", 
                                                     "dist.Status"))
-                 #select(-row) %>%
-                 #ungroup()
 fao_area <- all_fish_dist_agg %>% 
                   ungroup() %>%
                   dplyr::select(matches("^dist.FAO.Area_.*")) %>% 
@@ -569,6 +563,7 @@ fao_status <- all_fish_dist_agg %>%
                   tidyr::separate(fao_status, "fao_status")
 
 all_fish_dist_final <- cbind(all_fish_dist_agg$url, fao_area, fao_status)
+write.table(all_fish_dist, "tables/temp3.txt", sep = "\t", quote = FALSE) 
 ```
 
 ```r
@@ -635,7 +630,7 @@ scrape_fish_base <- dplyr::distinct(scrape_fish_base)
 
 fish_base_merge <- dplyr::left_join(tree_names_dashes,  scrape_fish_base) %>%
                    dplyr::left_join(., scrape_dist, by = "id")
-saveRDS(fish_base_merge, "rdata/8_fish_base_merge_raw.rds")
+saveRDS(fish_base_merge, "rdata/7_fish_base_merge_raw.rds")
 ```                   
 
 Finally, I can merge all of these metadata with my modified version of **Additional file 4** (Table S1. spreadsheet with full classification) from  the Betancur-R paper. 
@@ -652,27 +647,127 @@ fish_metadata[duplicated(fish_metadata[,1:1]),]
 fish_metadata <- dplyr::distinct(fish_metadata)
 fish_metadata[duplicated(fish_metadata[,1:1]),]
 fish_metadata[fish_metadata==""] <- NA
-saveRDS(fish_metadata, "rdata/9_fish_metadata.rds")
+saveRDS(fish_metadata, "rdata/8_fish_metadata.rds")
 ```
 
-## Building the anvi'o Profile database
+```r
+fish_metadata <- readRDS("rdata/8_fish_metadata.rds")
+colnames(fish_metadata)
+fish_metadata <- fish_metadata %>% dplyr::rename("Group" = "Betancur_R_ID")
+write.table(fish_metadata, "fish_metadata_complete.txt", sep = "\t", quote = FALSE, row.names = FALSE) 
 
-{{% callout warning %}}
-This section is a work in progress. Please check back soon for updates. 
+fish_metadata <- fish_metadata[, -c(3:27)]
+fish_metadata[, 4] <- list(NULL)
+fish_metadata[, 2:5] <- list(NULL)
+
+fish_metadata$max_reported_age  <- gsub(x = fish_metadata$max_reported_age, 
+                                   pattern = " years", 
+                                   replacement = "")  
+
+write.table(fish_metadata, "fish_metadata.txt", sep = "\t", quote = FALSE, row.names = FALSE) 
+```
+
+### Extra Code
+
+One last thing I wanted to (try to) do was scrape distribution data from the main species pages. Earlier I said this didn't work but then I noticed that some species had designations like `worldwide` or `cosmopolitan` distributions. I thought it would be neat to capture these data. This ultimately didn't work well but here is the code just in case. 
+
+```r
+#rm(list = ls())
+base_url <- "https://www.fishbase.se/summary/"
+fish <- scan('fish_list.txt', what = "character", sep = "\n")
+rm(list = ls(pattern = "sample_data"))
+sample_data <- data.frame()
+for (name in fish) {
+     tmp_link <- paste(base_url, name, ".html", sep = "")
+     tmp_entry <- cbind(name, tmp_link)
+     sample_data <- rbind(sample_data, tmp_entry)
+     rm(list = ls(pattern = "tmp_"))
+
+}
+sample_data <- sample_data %>% dplyr::rename("link" = "tmp_link")
+```
+
+```r
+all_links <- sample_data$link
+all_names <- sample_data$name
+```
+
+```r
+pjs_instance <- run_phantomjs()
+pjs_session <- Session$new(port = pjs_instance$port)
+```
+
+
+```r
+scrape_dist <- function(url) {
+  
+  pjs_session$go(url)
+  rendered_source <- pjs_session$getSource()
+  html_document <- read_html(rendered_source)
+
+  dist_xpath <- '//*[@id="ss-main"]/div[3]/span'
+  dist_text <- html_document %>%
+    html_node(xpath = dist_xpath) %>%
+    html_text(trim = T)
+
+  article <- data.frame(
+    url = url,
+    distribution = dist_text
+  )
+  
+  return(article)
+}
+```
+
+```r
+dist_data <- data.frame()
+for (i in 1:length(all_links)) {
+  cat("Downloading", i, "of", length(all_links), "URL:", all_links[i], "\n")
+  article <- scrape_dist(all_links[i])
+  # Append current article data.frame to the data.frame of all articles
+  dist_data <- rbind(dist_data, article)
+}
+```
+
+```r
+saveRDS(dist_data, "rdata/9_scrape_fish_base_just_dist.rds")
+write.table(dist_data, "tables/scrape_fish_base_just_dist.txt", sep = "\t", quote = FALSE) 
+```
+
+
+### Scape Conclusion
+
+Unfortunately I had to do quite a bit of post-processing to the scraped data because I couldn't figure out how to do it in R. Oh well. Let's talk about anvi'o
+
+
+## Visualizations in anvi'o
+
+<br/>
+
+{{% callout note %}}
+First of all, if you have never used anvi'o, you need to install it. Anvi'o is really easy to install using conda in the [Miniconda](https://docs.conda.io/en/latest/miniconda.html) environment. See the installation instructions [here](http://merenlab.org/2016/06/26/installation-v2/). Once installed, run the following command:
+
+```r
+anvi-self-test --suite mini
+```
+
+If you do not get any error you're good to go. 
+
 {{% /callout %}}
 
+In order to use anvi'o for the visualization, I need three files:
 
-At this point I have the Betancur-R tree and a complete metadata file with matching ids. Even though there is a lot of useful information in **Additional file 4**, I will remove some columns that are not really necessary for the visualization. 
+1) A tree, in this case the Betancur-R tree I modified.
+2) A metadata file where the row names match the names in the Betancur-R tree ***exactly***.
+3) An anvi'o profile database. 
 
+Since we do not have a profile database, we can let anvi'o create a database for us. 
 
-1) The original species list from the Betancur-R tree (`fish_list.txt`). 
-2) Various metadata scraped from FishBase for each species (`all_fish_meta_final`).
-3) Distribution data scraped from the FAO page for each species (`all_fish_dist_final`).
-4) Additional file 4 from Betancur-R paper. 
+```r
+anvi-interactive --profile-db profile.db \
+                 --view-data metadata.txt \
+                 --tree collapsed_fish_tree.tre 
+                 --manual
+```
 
-The key is that this table needs to have row names that match the names in the tree. 
-
-Anvi'o is really easy to install using conda in the [Miniconda](https://docs.conda.io/en/latest/miniconda.html) environment. See the installation instructions [here](http://merenlab.org/2016/06/26/installation-v2/). 
-
-
-
+This command will open a new window in your browser where you can explore the tree and associated metadata. Done. Bye :)

@@ -8,7 +8,7 @@ weight = 20  # Order that this section will appear in.
 title = "About the Istmobiome Project"
 editable = false
 [header]
-image = "about_map.png"
+image = "banners/about_map.png"
 #caption = "Image credit: [**Academic**](https://github.com/gcushen/hugo-academic/)"
 
 # Choose the user profile to display
@@ -26,7 +26,7 @@ The grant DOI is: <a href="http://doi.org/10.37807/GBMF5603" target="_blank">doi
 
 ## Site Overview
 
-This site is a gallery meant to capture and highlight all of the other work we conducted during this grant.  Most of the site is pretty straightforward however the [PROJECTS]({{< ref "../#projects" >}}) section is worth a moment of explanation. Each individual PROJECT page contains a brief project overview of the project plus quick links to the bioinformatic workflows, raw data and data products, GitHub repo, code, etc. In most cases, the complete and reproducible bioinformatic workflows are actually hosted on separate GitHub Pages websites. This has to do with the way each project is generated. Since we often use R code, many figures, tables, analyses, etc. are processed when the project site is built and rendered. Once a project is finished we can archive the final code and simply link to it from istmobiome.rbind.io. This allows us to continually update istmobiome.rbind.io without needing to re-render each project with every site build. It also makes istmobiome.rbind.io more lightweight and faster since it does not have to load every project.
+This site is a gallery meant to capture and highlight all of the work we conducted during this grant.  Most of the site is pretty straightforward however the [PROJECTS]({{< ref "../#projects" >}}) section warrants a moment of explanation. Each individual PROJECT page contains a brief project overview of the project plus quick links to the bioinformatic workflows, raw data and data products, GitHub repo, code, etc. In most cases, the **complete and reproducible bioinformatic workflows** are actually hosted on separate GitHub Pages websites. This has to do with the way each project is generated. Since we often use R code, many figures, tables, analyses, etc. are processed when the project site is built and rendered. Once a project is finished we can archive the final code and simply link to it from istmobiome.rbind.io. This allows us to continually update istmobiome.rbind.io without needing to re-render each project with every site build. It also makes istmobiome.rbind.io more lightweight and faster since it does not have to load every project.
 
 ## Grant Overview
 

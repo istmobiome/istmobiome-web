@@ -9,7 +9,7 @@ date: "2019-12-05T00:00:00+01:00"
 external_link:
 header:
   caption: ""
-  image: "transwater.png"
+  image: "banners/transwater.png"
 image:
   caption: ""
   focal_point:

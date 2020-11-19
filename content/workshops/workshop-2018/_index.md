@@ -33,7 +33,7 @@ Here you will find information for a workshop we created and organized to explor
 
 A publication entitled [*Host-associated microbiomes drive structure and function of marine ecosystems*]({{< ref "/publication/wilkins-etal-2019/index.md" >}}) resulted from the workshop.
 
-For an awesome write-up about the workshop, check out Laetitia Wilkins' post on [RCN for Evolution in Changing Seas](https://rcn-ecs.github.io/2019-01-03-istmobiome/)
+For an awesome write-up about the workshop, check out {{% mention "laetitia-ge-wilkins" %}} post on [RCN for Evolution in Changing Seas](https://rcn-ecs.github.io/2019-01-03-istmobiome/)
 
 {{% /callout %}}
 

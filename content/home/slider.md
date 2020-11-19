@@ -49,7 +49,7 @@ height = "250px"
   align = "right"
 
   overlay_color = "#666"  # An HTML color value.
-  overlay_img = "land.jpg"  # Image path relative to your `static/media/` folder.
+  overlay_img = "site_banner/land.jpg"  # Image path relative to your `static/media/` folder.
   overlay_filter = 0.3  # Darken the image. Value in range 0-1.
   
 [[item]]
@@ -58,12 +58,12 @@ height = "250px"
   align = "right"
 
   overlay_color = "#333"  # An HTML color value.
-  overlay_img = "sea.jpg"  # Image path relative to your `static/media/` folder.
+  overlay_img = "site_banner/sea.jpg"  # Image path relative to your `static/media/` folder.
   overlay_filter = 0.3  # Darken the image. Value in range 0-1.
 
 [[item]]
   title = ""
-  content = "Learn more about this website & the grant that supports the work---*Divergence of Marine Symbiosis After the Rise of the Isthmus of Panama*.<br/>"
+  content = "Learn more about this website & the grant that supports the work---*Divergence of Marine Symbiosis After the Rise of the Isthmus of Panama*."
   align = "center"  # Choose `center`, `left`, or `right`.
 
   overlay_color = "#1f4e74FF"  # An HTML color value.
