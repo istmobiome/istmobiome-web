@@ -13,9 +13,13 @@ date_end: "2020-02-29T14:00:00Z"
 event: Comprehensive Seminar on CACAO Production
 #event_url: https://example.org
 featured: false
+header:
+  caption: ""
+  image: "banners/cacao.png"
 image:
   caption:
   focal_point: Right
+  preview_only: true
 #links:
 #- icon: twitter
 #  icon_pack: fab

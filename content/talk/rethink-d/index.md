@@ -13,9 +13,13 @@ date_end: "2020-01-09T20:00:00Z"
 event: STRI Public Lecture Series
 #event_url: https://example.org
 featured: false
+header:
+  caption: ""
+  image: "banners/rethink.png"
 image:
   caption:
   focal_point: Right
+  preview_only: true
 #links:
 #- icon: twitter
 #  icon_pack: fab

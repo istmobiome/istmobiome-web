@@ -1,6 +1,6 @@
 ---
 title: Seafood Stew
-summary: A story about a new shrimp species from Panama’s Coiba National Park featuring Matt Leray. 
+summary: A story about a new shrimp species from Panama’s Coiba National Park featuring [Matt Leray](author/matthieu-leray/). 
 tags:
 - shrimp
 - Coiba

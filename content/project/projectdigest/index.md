@@ -10,7 +10,7 @@ external_link:
 bibliography: [cite.bib]
 header:
   caption: ""
-  image: "projectdigest.png"
+  image: "banners/projectdigest.png"
 image:
   caption: ""
   focal_point:
