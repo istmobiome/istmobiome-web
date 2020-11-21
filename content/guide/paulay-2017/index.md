@@ -1,5 +1,6 @@
 ---
-title: "Field guide to cryptobenthic invertebrates of Bocas del Toro, Panama"
+title: "Field guide to cryptobenthic invertebrates of the Caribbean coast of Panama"
+summary: "Photographs of small invertebrates collected in the reef structure created by dead corals in the Bahia Almirante, Bocas del Toro."
 authors:
 - Paulay G
 - Lasley R
@@ -31,32 +32,15 @@ authors:
 date: "2017-07-11T00:00:00Z"
 doi: "10.6084/m9.figshare.5183722"
 
-# Schedule page publish date (NOT publication's date).
-publishDate: "2020-01-11T00:00:00Z"
-
-# Publication type.
-# Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
-# 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
-# 7 = Thesis; 8 = Patent
-publication_types: ["3"]
-
-# Publication name and optional abbreviated publication name.
-publication: ""
-publication_short: ""
-
-abstract: The field guide presents photographs of small invertebrates collected in the reef structure created by dead corals (*Agaricia taenuifolia*) in May 2016 in the Bahia Almirante of Bocas del Toro (Panama).
-
-# Summary. An optional shortened abstract.
-summary: ""
 
 tags:
 - Bocas del Toro
 - Caribbean
 - invertebrates
 
-#featured: false
+featured: true
 
-# links:
+links:
 # - name: ""
 #   url: ""
 url_pdf:
@@ -88,11 +72,16 @@ projects: []
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: example
+slides: ""
 ---
 
-The field guide presents photographs of small invertebrates collected in the reef structure created by dead corals (*Agaricia taenuifolia*) in May 2016 in the Bahia Almirante of Bocas del Toro (Panama).
+<br/>
 
+{{% callout note %}}
+
+The field guide presents photographs of small invertebrates collected in the reef structure created by dead corals (*Agaricia taenuifolia*) in May 2016 in the Bahia Almirante of Bocas del Toro, Panama. The size of the pdf is about 2.02Gb.
+
+{{% /callout %}}
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 

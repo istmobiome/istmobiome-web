@@ -1,5 +1,6 @@
 ---
 title: "Field guide to corals & other macro-invertebrates of the Eastern Pacific coast of Panama"
+summary: "Includes species reported on coral reefs in the Coiba National Park and the Pearl Islands."
 authors:
 - Matthieu Leray
 
@@ -9,21 +10,6 @@ doi: "10.6084/m9.figshare.11664045.v2"
 # Schedule page publish date (NOT publication's date).
 publishDate: "2020-01-21T00:00:00Z"
 
-# Publication type.
-# Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
-# 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
-# 7 = Thesis; 8 = Patent
-publication_types: ["3"]
-
-# Publication name and optional abbreviated publication name.
-publication: ""
-publication_short: ""
-
-abstract: This field guide that can be printed on waterproof paper to help identify corals and others macro-invertebrates that occur on the Eastern Pacific coast of Panama. The guide includes species that have been reported on coral reefs in the Coiba National Park and in the Pearl Islands.
-
-# Summary. An optional shortened abstract.
-summary: ""
-
 tags:
 - Eastern Pacific
 - Coiba
@@ -31,7 +17,7 @@ tags:
 
 #featured: false
 
-# links:
+links:
 # - name: ""
 #   url: ""
 url_pdf: https://ndownloader.figshare.com/files/21195912
@@ -65,12 +51,16 @@ projects: []
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: example
+slides: ""
 ---
+
+<br/>
+
+{{% callout note %}}
 
 This field guide that can be printed on waterproof paper to help identify corals and others macro-invertebrates that occur on the Eastern Pacific coast of Panama. The guide includes species that have been reported on coral reefs in the Coiba National Park and in the Pearl Islands. The size of the pdf is about 54Mb. 
 
-
+{{% /callout %}}
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 

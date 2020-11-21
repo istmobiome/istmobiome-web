@@ -41,7 +41,7 @@
 
 [[main]]
   name = "Guides"
-  url = "#field-guides"
+  url = "#guides"
   weight = 60
 
   [[main]]
