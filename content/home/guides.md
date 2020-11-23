@@ -8,7 +8,7 @@ active = true  # Activate this widget? true/false
 weight = 65  # Order that this section will appear.
 
 title = "Field Guides"
-subtitle = "Fish & Invertebrates from Panama's Caribbean & Pacific Coasts "
+subtitle = "Fishes & Invertebrates from Panama's Caribbean & Pacific Coasts "
 
 [content]
   # Page type to display. E.g. project.

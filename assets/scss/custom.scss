@@ -167,13 +167,22 @@ a.nav-link:hover:after {
   width: 80%;
 }
 
+.dropdown-toggle::after {
+  border: 0;
+}
+
+nav#TableOfContents a.nav-link:after {
+  display: none;
+}
+
 /*************************************************
  *  Metric layouts
  **************************************************/
 
-div.altmetric-embed {
+span.altmetric-embed {
   display: inline-block;
   float: left;
+  background-color: #ffffff;
 }
 
 span.__dimensions_badge_embed__ {
@@ -222,4 +231,18 @@ section.footnotes {
 
 div.see-all {
   font-size: 1.5em;
+}
+
+/*************************************************
+ *  Photo credits
+ **************************************************/
+
+.credits {
+  font-size: 0.75em;
+  line-height: 2.2em;
+}
+
+.credits p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }

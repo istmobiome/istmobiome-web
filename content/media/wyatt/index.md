@@ -1,5 +1,5 @@
 ---
-title: Coiba From Prison to Biodiversity Sanctuary
+title: Coiba&#58; From Prison to Biodiversity Sanctuary
 summary: A short documentary piece about Isla Coiba by one of our students.
 tags:
 - Coiba

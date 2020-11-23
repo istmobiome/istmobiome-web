@@ -90,8 +90,10 @@ Use the `Cite` button above to access a BibTeX formatted bibliography for the re
 
 <hr>
 
-<p><small>
-Banner photo credits, Sean Mattson.
-</small></p>
+<div class="credits">
+  <p>
+  Banner photo credits, Sean Mattson.
+  </p>
+<div>
 
 <hr>

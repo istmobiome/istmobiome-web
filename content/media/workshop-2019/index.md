@@ -1,6 +1,6 @@
 ---
 title: Tropical Microbiomes
-summary: STRI hosts 2019 marine microbiome workshop
+summary: STRI hosts 2019 marine microbiome workshop.
 tags:
 - microbiomes
 

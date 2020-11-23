@@ -85,5 +85,4 @@ The field guide presents photographs of small invertebrates collected in the ree
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 
-<div data-badge-type="medium-donut" data-doi="10.6084/m9.figshare.5183722" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div> 
-<span class="__dimensions_badge_embed__" data-doi="10.6084/m9.figshare.5183722" data-hide-zero-citations="true" data-legend="hover-right"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+<span data-badge-type="medium-donut" data-doi="10.6084/m9.figshare.5183722" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></span> <span class="__dimensions_badge_embed__" data-doi="10.6084/m9.figshare.5183722" data-hide-zero-citations="true" data-legend="hover-right"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
