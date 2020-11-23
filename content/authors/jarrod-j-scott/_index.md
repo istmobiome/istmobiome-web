@@ -48,7 +48,7 @@ social:
   link: https://metacrobe.github.io/
 - icon: envelope
   icon_pack: fas
-  link: #contact
+  link: mailto:istmobiome@gmail.com
 - icon: github
   icon_pack: fab
   link: https://github.com/jarrodscott/

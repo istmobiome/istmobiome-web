@@ -74,10 +74,10 @@ Use the `Cite` button above to access a BibTeX formatted bibliography for the re
 
 <hr>
 
-<p><small>
-
-**Card photo entitled** <em>Chaetodon capistratus Linnaeus, 1758—foureye butterflyfish, 99.4 mm SL.</em> by JT Williams. Retrieved from <a href="https://commons.wikimedia.org/wiki/File:Chaetodon_capistratus_-_pone.0010676.g099.png">Wikimedia Commons</a> and licenced under <a href="https://creativecommons.org/licenses/by/2.5/deed.en">CC BY 2.5</a>. Original source Williams, J. T et. al., (2010). <em>Biodiversity Assessment of the Fishes of Saba Bank Atoll, Netherlands Antilles</em>. <a href="https://doi.org/10.1371/journal.pone.0010676"> PLoS ONE 5 (5): e10676.</a>
-
-</small></p>
+<div class="credits">
+  <p>
+    <strong>Card photo entitled</strong> <em>Chaetodon capistratus Linnaeus, 1758—foureye butterflyfish, 99.4 mm SL.</em> by JT Williams. Retrieved from <a href="https://commons.wikimedia.org/wiki/File:Chaetodon_capistratus_-_pone.0010676.g099.png">Wikimedia Commons</a> and licenced under <a href="https://creativecommons.org/licenses/by/2.5/deed.en">CC BY 2.5</a>. Original source Williams, J. T et. al., (2010). <em>Biodiversity Assessment of the Fishes of Saba Bank Atoll, Netherlands Antilles</em>. <a href="https://doi.org/10.1371/journal.pone.0010676"> PLoS ONE 5 (5): e10676.</a>
+  </p>
+</div>
 
 <hr>

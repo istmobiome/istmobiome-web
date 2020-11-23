@@ -44,10 +44,11 @@ weight: 5
 
 <hr>
 
-<p><small>
-
-**All banner images from** <em>The Fishes of Porto Rico (1902) </em> by Everman & Marsh, Bulletin of the United States Fish Commission, v.20, pt.1, for 1900, Washington, DC: Government Printing Office. Retrieved from <a href="https://commons.wikimedia.org/wiki/Category:The_Fishes_of_Porto_Rico_(1902)">Wikimedia Commons</a> and licenced under <a href="https://creativecommons.org/share-your-work/public-domain/cc0">CC-0</a>. Yes, that is how they spelled Puerto Rico in 1902.
-</small></p>
+<div class="credits">
+  <p>
+    <strong>All banner images from</strong> <em>The Fishes of Porto Rico (1902) </em> by Everman & Marsh, Bulletin of the United States Fish Commission, v.20, pt.1, for 1900, Washington, DC: Government Printing Office. Retrieved from <a href="https://commons.wikimedia.org/wiki/Category:The_Fishes_of_Porto_Rico_(1902)">Wikimedia Commons</a> and licenced under <a href="https://creativecommons.org/share-your-work/public-domain/cc0">CC-0</a>. Yes, that is how they spelled Puerto Rico in 1902.
+  </p>
+</div>
 
 <hr>
 

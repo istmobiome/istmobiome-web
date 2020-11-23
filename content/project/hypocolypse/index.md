@@ -79,8 +79,10 @@ Use the `Cite` button above to access a BibTeX formatted bibliography for the re
 
 <hr>
 
-<p><small>
-Banner photo credits, Maggie Johnson & Noelle Lucey. 
-</small></p>
+<div class="credits">
+  <p>
+    Banner photo credits, Maggie Johnson & Noelle Lucey. 
+  </p>
+</div>
 
 <hr>

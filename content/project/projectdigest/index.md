@@ -74,13 +74,16 @@ On this site you will find details on our reproducible bioinformatics workflow a
 
 Use the `Cite` button above to access a BibTeX formatted bibliography for the references we used in this study.
 
-<hr>
+<hr/>
 
-<p><small>
-<em>All banner photos on this page were retreived from Wikimedia Commons and Licensed under Creative Commons Attributions. Each photo was modified from the originals by removing the background</em>.
+<div class="credits">
+  <p>
+    <em>All banner photos on this page were retreived from Wikimedia Commons and Licensed under Creative Commons Attributions. Each photo was modified from the originals by removing the background</em>.
+  </p>
 
-**Banner photos from left to right**: <em>Acanthurus bahianus/Acanthurus tractus </em><a href="https://commons.wikimedia.org/wiki/Category:Acanthurus_bahianus#/media/File:Acanthurus_bahianus_SI2.jpg">(original)</a> licenced under <a href="https://creativecommons.org/share-your-work/public-domain/cc0">CC-0</a>; <em>Acanthurus coeruleus </em><a href="https://commons.wikimedia.org/wiki/File:Fish13092009a.jpg">(original)</a> by Sylfred1977 licenced under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA-3.0</a>; <em>Scarus taeniopterus</em> (Desmarest 1831) <a href="https://commons.wikimedia.org/wiki/File:Scarus_taeniopterus_-_pone.0010676.g130.png">(original)</a>, <em>Sparisoma aurofrenatum</em> (Valenciennes, 1840) <a href="https://commons.wikimedia.org/wiki/File:Sparisoma_aurofrenatum_-_pone.0010676.g133.png">(original)</a>, and <em>Sparisoma viride</em> (Bonnaterre, 1788) <a href="https://commons.wikimedia.org/wiki/File:Stoplight-parrotfish.jpg">(original)</a> all licenced under <a href="https://creativecommons.org/licenses/by/2.5/">CC-BY-2.5</a> by <a href="https://doi.org/10.1371/journal.pone.0010676">Williams et. al., 2010</a>.
-</small></p>
+  <p>
+    <strong>Banner photos from left to right</strong>: <em>Acanthurus bahianus/Acanthurus tractus </em><a href="https://commons.wikimedia.org/wiki/Category:Acanthurus_bahianus#/media/File:Acanthurus_bahianus_SI2.jpg">(original)</a> licenced under <a href="https://creativecommons.org/share-your-work/public-domain/cc0">CC-0</a>; <em>Acanthurus coeruleus </em><a href="https://commons.wikimedia.org/wiki/File:Fish13092009a.jpg">(original)</a> by Sylfred1977 licenced under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA-3.0</a>; <em>Scarus taeniopterus</em> (Desmarest 1831) <a href="https://commons.wikimedia.org/wiki/File:Scarus_taeniopterus_-_pone.0010676.g130.png">(original)</a>, <em>Sparisoma aurofrenatum</em> (Valenciennes, 1840) <a href="https://commons.wikimedia.org/wiki/File:Sparisoma_aurofrenatum_-_pone.0010676.g133.png">(original)</a>, and <em>Sparisoma viride</em> (Bonnaterre, 1788) <a href="https://commons.wikimedia.org/wiki/File:Stoplight-parrotfish.jpg">(original)</a> all licenced under <a href="https://creativecommons.org/licenses/by/2.5/">CC-BY-2.5</a> by <a href="https://doi.org/10.1371/journal.pone.0010676">Williams et. al., 2010</a>.
+  </p>
+</div>
 
-
-<hr>
+<hr/>
