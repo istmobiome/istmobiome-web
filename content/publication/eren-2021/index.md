@@ -48,7 +48,7 @@ publishDate: "2020-12-21T00:00:00Z"
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "[Nature Microbiology (2020) 6 3–6](https://doi.org/10.1038/s41564-020-00834-3)"
+publication: "[Nature Microbiology (2021) 6 3–6](https://doi.org/10.1038/s41564-020-00834-3)"
 publication_short: ""
 
 abstract: Big data abound in microbiology, but the workflows designed to enable researchers to interpret data can constrain the biological questions that can be asked. Five years after anvi’o was first published, this community-led multi-omics platform is maturing into an open software ecosystem that reduces constraints in ‘omics data analyses.
