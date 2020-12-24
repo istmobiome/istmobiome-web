@@ -5,12 +5,12 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 100  # Order that this section will appear.
 
-title = "Media Coverage"
+title = "Press Coverage"
 subtitle = "Stories about our science."
 
 [content]
   # Page type to display. E.g. project.
-  page_type = "media"
+  page_type = "press"
   
   # Filter toolbar (optional).
   # Add or remove as many filters (`[[content.filter_button]]` instances) as you like.

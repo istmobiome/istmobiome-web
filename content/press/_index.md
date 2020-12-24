@@ -2,6 +2,6 @@
 header:
   caption: ""
   image: ""
-title: Media Coverage
+title: Press Coverage
 view: 2
 ---
