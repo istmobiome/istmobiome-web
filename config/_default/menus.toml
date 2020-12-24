@@ -50,8 +50,8 @@
   weight = 65
 
 [[main]]
-  name = "Media"
-  url = "#media"
+  name = "Press"
+  url = "#press"
   weight = 90
 
 [[main]]
