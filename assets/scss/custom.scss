@@ -221,6 +221,20 @@ span.__dimensions_badge_embed__ {
 	border-radius: 4px;
 }
 
+.hljs.yaml {
+  font-size: 1.1em;
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+  color: #333;
+  background: #f8f8f8;
+	border-left: 1px solid #333332;
+	border-top: 0.5px solid #333332;
+	border-bottom: 0.5px solid #333332;
+	border-right: 1px solid #333332;
+	border-radius: 4px;
+}
+
 code {
   font-size: 0.8em;
 }
@@ -246,3 +260,9 @@ div.see-all {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
+/*************************************************
+ *  Markdown Tables
+ **************************************************/
+
+
