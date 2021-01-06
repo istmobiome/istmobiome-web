@@ -614,7 +614,7 @@ scrape_fish_base$id  <- gsub(x = scrape_fish_base$id,
                         replacement = "")  
 ```
 
-At this point, if I try to merge all three data frames, something will look a bit fishy. You see, the tree has 1992 species in it, yes the merged data frame has 2000 lines. So, I need to see if anything is duplicated. Sure enough, when I look at the species list I see there are 4 species that are duplicates. 
+At this point, if I try to merge all three data frames, something will look a bit fishy. You see, the tree has 1992 species in it, yet the merged data frame has 2000 lines. So, I need to see if anything is duplicated. Sure enough, when I look at the species list I see there are 4 species that are duplicates. 
 
 ```r
 tree_names_dashes[duplicated(tree_names_dashes[,1:1]),]
@@ -735,11 +735,389 @@ saveRDS(dist_data, "rdata/9_scrape_fish_base_just_dist.rds")
 write.table(dist_data, "tables/scrape_fish_base_just_dist.txt", sep = "\t", quote = FALSE) 
 ```
 
-
 ### Scape Conclusion
 
-Unfortunately I had to do quite a bit of post-processing to the scraped data because I couldn't figure out how to do it in R. Oh well. Let's talk about anvi'o
+Unfortunately I had to do quite a bit of post-processing to the scraped data because I couldn't figure out how to do it in R. Oh well. 
 
+## Adding Microbiome Data
+
+There are two more pieces of information I want to add. The first is to identify fish that have been analyzed for microbiome content. To accomplish this, I used [`pysradb`](https://github.com/saketkc/pysradb), a python package for retrieving metadata and downloading datasets from NCBI's [Sequence Read Archive (SRA)](https://www.ncbi.nlm.nih.gov/sra) and/or the [European Nucleotide Archive (ENA)](https://www.ebi.ac.uk/ena/browser/home). To simplify things, I decided to search for genus only, rather than include the species name. The first thing I needed was a list of all fish genera.
+
+```r
+tmp_fish_list <- read.delim("tables/additional_file_4_modified.txt", header = TRUE)
+tmp_fish_list <- dplyr::filter(tmp_fish_list, CLADE != "OUTGROUP")
+tmp_fish_list <- data.frame(tmp_fish_list$Betancur_R_ID)
+tmp_fish_list <- data.frame(stringr::str_split_fixed(tmp_fish_list[[1]], "_", 3))
+tmp_fish_list[,2:3] <- NULL
+tmp_fish_list <- unique(tmp_fish_list)
+write.table(tmp_fish_list, "fish_list_genera.txt", row.names = FALSE, 
+            quote = FALSE, col.names = FALSE)
+```
+
+Then I used a `for` loop to cycle through each genus in the list to fetch metadata from the SRA and ENA.
+```r
+for NAME in `cat fish_list_genera.txt`
+
+do 
+    pysradb search --query $NAME --db sra -v 3  \
+                   --saveto $NAME-sra-hits.txt \
+                   --max 20 --stats > $NAME-sra-stats.txt 
+    pysradb search --query $NAME --db ena -v 3  \
+                   --saveto $NAME-ena-hits.txt \
+                   --max 20 --stats > $NAME-ena-stats.txt 
+done
+```
+
+Now I had two text files for each genus from both the SRA and ENA, so four files total. The ENA and SRA capture slightly different information. I wanted to make sure I wasn't missing anything, so I searched both. I began with the stats file, which provide some basic information about each search term. My plan was to use these files to identify hits that had certain keywords that would indicate some type of microbiome analysis. Here is an example of this file from the genus *Acanthurus*.
+
+```
+  Statistics for the search query:
+  =================================
+  Number of unique studies: 5
+  Number of unique experiments: 20
+  Number of unique runs: 20
+  Number of unique samples: 20
+  Mean base count of samples: 682131524.950
+  Median base count of samples: 1000023.500
+  Sample base count standard deviation: 1733608136.332
+  Date range: 
+	  2015-01:  16
+	  2016-07:  1
+	  2017-02:  1
+	  2017-06:  1
+	  2020-10:  1
+
+  Organisms: 
+	  Acanthurus bahianus:  1
+	  Acanthurus mata:  1
+	  Varanus acanthurus:  1
+	  gut metagenome:  17
+
+  Platform: 
+	  ILLUMINA:  4
+	  LS454:  16
+
+  Library strategy: 
+	  AMPLICON:  16
+	  RNA-Seq:  3
+	  Targeted-Capture:  1
+
+  Library source: 
+	  GENOMIC:  1
+	  METAGENOMIC:  16
+	  METATRANSCRIPTOMIC:  1
+	  TRANSCRIPTOMIC:  2
+
+  Library selection: 
+	  Hybrid Selection:  1
+	  PCR:  16
+	  RANDOM:  2
+	  cDNA:  1
+
+  Library layout: 
+	  PAIRED:  4
+	  SINGLE:  16
+```
+
+Some of this information---like `Organisms`, `Library strategy`, `Library source`---will be useful while others (e.g., `Date range`) will not. 
+
+Unfortunately, the structure of the file is a bit clunky and I had to write some equally clunky code to create a usable table. Step one was to reformate each file and then merge them all into a single dataframe. 
+
+```r
+no_results <- "No results found for the following search query"
+pysradb_results <- NULL
+pysradb_files <- list.files(path = "pysradb_results", pattern = "*.txt", 
+                            full.names = TRUE, recursive = FALSE)
+for (i in pysradb_files) {
+    tmp_fish <- read_file(i)
+    
+    if(isTRUE(grepl(no_results, tmp_fish, fixed = TRUE)))
+      next
+    tmp_fish <- gsub(": \n\t  ", "---", tmp_fish)
+    tmp_fish <- gsub(":  ", " (", tmp_fish)
+    tmp_fish <- gsub("\n\t  ", ");", tmp_fish)
+    tmp_fish <- gsub("\n\n  ", ")\n  ", tmp_fish)
+    tmp_fish <- gsub(": ", "---", tmp_fish)
+    tmp_fish <- data.frame(strsplit(tmp_fish, split = "\n  "))
+    tmp_fish <- data.frame(tmp_fish[-c(1:3), ])
+    tmp_fish <- data.frame(tmp_fish) %>%
+                  dplyr::rename("id" = 1)
+    tmp_fish$id <- gsub("\n+", ")", tmp_fish$id)
+
+    tmp_fish <- data.frame(stringr::str_split_fixed(tmp_fish$id, "---", 2)) %>%
+          dplyr::rename("metric" = 1) %>%
+          dplyr::rename("results" = 2)
+    tmp_str <- i
+    tmp_str <- str_remove(tmp_str, "pysradb_results/")
+    tmp_str <- stringr::str_split_fixed(tmp_str, pattern = "-", n = 3)
+
+    tmp_fish$genus <- tmp_str[1]
+    tmp_fish$db <- tmp_str[2]
+    tmp_fish <- tmp_fish[,c(3,4,1,2)]
+    pysradb_results <- rbind(pysradb_results, data.frame(tmp_fish))
+    rm(list = ls(pattern = "tmp_"))
+}
+dplyr::filter(pysradb_results, metric == "Library source")
+```
+
+A little more reformating.
+
+```r
+pysradb_results_wide <- tidyr::pivot_wider(pysradb_results, 
+                                           names_from = metric, 
+                                           values_from = results)
+pysradb_results_wide <- pysradb_results_wide %>% 
+                        dplyr::rename(unique_studies = 3,
+                                      unique_experiments = 4,
+                                      unique_runs = 5,
+                                      unique_samples = 6,
+                                      mean_base_count = 7,
+                                      median_base_count = 8,
+                                      sd_base_count = 9,
+                                      date_range = 10,
+                                      organisms = 11, 
+                                      platform = 12,
+                                      library_strategy = 13,
+                                      library_source = 14,
+                                      library_selection = 15,
+                                      library_layout = 16) 
+pysradb_results_wide <- pysradb_results_wide[,c(1:2,11,14,13,3:9,12,15,16,10)]
+write.table(pysradb_results_wide, "pysradb_results_wide.txt", 
+                                   row.names = FALSE, quote = FALSE, sep = "\t")
+```
+
+And we get a single dataframe containing the summary stats from both databases for every genus. Any genus not found in either data base is absent from the table.
+
+Here is an abbreviated version of the metadata scraped from the sequence read archives.
+
+<br/>
+
+|genus|db|organisms|library_source|library_strategy|platform|library_selection|library_layout|
+|-----|--|---------|--------------|----------------|--------|-----------------|--------------|
+|Abudefduf|ena|fish gut metagenome (20)|METAGENOMIC (20)|AMPLICON (20)|ILLUMINA (20)|PCR (20)|SINGLE (20)|
+|Acanthochromis|ena|Acanthochromis polyacanthus (8);fish gut metagenome (12)|METAGENOMIC (12);TRANSCRIPTOMIC (8)|AMPLICON (12)|ILLUMINA (20)|PCR (12);cDNA (8)|PAIRED (8);SINGLE (12)|
+|Acanthurus|ena|Acanthurus bahianus (1);gut metagenome (17)|METAGENOMIC (16);METATRANSCRIPTOMIC (1)|AMPLICON (16)|ILLUMINA (4);LS454 (16)|PCR (16);RANDOM (2);cDNA (1)|PAIRED (4);SINGLE (16)|
+|Acanthurus|sra|Acanthurus bahianus (2);gut metagenome (11)|GENOMIC (3);METAGENOMIC (16)|AMPLICON (10);WGS (6)|ILLUMINA (20)|PCR (15);PolyA (1);RANDOM (2)|PAIRED (13);SINGLE (7)|
+|Acheilognathus|sra|Acheilognathus tonkinensis (1);metagenome (2)|GENOMIC (1);METATRANSCRIPTOMIC (2)|AMPLICON (1)|ILLUMINA (3)|PCR (1);RANDOM (2)|PAIRED (3)|
+|Achirus|sra|Achirus lineatus (8);metagenome (12)|METAGENOMIC (12);TRANSCRIPTOMIC (8)|AMPLICON (12)|ILLUMINA (20)|PCR (12);RT-PCR (8)|PAIRED (20)|
+|Aethaloperca|ena|coral reef metagenome (1)|GENOMIC (1)|AMPLICON (1)|ILLUMINA (1)|PCR (1)|PAIRED (1)|
+
+We ended up with **1,659 total hits**---divide that by 2 mean we retrieved information for roughly **830 genera**. However, a lot of these molecular studies have nothing to do with microbes. After scanning the table, I decided to start by selecting studies that generated data from either `METATRANSCRIPTOMIC` or `METAGENOMIC` libraries. I also used several keywords like `fish`, `gut`, etc.
+
+```r
+pysradb_trim <- pysradb_results_wide[(
+                      grepl("METATRANSCRIPTOMIC", pysradb_results_wide$library_source) |
+                      grepl("METAGENOMIC", pysradb_results_wide$library_source) |
+                      grepl("fish", pysradb_results_wide$organisms) | 
+                      grepl("metagenome", pysradb_results_wide$organisms) | 
+                      grepl("gut", pysradb_results_wide$organisms)), ]
+```
+
+This gave me **326 hits**. I then removed any exact duplicates between ena and sra data.
+
+```r
+tmp_check <- c("genus","organisms","library_source","library_strategy",
+               "unique_studies","unique_experiments","unique_runs",
+               "unique_samples","platform","library_selection",
+               "library_layout")
+pysradb_trim <- pysradb_trim[!duplicated(pysradb_trim[,tmp_check]),]
+#tmp_trim <- tmp_trim[!duplicated(tmp_trim[,c('organisms','genus')]),]
+```
+
+Which reduced the total number to **309 hits**. Now I wanted to check whether the genus name is actually in the `organisms` column. When you search the archives using `pysradb`, I am pretty sure the algorithum is using a fuzzy seach, meaning when you search for something like `Acanthocobitis` you will also get hits for `Paracanthocobitis`---both fish, but something like `Albula` will also hit `Galbula`, which is a [jacamar](https://en.wikipedia.org/wiki/Galbula). I am uncertain how to perform exact searches with `pysradb` but I am sure it is possible. Anyway, the code below will look for the genus name in the organism column, then add a new column with the results (TRUE/FALSE) of the query. 
+
+```r
+check_org_name <- NULL
+for (i in 1:nrow(pysradb_trim)) {
+  tmp_check <- grepl(pysradb_trim$genus[i], pysradb_trim$organisms[i])
+  check_org_name <- rbind(check_org_name, data.frame(tmp_check))
+  rm(list = ls(pattern = "tmp_"))
+}
+tmp_match <- cbind(check_org_name, pysradb_trim)
+```
+
+193 hits returned a value of `TRUE` and 116 were `FALSE`. Remember, I am screening two databases---the ENA and SRA---so in the table, I have search terms that were either found in the `organism` description for both databases, neither database, or only one database. I need to separate all of this out. I start with the genera that were either found in both or not found in both.
+
+```r
+tmp_match_dup <- tmp_match[tmp_match$genus %in% 
+                            tmp_match$genus[
+                              duplicated(tmp_match[, c("genus", 
+                                                       "tmp_check")])],]
+tmp_match_dup_t <- tmp_match_dup %>% dplyr::filter(tmp_check == "TRUE")
+good_list_1 <- tmp_match_dup_t[duplicated(tmp_match_dup_t[,c('genus')]),]
+
+tmp_match_dup_f <- tmp_match_dup %>% dplyr::filter(tmp_check == "FALSE")
+```
+
+This screening gives me **30 unique hits** that were `TRUE` and **24 total hits** that were `FALSE`. Now for the rest of the data.
+
+
+```r
+tmp_match_no_dup <- tmp_match[!tmp_match$genus %in% 
+                            tmp_match$genus[
+                              duplicated(tmp_match[, c("genus", 
+                                                       "tmp_check")])],]
+good_list_2 <- tmp_match_no_dup %>% dplyr::filter(tmp_check == "TRUE")
+tmp_match_no_dup_f <- tmp_match_no_dup %>% dplyr::filter(tmp_check == "FALSE")
+```
+
+OK. **133 unique hits** that were `TRUE` and **92 unique hits** that were `FALSE`. At this point, I have 163 hits that have one of the filtering terms described above AND have the search term in the organism description. Now I need to deal with all of the hits that do not have the search term in the organism description. For this I again go back and select any organism descriptions that have either `fish` or `coral`, and I get 43 more hits.
+
+```r
+tmp_filt <- tmp_match_dup_f[(
+                      grepl("fish", tmp_match_dup_f$organisms) | 
+                      grepl("coral", tmp_match_dup_f$organisms)), ]
+good_list_3 <- tmp_filt[duplicated(tmp_filt[,c('genus')]),]
+tmp_filt <- tmp_match_dup_f[!(
+                      grepl("fish", tmp_match_dup_f$organisms) | 
+                      grepl("coral", tmp_match_dup_f$organisms)), ]
+good_list_4 <- tmp_match_no_dup_f[(
+                      grepl("fish", tmp_match_no_dup_f$organisms) | 
+                      grepl("coral", tmp_match_no_dup_f$organisms)), ]
+
+good_list_5_unscreened <- tmp_match_no_dup_f[!(
+                      grepl("fish", tmp_match_no_dup_f$organisms) | 
+                      grepl("coral", tmp_match_no_dup_f$organisms)), ]
+
+write.table(good_list_5_unscreened, "good_list_5_unscreened.txt", 
+                                   row.names = FALSE, quote = FALSE, sep = "\t")
+```
+
+```r
+search_res <- NULL
+search_files <- list.files(path = "PICK_ENA", pattern = "*.txt", 
+                            full.names = TRUE, recursive = FALSE)
+for (i in search_files) {
+  tmp_term <- stringr::str_split(i, "-", 2)
+  tmp_term <- stringr::str_split(tmp_term[[1]][1], "/", 2)
+  tmp_term <- tmp_term[[1]][2]
+  tmp_grep <- grepl(tmp_term, readLines(i))
+  tmp_hit <- "TRUE" %in% tmp_grep
+  tmp_res <- data.frame(cbind(tmp_term, tmp_hit))
+  search_res <- rbind(search_res, data.frame(tmp_res))
+  rm(list = ls(pattern = "tmp_"))
+}  
+ena_true <- dplyr::filter(search_res, tmp_hit == "TRUE")
+
+ena_true$tmp_term %in% sra_true$tmp_term
+dplyr::full_join(sra_true, ena_true, by = "tmp_term")
+```
+
+```r
+good_list_5_list <- list.files(path = "PICK", pattern = "*.txt", 
+                            full.names = FALSE, recursive = FALSE)
+good_list_5_list <- data.frame(gsub(x = good_list_5_list, 
+                                   pattern = "-[a-z]{3}-hits.txt", 
+                                   replacement = "")) %>%
+                   dplyr::rename("genus" = 1)
+
+good_list_5 <- dplyr::left_join(good_list_5_list, good_list_5_unscreened)
+
+good_df <- rbind(good_list_1, good_list_2, good_list_3, good_list_4, good_list_5)
+good_df <- good_df %>% arrange(genus)
+good_df <- good_df %>% tibble::remove_rownames()
+good_df$tmp_check <- NULL
+good_list <- data.frame(good_df$genus)
+```
+
+After some manual inspection and other data wrangling, I end up with a final list of **240** unique genera that I am pretty confident has some associated microbiome data.  
+
+It looks like this:
+
+<br/>
+
+|genus|microbiome|
+|-----|----------|
+|Abudefduf|yes|
+|Acanthochromis|yes|
+|Acanthurus|yes|
+|Acheilognathus|yes|
+|Albula|yes|
+
+## Fish of Panama
+
+The last piece of the puzzle I wanted to add was which fish have been recorded from Panama. For this, I scraped the [Fish of Panama](https://stricollections.org/portal/checklists/checklist.php?clid=4&pid=4&dynclid=0) checklist from STRI. My method was similar to my scrape of FishBase described above.
+
+
+{{< figure src = "images/scrape_4.png">}}
+
+What I am after here is simply a list of species identified from Panama. The check list spans four separate pages, so the code will go through each page and grad the text associated with a specifc `XPATH`. 
+
+```r
+page_numbers <- 1:4
+base_url <- "https://stricollections.org/portal/checklists/checklist.php?pagenumber="
+paging_urls <- paste0(base_url, page_numbers, "&clid=4&dynclid=0&showvouchers=1&pid=4&searchsynonyms=1")
+```
+
+```r
+scrape_stri_fish <- function(url) {
+  
+  pjs_session$go(url)
+  rendered_source <- pjs_session$getSource()
+  html_document <- read_html(rendered_source)
+  
+  body_xpath <- '//*[contains(concat( " ", @class, " " ), concat( " ", "taxon-span", " " ))]'
+  body_text <- html_document %>%
+    html_nodes(xpath = body_xpath) %>%
+    html_text(trim = T) 
+  
+  article <- data.frame(
+    id = body_text
+  )
+  
+  return(article)
+  
+}
+```
+
+```r
+all_articles <- data.frame()
+for (i in 1:length(paging_urls)) {
+  cat("Downloading", i, "of", length(paging_urls), "URL:", paging_urls[i], "\n")
+  article <- scrape_stri_fish(paging_urls[i])
+  # Append current article data.frame to the data.frame of all articles
+  all_articles <- rbind(all_articles, article)
+}
+panama_fish <- all_articles
+panama_fish <- data.frame(stringr::str_split_fixed(panama_fish$id, " ", 3))
+panama_fish[,3] <- NULL
+panama_fish$id <- paste(panama_fish[[1]], panama_fish[[2]], sep = "_")
+panama_fish[,1:2] <- NULL
+panama_fish$Panama <- "yes"
+```
+
+|genus|Panama|
+|-----|----------|
+|Acanthurus_bahianus|yes|
+|Acanthurus_chirurgus|yes|
+|Acanthurus_coeruleus|yes|
+|Acanthurus_nigricans|yes|
+|Acanthurus_triostegus|yes|
+
+
+Merge these data with the microbiome data and I am done. 
+
+```r
+panama_fish
+panama_fish <- panama_fish %>% arrange(id)
+good_list$microbiome <- "yes"
+good_list <- good_list %>% dplyr::rename("genus" = 1)
+merge_list <- read.table("merge_list.txt", 
+                               header = TRUE, sep = "\t", 
+                               row.names = NULL)
+panama_fish
+
+tmp_merge <- dplyr::left_join(merge_list, panama_fish)
+
+tmp_merge[duplicated(tmp_merge$items),]
+tmp_merge <- dplyr::distinct(tmp_merge)
+tmp_merge2 <- dplyr::left_join(tmp_merge, good_list)
+tmp_merge2[duplicated(tmp_merge2$items),]
+
+profile_db_add <- dplyr::distinct(tmp_merge2)
+```
+
+Now I have a tree and gobs of associated metadata. Time to visualize so let's talk about anvi'o. 
 
 ## Visualizations in anvi'o
 
