@@ -1,6 +1,6 @@
 ---
 title: Eastern Tropical Pacific
-summary: A story about our first expedition to Panama’s Coiba National Park. 
+summary: A story about our first expedition to Panama’s Coiba National Park. Photo by Sean Mattson.
 tags:
 - Coiba
 date: "2018-05-09T00:00:00Z"
