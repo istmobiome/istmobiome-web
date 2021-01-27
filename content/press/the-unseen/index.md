@@ -12,6 +12,6 @@ date: "2021-01-14T00:00:00Z"
 external_link: https://stri.si.edu/story/picture-unseen
 
 image:
-  caption: Art by Jorge Alemán
+  caption: Design by Jorge Alemán
   focal_point: Smart
 ---
