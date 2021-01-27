@@ -1,6 +1,6 @@
 ---
 title: The future of Coiba coral reefs
-summary: An interview with [Matt Leray](author/matthieu-leray/).
+summary: An interview with [Matt Leray](author/matthieu-leray/). Photo by Sean Mattson.
 tags:
 - coral reefs
 - Coiba

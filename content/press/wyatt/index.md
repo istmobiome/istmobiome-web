@@ -1,6 +1,6 @@
 ---
 title: Coiba&#58; From Prison to Biodiversity Sanctuary
-summary: A short documentary piece about Isla Coiba by one of our students.
+summary: A short documentary piece about Isla Coiba by one of our students. Photo by Toa Heftiba.
 tags:
 - Coiba
 date: "2019-02-15T00:00:00Z"

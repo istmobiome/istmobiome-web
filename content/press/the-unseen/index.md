@@ -1,6 +1,6 @@
 ---
 title: Picture the Unseen
-summary: A story about visualizing microbial communities featuring [Jarrod Scott](author/jarrod-j-scott/). Art by Jorge Alemán. 
+summary: A story about visualizing microbial communities featuring [Jarrod Scott](author/jarrod-j-scott/). Design by Jorge Alemán. 
 tags:
 - anvi'o
 - microbes
