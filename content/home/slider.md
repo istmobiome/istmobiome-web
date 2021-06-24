@@ -50,8 +50,8 @@ height = "250px"
 
   overlay_color = "#666"  # An HTML color value.
   overlay_img = "site_banner/land.jpg"  # Image path relative to your `static/media/` folder.
-  overlay_filter = 0.3  # Darken the image. Value in range 0-1.
-  
+  overlay_filter = 0.7  # Darken the image. Value in range 0-1.
+
 [[item]]
   title = "...in the Sea."
   content = "it divided one ocean. "
@@ -59,7 +59,7 @@ height = "250px"
 
   overlay_color = "#333"  # An HTML color value.
   overlay_img = "site_banner/sea.jpg"  # Image path relative to your `static/media/` folder.
-  overlay_filter = 0.3  # Darken the image. Value in range 0-1.
+  overlay_filter = 0.7  # Darken the image. Value in range 0-1.
 
 [[item]]
   title = ""
