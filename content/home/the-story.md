@@ -9,7 +9,7 @@ active = true  # Activate this widget? true/false
 weight = 30  # Order that this section will appear.
 
 title = "<small>The</small> Great<br/>TransIsthmian<br/>Experiment"
-subtitle = "### A bridge on land, a barrier in the sea <br/> <br/>  <small>[Click here](/talk/the-isthmus/) and [here](/talk/leray-03-2020/) for presentations on the rise of the Isthmus and how it changed the world.</small>. <br/> <br/>  For more information about the Istmobiome Project please see the [About page](about/)."
+subtitle = "### A bridge on land, a barrier in the sea <br/> <br/>  <small>[Click here](/talk/the-isthmus/) and [here](/talk/leray-03-2020/) for presentations on the <br/> rise of the Isthmus & how it changed the world.</small>. <br/> <br/>  For more information about the Istmobiome Project please see the <br/> [About page](about/)."
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.

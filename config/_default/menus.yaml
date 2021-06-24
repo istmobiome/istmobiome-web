@@ -1,0 +1,57 @@
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+
+main:
+  - name: The Story
+    url: '#the-story'
+    weight: 20
+  - name: Geminates
+    url: '#geminates'
+    weight: 30
+  - name: Projects
+    url: '#projects'
+    weight: 40
+  - name: Papers
+    url: '#publications'
+    weight: 50
+  - name: Workshops
+    url: '#workshops'
+    weight: 55
+  - name: Guides
+    url: '#guides'
+    weight: 60
+  - name: Talks
+    url: '#talks'
+    weight: 65
+  - name: Press
+    url: '#press'
+    weight: 90
+  - name: People
+    url: '#people'
+    weight: 100
+  - parent: More
+    name: About the Project
+    url: 'about/'
+    weight: 110
+  - parent: More
+    name: Blog
+    url: 'http://istmobiome.net/'
+    weight: 140
+  - parent: More
+    name: License
+    url: 'license/'
+    weight: 140
+main_right:
+  - name: ' '
+    identifier: github
+    pre: <i class="fab fa-github fa-lg"></i>
+    url: 'https://github.com/istmobiome/istmobiome-web'
+    weight: 280    
+
+# Link to a PDF of your resume/CV from the menu.
+# To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
+#  - name: CV
+#    url: uploads/resume.pdf
+#    weight: 70

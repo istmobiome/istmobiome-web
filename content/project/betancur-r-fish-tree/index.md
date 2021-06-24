@@ -88,7 +88,7 @@ Here are a few examples of the Betancur-R tree, accompanied by various pieces of
 
 <br/>
 
-{{< gallery album="gallery">}}
+{{< gallery album="betancur" >}}
 
 ## The Betancur-R Fish Phylogeny Data
 
