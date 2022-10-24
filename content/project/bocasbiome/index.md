@@ -14,7 +14,7 @@ header:
 image:
   caption: ""
   focal_point:
-  preview_only: true
+  preview_only: false
 links:
 - name: Project Site
   url: https://bocasbiome.github.io/
@@ -33,7 +33,7 @@ links:
 - icon: newspaper
   icon_pack: fas
   name: Publication
-  url: publication/clever-etal-2020/
+  url: publication/clever-etal-2022/
 #- name: Authors
 #  url: https://projectdigest.github.io/people.html
 publication: [clever-etal-2022]
