@@ -48,7 +48,7 @@ main_right:
     identifier: github
     pre: <i class="fab fa-github fa-lg"></i>
     url: 'https://github.com/istmobiome/istmobiome-web'
-    weight: 280    
+    weight: 280
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.

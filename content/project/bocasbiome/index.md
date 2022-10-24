@@ -36,7 +36,7 @@ links:
   url: publication/clever-etal-2020/
 #- name: Authors
 #  url: https://projectdigest.github.io/people.html
-publication: [clever-etal-2020]
+publication: [clever-etal-2022]
 slides:
 url_code: ""
 url_pdf: ""

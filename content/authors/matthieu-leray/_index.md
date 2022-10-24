@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Postdoctoral Fellow
+role: Staff Scientist
 
 # Organizations/Affiliations
 organizations:
@@ -76,5 +76,6 @@ email: ""
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
 - Researchers
+- Principal Investigators
 #- Visitors
 ---

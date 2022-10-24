@@ -14,23 +14,24 @@ authors:
 author_notes:
 - "Equal contribution"
 - "Equal contribution"
-date: "2020-09-21T00:00:00Z"
-doi: "10.1101/2020.09.21.306712"
+date: "2022-07-30T00:00:00Z"
+doi: "10.1038/s42003-022-03679-0"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2020-09-21T00:00:00Z"
+publishDate: "2022-07-30T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["3"]
+publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "[bioRxiv 2020.09.21.306712](https://www.biorxiv.org/content/10.1101/2020.09.21.306712v1)"
+publication: "[Communications Biology](https://www.nature.com/articles/s42003-022-03679-0)"
 publication_short: ""
 
-abstract: Environmental degradation has the potential to alter key mutualisms that underline the structure and function of ecological communities. While it is well recognized that the global loss of coral reefs alters fish communities, the effects of habitat degradation on microbial communities associated with fishes remain largely unknown despite their fundamental roles in host nutrition and immunity. Using a gradient of reef degradation, we show that the gut microbiome of a facultative, coral-feeding butterflyfish (Chaetodon capistratus) is significantly more variable among individuals at degraded reefs with very low live coral cover (~0%) than reefs with higher coral cover (~30%), mirroring a known pattern of microbial imbalance observed in immunodeficient humans and other stressed or diseased animals. We demonstrate that fish gut microbiomes on severely degraded reefs have a lower abundance of Endozoicomonas and a higher diversity of anaerobic fermentative bacteria, which suggests a broader and less coral dominated diet. The observed shifts in fish gut bacterial communities across the habitat gradient extend to a small set of potentially beneficial host associated bacteria (i.e., the core microbiome) suggesting essential fish-microbiome interactions are vulnerable to severe coral degradation.
+abstract: Environmental degradation has the potential to alter key mutualisms that underlie the structure and function of ecological communities. How microbial communities associated with fishes vary across populations and in relation to habitat characteristics remains largely unknown despite their fundamental roles in host nutrition and immunity. We find significant differences in the gut microbiome composition of a facultative coral-feeding butterflyfish (Chaetodon capistratus) across Caribbean reefs that differ markedly in live coral cover (∼0–30%). Fish gut microbiomes were significantly more variable at degraded reefs, a pattern driven by changes in the relative abundance of the most common taxa potentially associated with stress. We also demonstrate that fish gut microbiomes on severely degraded reefs have a lower abundance of Endozoicomonas and a higher diversity of anaerobic fermentative bacteria, which may suggest a less coral dominated diet. The observed shifts in fish gut bacterial communities across the habitat gradient extend to a small set of potentially beneficial host associated bacteria (i.e., the core microbiome) suggesting essential fish-microbiome interactions may be vulnerable to severe coral degradation.
+
 
 # Summary. An optional shortened abstract.
 summary: ""
@@ -52,9 +53,9 @@ links:
 - icon: open-access
   icon_pack: ai
   name: Open Access
-  url: https://www.biorxiv.org/content/10.1101/2020.09.21.306712v1
+  url: https://www.nature.com/articles/s42003-022-03679-0
 
-url_pdf: https://www.biorxiv.org/content/10.1101/2020.09.21.306712v1.full.pdf
+url_pdf: https://www.nature.com/articles/s42003-022-03679-0.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''

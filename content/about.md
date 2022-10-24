@@ -17,7 +17,7 @@ image = "banners/about_map.png"
 author = "admin"
 +++
 
-The Istmobiome Project, more formally known as the ***Divergence of Marine Symbiosis After the Rise of the Isthmus of Panama***, is a collaborative project funded by the Gordon and Betty Moore Foundation between the University of California---Davis and the Smithsonian Tropical Research Institute. 
+The Istmobiome Project, more formally known as the ***Divergence of Marine Symbiosis After the Rise of the Isthmus of Panama***, is a collaborative project funded by the Gordon and Betty Moore Foundation between the University of California---Davis and the Smithsonian Tropical Research Institute.
 
 {{% callout note %}}
 The grant DOI is: <a href="http://doi.org/10.37807/GBMF5603" target="_blank">doi:10.37807/GBMF5603</a>.
@@ -26,7 +26,7 @@ The grant DOI is: <a href="http://doi.org/10.37807/GBMF5603" target="_blank">doi
 
 ## Site Overview
 
-This site is a gallery meant to capture and highlight all of the work we conducted during this grant.  Most of the site is pretty straightforward however the [PROJECTS]({{< ref "../#projects" >}}) section warrants a moment of explanation. Each individual PROJECT page contains a brief project overview of the project plus quick links to the bioinformatic workflows, raw data and data products, GitHub repo, code, etc. In most cases, the **complete and reproducible bioinformatic workflows** are actually hosted on separate GitHub Pages websites. This has to do with the way each project is generated. Since we often use R code, many figures, tables, analyses, etc. are processed when the project site is built and rendered. Once a project is finished we can archive the final code and simply link to it from istmobiome.rbind.io. This allows us to continually update istmobiome.rbind.io without needing to re-render each project with every site build. It also makes istmobiome.rbind.io more lightweight and faster since it does not have to load every project.
+This site is a gallery meant to capture and highlight the work we conducted during this grant.  Most of the site is pretty straightforward however the [PROJECTS]({{< ref "../#projects" >}}) section warrants a moment of explanation. Each individual PROJECT page contains a brief project overview of the project plus quick links to the bioinformatic workflows, raw data and data products, GitHub repo, code, etc. In most cases, the **complete and reproducible bioinformatic workflows** are actually hosted on separate GitHub Pages websites. This has to do with the way each project is generated. Since we often use R code, many figures, tables, analyses, etc. are processed when the project site is built and rendered. Once a project is finished we can archive the final code and simply link to it from istmobiome.rbind.io. This allows us to continually update istmobiome.rbind.io without needing to re-render each project with every site build. It also makes istmobiome.rbind.io more lightweight and faster since it does not have to load every project.
 
 ## Grant Overview
 
@@ -47,19 +47,19 @@ Based on a considerable wealth of knowledge gathered by STRI scientists and coll
 
 Using these species we will begin to address the following key questions:
 
-- What were the evolutionary consequences for the microbiomes, in terms of community composition and function, following the evolutionary diversification of host taxa in new environments? 
+- What were the evolutionary consequences for the microbiomes, in terms of community composition and function, following the evolutionary diversification of host taxa in new environments?
 
-- Was there a reduction in microbial diversity associated with bottlenecks in host populations? Did the microbiome compensate in any way for reduced genetic diversity of hosts? 
+- Was there a reduction in microbial diversity associated with bottlenecks in host populations? Did the microbiome compensate in any way for reduced genetic diversity of hosts?
 
 - To what extent did the microbiome co-speciate or co-evolve with hosts? Are there any parallel changes that have occurred in the microbiomes (from a taxonomic composition or functional point of view) across the different taxa on either side of the Isthmus?
 
-- What are the key functional differences in geminate pairs that might be associated with divergent microbiomes? 
+- What are the key functional differences in geminate pairs that might be associated with divergent microbiomes?
 
 <hr>
 
 <p><small>
 
-**All banner images retrieved from** Wikimedia Commons and licenced under <a href="https://creativecommons.org/share-your-work/public-domain/cc0" target = "_blank">CC-0</a>. 
+**All banner images retrieved from** Wikimedia Commons and licenced under <a href="https://creativecommons.org/share-your-work/public-domain/cc0" target = "_blank">CC-0</a>.
 
 Top row, from left to right: <a href="https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1793_Bahia_Almirante_and_Laguna_Chiriqui,_Published_1964.jpg" target = "_blank"> Nautical chart of Bahia Almirante and Laguna Chiriqui, Panama, at a scale of 1:103,280. Suerveyed by Commander E. Barnett 1839</a>; <a href="https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1799_Anchorages_on_the_North_Coast_of_Panama,_Published_1927.jpg" target = "_blank"> Nautical chart of Anchorages on the North Coast of Panama</a>; <a href="https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_657_Isthmus_of_Panama_Showing_The_Proposed_Panama_Canal_and_the_Railway_._._._,_Published_1885.jpg" target = "_blank"> 1885 Admiralty Chart - Isthmus of Panama Showing The Proposed Panama Canal and the Railway</a>; <a href="https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1299_Panama_Canal,_Published_1957.jpg" target = "_blank"> Nautical chart of the Panama Canal at a scale of 1/50,000</a>; <a href="https://commons.wikimedia.org/wiki/File:Darien_Nautical_Chart_1737.jpg" target = "_blank"> Darien Nautical Chart 1737. </a>
 
@@ -83,8 +83,3 @@ Bottom row, from left to right: <a href="https://commons.wikimedia.org/wiki/File
 [^7]: Sullam KE, Rubin BER, Dalton CM, Kilham SS, Flecker AS and Russell JA. (2015). *Divergence across diet, time and populations rules out parallel evolution in the gut microbiomes of Trinidadian guppies*. [**The ISME Journal** 9: 1508--1522](https://dx.doi.org/10.1038%2Fismej.2014.231).
 
 [^8]: Franchini P, Fruciano C, Frickey T, Jones JC, Meyer A (2014) The gut microbial community of Midas cichlid fish in repeatedly evolved limnetic-benthic species pairs. [**PLoS ONE** 9: e95027](doi:10.1371/journal.pone.0095027).
-
-
-
-
-
