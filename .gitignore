@@ -3,10 +3,13 @@
 
 # Hugo
 /resources/
-public/
+/public/
 .Rproj.user
 resources/
 exampleSite/
 .DS_Store
 .Rhistory
 .Rprofile
+public/
+.hugo_build.lock
+
