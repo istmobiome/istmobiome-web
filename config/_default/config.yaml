@@ -71,4 +71,4 @@ security:
   funcs:
     getenv:
       - ^HUGO_
-      - ^WC_      
+      - ^WC_
