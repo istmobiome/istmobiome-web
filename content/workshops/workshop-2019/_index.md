@@ -10,7 +10,7 @@ menu:
     name: Front Page
     weight: 1
 summary: The Isthmus of Panama for the study of microbial symbiosis&#58; What can we learn from comparative analysis of host-associated microbiomes across two oceans?
-tags: []
+tags: [workshop]
 title: 2019 Marine Microbiome Workshop
 toc: false
 type: book
@@ -21,8 +21,9 @@ weight: 1
 
 December 2--7 2019<br/>
 Smithsonian Tropical Research Institute<br/>
-Panama City & Bocas del Toro<br/>
-Panama<br/>
+Panama City & Bocas del Toro, Panama<br/>
+**Organized by** {{% mention "matthieu-leray" %}} & {{% mention "laetitia-ge-wilkins" %}}
+
 
 
 {{< figure src = "four_oceans.png" caption = "Panama's four oceans. Contrasting conditions of marine environments present a unique opportunity to understand the evolution of microbial symbiosis in the ocean.">}}

@@ -2,11 +2,10 @@
 categories: []
 date: "2018-11-05T00:00:00+01:00"
 draft: false
-#lastmod: "2018-11-05T00:00:00+01:00"
 linktitle: Front Page
 editable: false
 summary: From model organisms to ecosystems&#58; scaling-up our understanding of host-microbe symbiosis in the sea
-tags: []
+tags: [workshop]
 title: 2018 Marine Microbiome Workshop
 toc: false
 type: book
@@ -18,6 +17,8 @@ weight: 1
 December 3--8 2018<br/>
 Smithsonian Tropical Research Institute<br/>
 Bocas del Toro Research Station, Panama<br/>
+**Organized by** {{% mention "matthieu-leray" %}}, {{% mention "jarrod-j-scott" %}}, &   {{% mention "laetitia-ge-wilkins" %}}
+
 
 {{< figure src = "images/participants.png" caption = "Participants from the 2018 workshop. From left to right. **FRONT ROW**: Jarrod J Scott, Noelle Lucey, Allen Herre, Douglas Rasher, Raquel Peixoto, Rebecca Vega Thurber, Tiago Pereira, Jonathan Eisen. **MIDDLE ROW**: Benedict Yuen, Laetitia Wilkins, Matthieu Leray, Emilia Sogin, Lizzy Wilbanks, Emmett Duffy, Katherine Sharp. **BACK ROW**: David Coil, Aaron O’Dea, Jon Kaye, Luis Mejia, Robert Thacker. Not pictured: Rachel Collin, Harilaos Lessios, Jennifer McMillan,  Ross Robertson, William Wcislo.">}}
 
