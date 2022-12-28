@@ -6,7 +6,7 @@ linktitle: Front Page
 editable: false
 summary: From model organisms to ecosystems&#58; scaling-up our understanding of host-microbe symbiosis in the sea
 tags: [workshop]
-title: 2018 Marine Microbiome Workshop
+title: 2018 Marine Microbiome Symposium/Workshop
 toc: false
 type: book
 weight: 1

@@ -3,7 +3,7 @@ categories: []
 date: "2022-11-29T00:00:00+01:00"
 draft: false
 #lastmod: "2018-11-05T00:00:00+01:00"
-linktitle: Tropical Microbial Ecology Workshop 2022
+#linktitle: Tropical Microbial Ecology Workshop 2022
 editable: false
 menu:
   workshop-2022:
@@ -11,7 +11,7 @@ menu:
     weight: 1
 summary: The context-dependent symbiosis in marine and terrestrial tropical systems
 tags: [workshop]
-title: 2022 Marine & Terrestrial Microbiome Workshop
+title: 2022 Marine & Terrestrial Microbiome Symposium/Workshop
 toc: false
 type: book
 weight: 1
@@ -22,7 +22,7 @@ weight: 1
 November 29--December 3 2022<br/>
 Smithsonian Tropical Research Institute<br/>
 Panama City, Panama<br/>
-**Organized by** {{% mention "matthieu-leray" %}} & Erin Spear
+**Organized by** {{% mention "matthieu-leray" %}} & [Erin Spear](https://stri.si.edu/scientist/erin-spear)
 
 {{< figure src = "images/participants.jpg" caption = "Participants and their affiliations from left to right and back to front: Alison Gould (California Academy of Sciences), Cathy Collins (Bard College), Katie Gold (Cornell University), William Wcislo (STRI), Michelle Hersh (Sarah Lawrence College), Michael Kühl (University of Copenhagen), Mohammad Moniruzzaman (University of Miami), Laetitia Wilkins (Max Planck Institute for Marine Microbiology), Justin Shaffer (UC San Diego), Matthieu Leray (STRI), Laura Bogar (UC Davis), Dale Forrister (STRI), Jon Kaye (Moore Foundation), Adrienne Simoes Correa (Rice University), Lucía Pita (Institute of Marine Science of Barcelona), Nanette Svenson (Facilitator), Erin Spear (STRI), Isidora Morel (Max Planck Institute for Marine Microbiology), Maria Chacon (STRI), Leho Tedersoo (University of Estonia).">}}
 
@@ -33,7 +33,7 @@ Workshop funding was generously provided by the Gordon and Betty Moore Foundatio
 
 {{% /callout %}}
 
-{{% staticref "files/microbial_symposiumv_schedule_2022.pdf" "newtab" %}}Download the Workshop Agenda here {{% /staticref %}} and {{% staticref "files/microbial_symposiumv_abstracts_2022.pdf" "newtab" %}}Download the Workshop Abstracts here{{% /staticref %}}.
+{{% staticref "files/microbial_symposium_schedule_2022.pdf" "newtab" %}}Download the Workshop Agenda here {{% /staticref %}} and {{% staticref "files/microbial_symposium_abstracts_2022.pdf" "newtab" %}}Download the Workshop Abstracts here{{% /staticref %}}.
 
 ## Background
 

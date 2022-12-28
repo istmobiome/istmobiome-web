@@ -11,7 +11,7 @@ menu:
     weight: 1
 summary: The Isthmus of Panama for the study of microbial symbiosis&#58; What can we learn from comparative analysis of host-associated microbiomes across two oceans?
 tags: [workshop]
-title: 2019 Marine Microbiome Workshop
+title: 2019 Marine Microbiome Symposium/Workshop
 toc: false
 type: book
 weight: 1
