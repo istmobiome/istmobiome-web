@@ -3,13 +3,29 @@
 
 # Hugo
 /resources/
-/public/
-.Rproj.user
 resources/
+
+/public/
+public/
+
+/exampleSite/
 exampleSite/
+
+.Rproj.user
 .DS_Store
 .Rhistory
 .Rprofile
-public/
 .hugo_build.lock
+
+
+update_wowchemy.sh
+
+
+### TO REMOVE files/directories after they
+### are already in repository
+
+### git rm --cache .Rhistory
+### git add .Rhistory
+### git commit -m "add .Rhistory to .gitignore"
+### git push origin master
 
