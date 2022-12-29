@@ -20,8 +20,6 @@ publication_short: ""
 
 abstract: A new palaemonid shrimp genus, Unesconia gen. nov., is established to accommodate a peculiar, small, presumably sponge-associated species, Unesconia coibensis gen. et sp. nov. The description of the new genus and species is based on several specimens found in the shallow marine waters of the Coiba Archipelago, Pacific coast of Panama. Unesconia gen. nov. does not seem to have close affinities to other eastern Pacific or western Atlantic palaemonid genera, including those harbouring sponge symbionts. On the other hand, it shares many characters with three Indo-West Pacific genera, which contain sponge-associated species, viz. Paraclimenaeus Bruce, 1988, Apopontonia Bruce, 1976 and Climeniperaeus Bruce, 1996. The most important diagnostic features of Unesconia gen. nov. are the strongly carinate, dorsally dentate rostrum, with its lateral carinae greatly expanded basally and armed with strong supraorbital teeth; the non-filtering mouthparts, with mandible lacking palp; the first pereiopod chela with excavated fingers and strongly tridentate fingertips; the asymmetrical second pereiopods (chelipeds), with the major chela bearing a double-fossa mechanism on the finger cutting edges; the ambulatory pereiopod dactylus armed with one large tooth and at least two small spinules on the ventral margin of the corpus, in addition to the terminal unguis; the lateral section of the uropodal diaeresis armed with five spiniform setae, the latter not extending to the lateral margin of the exopod; and the telson with two pairs of stout long cuspidate setae on dorsal surface and three pairs of strong, elongate spiniform setae on the posterior margin.
 
-
-
 # Summary. An optional shortened abstract.
 summary: ""
 
@@ -64,6 +62,8 @@ projects: []
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: example
+design:
+  css_class: 'pub_class'
 ---
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>

@@ -1,5 +1,5 @@
 ---
-title: "A remarkable burrow-dwelling alpheid shrimp, new genus and new species, from the tropical eastern Pacific (Malacostraca: Decapoda: Caridea"
+title: "A remarkable burrow-dwelling alpheid shrimp, new genus and new species, from the tropical eastern Pacific (Malacostraca: Decapoda: Caridea)"
 authors:
 - Arthur Anker
 date: "2020-01-11T00:00:00Z"
@@ -61,6 +61,8 @@ projects: []
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: example
+design:
+  css_class: 'pub_class'
 ---
 
 

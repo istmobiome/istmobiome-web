@@ -29,7 +29,7 @@ hero_media = "workshop_hero.jpg"
 +++
 
 <p style="font-size:0.8em;">
-During this project we created, organized, & hosted four microbiome workshops in Panama. The objective was to bring experts from various fields together to discuss the evolutionary ecology and function of host-microbiomes, to synthesize discussions into whitepapers, & to build cross-disciplinary collaborations. 
+During this project we created, organized, & hosted four workshops in Panama. The objective was to bring experts from various fields together to discuss the evolutionary ecology and function of host-microbiomes, to synthesize discussions into whitepapers, & to build cross-disciplinary collaborations. 
 </p>
 
 <div style="height: 5px"></div>

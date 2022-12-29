@@ -84,6 +84,8 @@ projects: [hypocolypse]
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: example
+design:
+  css_class: 'pub_class'
 ---
 
 Complete bioinformatic workflows can be found on the Hypocolypse project website at https://hypocolypse.github.io/.

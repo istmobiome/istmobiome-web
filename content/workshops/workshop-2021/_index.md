@@ -15,6 +15,9 @@ title: 2021 Marine & Terrestrial Microbiome Virtual Symposium
 toc: false
 type: book
 weight: 1
+design:
+  css_class: 'workshop_class'
+
 ---
 
 ### Frontiers in Tropical Marine and Terrestrial Microbial Ecology
@@ -27,13 +30,7 @@ Panama City, Panama<br/>
 {{< figure src = "images/flyer.png">}}
 
 
-{{% callout note %}}
-
-Symposium funding was generously provided by the Gordon and Betty Moore Foundation and the Simons Foundation.
-
-{{% /callout %}}
-
-{{% staticref "files/microbial_symposium_2021_AgendaAndAbstracts.pdf" "newtab" %}}Download the Workshop Agenda here Abstracts here{{% /staticref %}}.
+> {{% staticref "files/microbial_symposium_2021_AgendaAndAbstracts.pdf" "newtab" %}}Download the Workshop Agenda and Abstracts{{% /staticref %}}.
 
 ## Background
 
@@ -42,3 +39,8 @@ This symposium aimed to summarize our current understanding of four interconnect
 Twenty-seven researchers outlined what they consider to be important current knowledge in their fields, the outstanding questions, and key next steps for both basic and applied research. Throughout this symposium, the speakers emphasized the profound effects that microbiomes exert on species and functional diversity across all levels of biological organization in both terrestrial and marine ecosystems.
 
 
+{{% callout note %}}
+
+Symposium funding was generously provided by the Gordon and Betty Moore Foundation and the Simons Foundation.
+
+{{% /callout %}}

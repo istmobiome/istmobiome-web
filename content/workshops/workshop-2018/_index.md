@@ -10,6 +10,8 @@ title: 2018 Marine Microbiome Symposium/Workshop
 toc: false
 type: book
 weight: 1
+design:
+  css_class: 'workshop_class'
 ---
 
 ### From model organisms to ecosystems&#58; scaling-up our understanding of host-microbe symbiosis in the sea
@@ -22,17 +24,18 @@ Bocas del Toro Research Station, Panama<br/>
 
 {{< figure src = "images/participants.png" caption = "Participants from the 2018 workshop. From left to right. **FRONT ROW**: Jarrod J Scott, Noelle Lucey, Allen Herre, Douglas Rasher, Raquel Peixoto, Rebecca Vega Thurber, Tiago Pereira, Jonathan Eisen. **MIDDLE ROW**: Benedict Yuen, Laetitia Wilkins, Matthieu Leray, Emilia Sogin, Lizzy Wilbanks, Emmett Duffy, Katherine Sharp. **BACK ROW**: David Coil, Aaron O’Dea, Jon Kaye, Luis Mejia, Robert Thacker. Not pictured: Rachel Collin, Harilaos Lessios, Jennifer McMillan,  Ross Robertson, William Wcislo.">}}
 
+</br>
+
+A publication by workshop participant entitled  [*Host-associated microbiomes drive structure and function of marine ecosystems*]({{< ref "/publication/wilkins-etal-2019/index.md" >}}) resulted from the workshop.  
+
+<span data-badge-details="right" data-badge-type="medium-donut" data-doi="10.1371/journal.pbio.3000533" data-hide-no-mentions="true" class="altmetric-embed"></span><span class="__dimensions_badge_embed__" data-doi="10.1371/journal.pbio.3000533" data-hide-zero-citations="true" data-legend="hover-bottom" data-style="medium-circle"></span>
+
+
+
 ## Background
 
 Here you will find information for a workshop we created and organized to explore the nature of host-microbiome associations in marine environments. The workshop was jointly funded by [The Gordon & Betty Moore Foundation](https://www.moore.org/) and [The Smithsonian Tropical Research Institute](https://stri.si.edu/). We hosted 25 researchers from 16 different institutions in Bocas del Toro, Panama, during the winter of 2018 for 5 days of presentations, discussions, and breakout sessions.
 
-{{% callout note %}}
-
-A publication entitled [*Host-associated microbiomes drive structure and function of marine ecosystems*]({{< ref "/publication/wilkins-etal-2019/index.md" >}}) resulted from the workshop.
-
-For an awesome write-up about the workshop, check out {{% mention "laetitia-ge-wilkins" %}} post on [RCN for Evolution in Changing Seas](https://rcn-ecs.github.io/2019-01-03-istmobiome/)
-
-{{% /callout %}}
 
 ## Motivation
 
@@ -41,3 +44,9 @@ Animals serve as ecosystems for a suite of bacteria, archaea, viruses and fungi 
 During this workshop we summarized and synthesized the current state of our knowledge on the mechanisms and the role of animal-microbe interactions in the sea. As anthropogenic activities affect the dynamics of our oceans, we discussed how the field can become more unified and predictive. How do we go about understanding the role of environmental stress on host-microbe interactions and the future of marine communities?
 
 The result of these discussions were summarized in a peer-reviewed manuscript (see above).
+
+{{% callout note %}}
+
+For an awesome write-up about the workshop, check out {{% mention "laetitia-ge-wilkins" %}} post on [RCN for Evolution in Changing Seas](https://rcn-ecs.github.io/2019-01-03-istmobiome/)
+
+{{% /callout %}}
