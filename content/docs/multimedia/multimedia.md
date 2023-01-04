@@ -10,7 +10,7 @@ subtitle: Press pieces, stories, slide shows, and videos about Istmobiome scienc
 
 content:
 # Page type to display. E.g. project.
-  page_type: media
+  page_type: multimedia
 
   # Filter toolbar (optional).
   # Add or remove as many filters (`[[content.filter_button]]` instances) as you like.

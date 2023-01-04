@@ -22,7 +22,7 @@ main_right:
     url: 'docs/project'
     weight: 40
   - name: Media
-    url: 'docs/media'
+    url: 'docs/multimedia'
     weight: 70
   - name: Guides
     url: 'docs/fieldguides'

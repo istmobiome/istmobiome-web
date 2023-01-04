@@ -149,7 +149,7 @@ sections:
 
         [^7]: Sullam KE, Rubin BER, Dalton CM, Kilham SS, Flecker AS and Russell JA. (2015). *Divergence across diet, time and populations rules out parallel evolution in the gut microbiomes of Trinidadian guppies*. [**The ISME Journal** 9: 1508--1522](https://dx.doi.org/10.1038%2Fismej.2014.231).
 
-        [^8]: Franchini P, Fruciano C, Frickey T, Jones JC, Meyer A (2014) The gut microbial community of Midas cichlid fish in repeatedly evolved limnetic-benthic species pairs. [**PLoS ONE** 9: e95027](doi:10.1371/journal.pone.0095027).
+        [^8]: Franchini P, Fruciano C, Frickey T, Jones JC, Meyer A (2014) The gut microbial community of Midas cichlid fish in repeatedly evolved limnetic-benthic species pairs. [**PLoS ONE** 9: e95027](https://doi.org/10.1371/journal.pone.0095027).
 
       # Filter toolbar (optional).
       # Add or remove as many filters (`filter_button` instances) as you like.
