@@ -1,18 +1,23 @@
 # Theme metadata
 name = "istmo-minimal"
 
-# Is theme light or dark?
-light = true
+[light]
+  # Primary
+  primary = "#2962ff"
 
-# Primary
-primary = "#2962ff"
+  # Menu
+  menu_primary = "#f8f8f8"
+  menu_text = "#34495e"
+  menu_text_active = "#2962FF"
+  menu_title = "#2b2b2b"
 
-# Menu
-menu_primary = "#f8f8f8"
-menu_text = "#34495e"
-menu_text_active = "#2962FF"
-menu_title = "#2b2b2b"
+  # Home sections
+  home_section_odd = "#f5f5f5"
+  home_section_even = "#fffdfc"
 
-# Home sections
-home_section_odd = "#f5f5f5"
-home_section_even = "#fffdfc"
+[dark]
+  # Primary
+  primary = "#bbdefb"
+
+  link = "#bbdefb"
+  link_hover = "#bbdefb"

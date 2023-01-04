@@ -44,7 +44,7 @@ education:
 social:
 - icon: globe
   icon_pack: fa
-  link: https://laetitia.schmid.se/
+  link: https://www.ecoevoint.ch/
 - icon: envelope
   icon_pack: fas
   link: mailto:megaptera.helvetiae@gmail.com

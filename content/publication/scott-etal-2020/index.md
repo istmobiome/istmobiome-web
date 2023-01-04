@@ -46,9 +46,17 @@ links:
   icon_pack: ai
   name: Open Access
   url: https://royalsocietypublishing.org/doi/10.1098/rspb.2019.2367
+- icon: github
+  icon_pack: fab
+  name: GitHub repo
+  url: https://github.com/projectdigest/web/
+
+- name: Workflows
+  url: https://projectdigest.github.io/
+
 url_pdf: https://royalsocietypublishing.org/doi/pdf/10.1098/rspb.2019.2367
 url_code: ''
-url_project: https://projectdigest.github.io/
+url_project: ''
 url_dataset: https://projectdigest.github.io/data_availability.html
 url_poster: ''
 url_slides: ''

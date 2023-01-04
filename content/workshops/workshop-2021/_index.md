@@ -3,7 +3,7 @@ categories: []
 date: "2021-03-24T00:00:00+01:00"
 draft: false
 #lastmod: "2018-11-05T00:00:00+01:00"
-linktitle: Tropical Marine & Terrestrial Microbiome Virtual Symposium 2021
+linktitle: Symposium 2021
 editable: false
 menu:
   workshop-2021:
@@ -29,8 +29,12 @@ Panama City, Panama<br/>
 
 {{< figure src = "images/flyer.png">}}
 
+<blockquote>
+<p>
+Download the <a href=/files/microbial_symposium_2021_AgendaAndAbstracts.pdf class="btn btn-dark btn-lg" style=background-color:#2962ff;border-color:#2962ff;margin-right:1rem><i class="fas fa-download" style=padding-right:10px></i>Workshop Agenda and Abstracts</a>
+</p>
+</blockquote>
 
-> {{% staticref "files/microbial_symposium_2021_AgendaAndAbstracts.pdf" "newtab" %}}Download the Workshop Agenda and Abstracts{{% /staticref %}}.
 
 ## Background
 

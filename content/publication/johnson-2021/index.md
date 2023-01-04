@@ -32,7 +32,7 @@ publication_short: ""
 abstract: Loss of oxygen in the global ocean is accelerating due to climate change and eutrophication, but how acute deoxygenation events affect tropical marine ecosystems remains poorly understood. Here we integrate analyses of coral reef benthic communities with microbial community sequencing to show how a deoxygenation event rapidly altered benthic community composition and microbial assemblages in a shallow tropical reef ecosystem. Conditions associated with the event precipitated coral bleaching and mass mortality, causing a 50% loss of live coral and a shift in the benthic community that persisted a year later. Conversely, the unique taxonomic and functional profile of hypoxia-associated microbes rapidly reverted to a normoxic assemblage one month after the event. The decoupling of ecological trajectories among these major functional groups following an acute event emphasizes the need to incorporate deoxygenation as an emerging stressor into coral reef research and management plans to combat escalating threats to reef persistence.
 
 # Summary. An optional shortened abstract.
-summary: "Complete bioinformatic workflows can be found on the Hypocolypse project website at https://hypocolypse.github.io/."
+#summary: "Complete bioinformatic workflows can be found on the Hypocolypse project website at https://hypocolypse.github.io/."
 
 tags:
 - hypoxia
@@ -55,13 +55,21 @@ links:
   icon_pack: ai
   name: Open Access
   url: https://www.nature.com/articles/s41467-021-24777-3
+- icon: github
+  icon_pack: fab
+  name: GitHub repo
+  url: https://github.com/hypocolypse/web/
+
+- name: Workflows
+  url: https://hypocolypse.github.io/
+
 url_pdf: https://www.nature.com/articles/s41467-021-24777-3.pdf
-url_code: ''
-url_project: https://hypocolypse.github.io/
-url_dataset:
+url_code: 
+url_project: ''
+url_dataset: https://hypocolypse.github.io/data-availability.html
 url_poster: ''
 url_slides: ''
-url_source: https://github.com/hypocolypse/web/
+url_source: ''
 url_video: ''
 
 # Featured image

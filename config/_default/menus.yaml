@@ -4,46 +4,32 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: The Story
-    url: '#the-story'
-    weight: 20
-  - name: Geminates
-    url: '#geminates'
+  - name: Portal
+    url: '#portal'
     weight: 30
-  - name: Projects
-    url: '#projects'
-    weight: 40
+main_right:
+  - name: About
+    url: 'about/'
+    weight: 10
+  - name: Team
+    url: 'docs/team/'
+    identifier: team
+    weight: 20
   - name: Papers
-    url: '#publications'
+    url: 'docs/publications'
+    weight: 30
+  - name: Workflows
+    url: 'docs/project'
+    weight: 40
+  - name: Media
+    url: 'docs/media'
+    weight: 70
+  - name: Guides
+    url: 'docs/fieldguides'
     weight: 50
   - name: Workshops
-    url: '#workshops'
-    weight: 55
-  - name: Guides
-    url: '#guides'
+    url: 'docs/workshops'
     weight: 60
-  - name: Talks
-    url: '#talks'
-    weight: 65
-  - name: Press
-    url: '#press'
-    weight: 90
-  - name: People
-    url: '#people'
-    weight: 100
-  - parent: More
-    name: About the Project
-    url: 'about/'
-    weight: 110
-  - parent: More
-    name: Blog
-    url: 'http://istmobiome.net/'
-    weight: 140
-  - parent: More
-    name: License
-    url: 'license/'
-    weight: 140
-main_right:
   - name: ' '
     identifier: github
     pre: <i class="fab fa-github fa-lg"></i>

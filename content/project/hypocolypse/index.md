@@ -8,7 +8,7 @@ categories: []
 date: "2019-12-05T00:00:00+01:00"
 external_link:
 bibliography: []
-header:
+banner:
   caption: ""
   image: "banners/hypocolypse.png"
 image:
@@ -16,7 +16,7 @@ image:
   focal_point:
   preview_only: true
 links:
-- name: Project Site
+- name: Workflows
   url: https://hypocolypse.github.io/
 - icon: database
   icon_pack: fas
@@ -44,6 +44,8 @@ url_slides: ""
 url_video: ""
 
 weight: 1
+design:
+  css_class: 'custom_banner'
 ---
 
 Welcome. This page provides access to our study on hypoxia-driven coral bleaching and microbial shifts in Caribbean Panama. Ocean deoxygenation poses a serious threat to marine ecosystems, but has only recently been identified as a critical, emerging stressor in tropical ecosystems. Despite the catastrophic implications, the effects of oxygen-loss on coral reefs and associated microbial communities remains poorly understood.

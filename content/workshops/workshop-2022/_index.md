@@ -3,7 +3,7 @@ categories: []
 date: "2022-11-29T00:00:00+01:00"
 draft: false
 #lastmod: "2018-11-05T00:00:00+01:00"
-#linktitle: Tropical Microbial Ecology Workshop 2022
+linktitle: Workshop 2022
 editable: false
 menu:
   workshop-2022:
@@ -18,6 +18,7 @@ weight: 1
 design:
   css_class: 'workshop_class'
 
+
 ---
 
 ### The context-dependent symbiosis in marine and terrestrial tropical systems
@@ -29,7 +30,11 @@ Panama City, Panama<br/>
 
 {{< figure src = "images/participants.jpg" caption = "Participants and their affiliations from left to right and back to front: Alison Gould (California Academy of Sciences), Cathy Collins (Bard College), Katie Gold (Cornell University), William Wcislo (STRI), Michelle Hersh (Sarah Lawrence College), Michael Kühl (University of Copenhagen), Mohammad Moniruzzaman (University of Miami), Laetitia Wilkins (Max Planck Institute for Marine Microbiology), Justin Shaffer (UC San Diego), Matthieu Leray (STRI), Laura Bogar (UC Davis), Dale Forrister (STRI), Jon Kaye (Moore Foundation), Adrienne Simoes Correa (Rice University), Lucía Pita (Institute of Marine Science of Barcelona), Nanette Svenson (Facilitator), Erin Spear (STRI), Isidora Morel (Max Planck Institute for Marine Microbiology), Maria Chacon (STRI), Leho Tedersoo (University of Estonia).">}}
 
-> Download the {{% staticref "files/microbial_symposium_schedule_2022.pdf" "newtab" %}} Workshop Agenda  {{% /staticref %}} and {{% staticref "files/microbial_symposium_abstracts_2022.pdf" "newtab" %}} Workshop Abstracts {{% /staticref %}}.
+<blockquote>
+<p>
+Download the <a href=/files/microbial_symposium_schedule_2022.pdf class="btn btn-dark btn-lg" style=background-color:#2962ff;border-color:#2962ff;margin-right:1rem><i class="fas fa-download" style=padding-right:10px></i>Workshop Agenda</a> <a href=/files/microbial_symposium_abstracts_2022.pdf class="btn btn-dark btn-lg" style=background-color:#2962ff;border-color:#2962ff;><i class="fas fa-download" style=padding-right:10px></i>Workshop Abstracts</a>
+</p>
+</blockquote>
 
 ## Background
 
@@ -40,4 +45,3 @@ Symbiotic relationships between microbes and host animals and plants are ubiquit
 Workshop funding was generously provided by the Gordon and Betty Moore Foundation and the Simons Foundation.
 
 {{% /callout %}}
-

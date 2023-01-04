@@ -1,8 +1,83 @@
 // Override this file to add your own SCSS styling.
 
+.container {
+    width: 90% !important;
+}
 /*************************************************
- *  Specific pages
- **************************************************/
+*  Specific pages
+**************************************************/
+
+/*************************************************
+*  Fieldguide
+**************************************************/
+
+.fieldguide_class .article-container {
+    width: 80% !important;
+    max-width: inherit;
+}
+
+/*.fieldguide_class .gallery-item {
+      display: flex;
+      flex-wrap: wrap;
+  }
+.fieldguide_class .gallery-item a {
+      flex-grow: 1;
+      object-fit: cover;
+      margin: 2px;
+      display: flex;
+  }
+
+.fieldguide_class .gallery-item a img {
+      height: 100px;
+      width: auto;
+      object-fit: cover;
+      flex-grow: 1;
+  }
+*/
+
+/*************************************************
+*  Custom Banners
+**************************************************/
+.custom_banner .article-banner {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/*************************************************
+*  Geminate landing
+**************************************************/
+
+.geminate_home_class .gallery-item {
+	background: transparent;
+	box-shadow: none;
+}
+
+.geminate_home_class .gallery-item img {
+	//width: 75%;
+	//height: 75%;
+	object-fit: scale-down;
+}
+
+.geminate_class .gallery-item {
+	background: transparent;
+	box-shadow: none;
+}
+
+
+/*************************************************
+*   page
+**************************************************/
+/*
+.project_class .dark, .card {
+	background: #343a40;
+}
+
+.project_class .card {
+	background: #F5F5F5;
+}
+
+*/
 
 .pub_class h1 {
 	font-size: 1.5em;
@@ -11,6 +86,16 @@
 .workshop_class h1 {
 	font-size: 1.8em;
 }
+
+/*************************************************
+*  Field Guides page
+**************************************************/
+
+
+/*.fancybox-image, .fancybox-spaceball  {
+  height: 110%;
+  width: 110%;
+}*/
 /*************************************************
  *  General
  **************************************************/
@@ -58,8 +143,9 @@ footer .powered-by {
  }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-  opacity: 1;
- }
+    width: 2rem;
+    height: 2rem;
+}
 /*************************************************
  *  Change From assets/scss/academic/_widgets.scss
  **************************************************/

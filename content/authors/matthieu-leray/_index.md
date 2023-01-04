@@ -15,7 +15,7 @@ role: Staff Scientist
 # Organizations/Affiliations
 organizations:
 - name: Smithsonian Tropical Reseach Institute
-  url: "https://stri.si.edu/"
+  url: "https://stri.si.edu/scientist/matthieu-leray"
 
 # Short bio (displayed in user profile at end of posts)
 bio: Drivers, functions, and evolution of marine biodiversity.

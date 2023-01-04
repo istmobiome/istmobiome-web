@@ -7,7 +7,7 @@ tags: ["metagenomics", "coral reefs", "mangroves", "microbes", "Isthmus of Panam
 categories: []
 date: "2019-12-05T00:00:00+01:00"
 external_link:
-header:
+banner:
   caption: ""
   image: "banners/transwater.png"
 image:
@@ -61,6 +61,8 @@ url_slides: ""
 url_video: ""
 
 weight: 4
+design:
+  css_class: 'custom_banner'
 ---
 
 Welcome. This site provides the reproducible bioinformatics workflow for our study on the Transisthmian water column microbiome project. Here you will find details on how we setup our computational environment, program names and exact parameters we used throughout every step of the analysis, and how to access raw data. In addition we provide field/lab methods, summary data products, and other (potentially) useful information.

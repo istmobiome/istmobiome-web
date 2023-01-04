@@ -2,7 +2,8 @@
 categories: []
 date: "2018-11-05T00:00:00+01:00"
 draft: false
-linktitle: Front Page
+authors:
+linktitle: Workshop 2018
 editable: false
 summary: From model organisms to ecosystems&#58; scaling-up our understanding of host-microbe symbiosis in the sea
 tags: [workshop]
@@ -26,11 +27,9 @@ Bocas del Toro Research Station, Panama<br/>
 
 </br>
 
-A publication by workshop participant entitled  [*Host-associated microbiomes drive structure and function of marine ecosystems*]({{< ref "/publication/wilkins-etal-2019/index.md" >}}) resulted from the workshop.  
+A publication entitled  [*Host-associated microbiomes drive structure and function of marine ecosystems* (PLoS Biology 2019)]({{< ref "/publication/wilkins-etal-2019/index.md" >}}) resulted from the workshop.  
 
-<span data-badge-details="right" data-badge-type="medium-donut" data-doi="10.1371/journal.pbio.3000533" data-hide-no-mentions="true" class="altmetric-embed"></span><span class="__dimensions_badge_embed__" data-doi="10.1371/journal.pbio.3000533" data-hide-zero-citations="true" data-legend="hover-bottom" data-style="medium-circle"></span>
-
-
+<span data-badge-type="medium-donut" data-doi="10.1371/journal.pbio.3000533" data-hide-no-mentions="true" class="altmetric-embed"></span><span class="__dimensions_badge_embed__" data-doi="10.1371/journal.pbio.3000533" data-hide-zero-citations="true" data-legend="hover-bottom" data-style="medium-circle"></span>
 
 ## Background
 

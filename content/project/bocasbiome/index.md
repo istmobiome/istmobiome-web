@@ -8,7 +8,7 @@ categories: []
 date: "2020-04-05T00:00:00+01:00"
 external_link:
 bibliography: [cite.bib]
-header:
+banner:
   caption: ""
   image: "featured.jpg"
 image:
@@ -16,7 +16,7 @@ image:
   focal_point:
   preview_only: false
 links:
-- name: Project Site
+- name: Workflows
   url: https://bocasbiome.github.io/
 - icon: database
   icon_pack: fas
@@ -44,6 +44,9 @@ url_slides: ""
 url_video: ""
 
 weight: 2
+design:
+  css_class: 'custom_banner'
+
 ---
 
 Welcome. This page provides a link to the website for our study on the intestinal microbiome of Bocas del Toro butterflyfish entitled <em>The gut microbiome stability of a butterflyfish is disrupted on severely degraded Caribbean reef habitats.</em>.

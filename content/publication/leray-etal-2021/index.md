@@ -70,6 +70,9 @@ links:
   icon_pack: ai
   name: Open Access
   url: https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001322
+- name: Workshop
+  url: workshops/workshop-2019/
+  
 url_pdf: https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.3001322&type=printable
 url_code: ''
 url_project:

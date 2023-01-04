@@ -69,10 +69,6 @@ tags:
 links:
 # - name: ""
 #   url: ""
-- icon: open-access
-  icon_pack: ai
-  name: Open Access
-  url: https://www.nature.com/articles/s41564-020-00834-3
 url_pdf: https://www.nature.com/articles/s41564-020-00834-3.pdf
 url_code: ''
 url_project: https://merenlab.org/software/anvio/
@@ -87,7 +83,7 @@ url_video: ''
 image:
   caption: 'modified from publication Figure 1'
   focal_point: ""
-  preview_only: false
+  preview_only: true
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
