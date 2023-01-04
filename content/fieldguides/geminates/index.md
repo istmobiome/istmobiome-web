@@ -1,6 +1,6 @@
 ---
 title: "Geminates"
-subtitle: "Gallery of geminates by taxa. Each card contains a species pair; top panels (peach) are Western Atlantic and bottom panels (royal blue) are Eastern Pacific."
+subtitle: "Gallery of geminates by taxa. Each card contains a species pair; top panels (vermillion) are Western Atlantic and bottom panels (royal blue) are Eastern Pacific."
 summary: "A little differentiated species evolved from a close common ancestor, a twin species, occuring on either side of the Isthmus."
 
 date: "2023-01-01T00:00:00Z"
