@@ -4,10 +4,6 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Portal
-    url: '#portal'
-    weight: 30
-main_right:
   - name: About
     url: 'about/'
     weight: 10
@@ -30,6 +26,12 @@ main_right:
   - name: Workshops
     url: 'docs/workshops'
     weight: 60
+main_right:
+  - name: ' '
+    identifier: portal
+    pre: <i class="fa-solid fa-door-closed"></i>
+    url: '#portal'
+    weight: 30
   - name: ' '
     identifier: github
     pre: <i class="fab fa-github fa-lg"></i>

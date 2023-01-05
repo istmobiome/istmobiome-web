@@ -6,7 +6,7 @@ active: true
 weight: 20
 
 title: Workflows
-subtitle: Use the cards to access individual project pages where you will find links to the project site, raw data, data products, associated publications, and more.
+subtitle: Access workflows, code, raw data, data products, any associated publications, and more.
 
 content:
 # Page type to display. E.g. project.
