@@ -5,15 +5,15 @@ authors: [Jarrod J Scott]
 summary: Betancur-R fish phylogeny, anvi'o, and rvest webscraping
 tags: ["fish", "phylogenetics", "anvio"]
 categories: []
-date: "2020-11-09T00:00:00+01:00"
+date: "2020-01-09T00:00:00+01:00"
 external_link:
 bibliography: [cite.bib]
-header:
+banner:
   caption: ""
-  image: "banners/betancur_banner.png"
+  image: "banners/betancur.png"
 image:
   caption: ""
-  focal_point: "BottomLeft"
+  focal_point: 
   preview_only: true
 links:
 - name: Interactive tree
@@ -38,6 +38,9 @@ url_slides: ""
 url_video: ""
 
 weight: 5
+
+design:
+  css_class: fieldguide_class custom_banner
 ---
 
 {{% toc %}}
@@ -54,7 +57,7 @@ weight: 5
 
 My goal in this project is to extend the functionality of the phylogeny of bony fishes by [Betancur-R et. al., (2017)](https://link.springer.com/article/10.1186/s12862-017-0958-3). I use [anvi'o](http://merenlab.org/software/anvio/) to visualize the tree and metadata scraped from [FishBase](https://www.fishbase.se/search.php) to create an interactive phylogeny.
 
-{{% callout alert %}}
+{{% callout note %}}
 If you are only interested in the data, no need to read further. You can grab all the files from the GitHub repo linked above or by [clicking here](https://github.com/projectdigest/betancur_r-fish-tree/). The repo contains instructions and files needed to visualize the Betancur-R and the FishBase metadata in anvi'o.
 {{% /callout %}}
 
@@ -69,7 +72,7 @@ How I did all of this is the subject of this post.
 
 <br/>
 
-{{% callout synopsis %}}
+{{% callout note %}}
 
 Workflow overview
 <hr>

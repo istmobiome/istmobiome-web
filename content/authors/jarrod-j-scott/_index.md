@@ -46,9 +46,9 @@ social:
 - icon: globe
   icon_pack: fa
   link: https://metacrobe.github.io/
-- icon: envelope
-  icon_pack: fas
-  link: mailto:istmobiome@gmail.com
+#- icon: envelope
+#  icon_pack: fas
+#  link: 
 - icon: github
   icon_pack: fab
   link: https://github.com/jarrodscott/
@@ -76,6 +76,9 @@ highlight_name: true
 user_groups:
 - Researchers
 #- Visitors
+design:
+  css_class: 'fieldguide_class' 
+
 ---
 
 I am inspired by the tales of old-time naturalists who journeyed the world, identifying patterns in biological diversity and laying the foundation for ecology and evolutionary biology. I see a similar opportunity for discovery today in the microbial world—-to explore genomic space and uncover underlying patterns that explain the diversity and function of microorganisms; how the structure of these communities affect host biology, biogeochemical cycles, and ecosystem-level processes.

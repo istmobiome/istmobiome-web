@@ -5,7 +5,7 @@ authors: [Maggie D Johnson, Jarrod J Scott, Matthieu Leray, Noelle Lucey, Lucia 
 summary: Field surveys, physiological analyses, & microbial communities during a marine hypoxic event.
 tags: ["coral reefs", "16S rRNA", "metagenomics", "water", "hypoxia", "Bocas del Toro", "microbes"]
 categories: []
-date: "2019-12-05T00:00:00+01:00"
+date: "2021-07-26T00:00:00+01:00"
 external_link:
 bibliography: []
 banner:

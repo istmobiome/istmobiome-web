@@ -17,7 +17,7 @@ main:
   - name: Workflows
     url: 'docs/project'
     weight: 40
-  - name: Media
+  - name: Multimedia
     url: 'docs/multimedia'
     weight: 70
   - name: Guides

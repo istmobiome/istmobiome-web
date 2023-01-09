@@ -5,12 +5,12 @@ authors: [Friederike Clever, Jade M Sourisse, Richard F Preziosi, Jonathan A Eis
 summary: Intestinal microbiomes from butterflyfish on degraded reefs in Bocas del Toro.
 tags: ["fish", "16s rRNA", "microbiome", "intestinal", "Bocas del Toro", "coral reefs"]
 categories: []
-date: "2020-04-05T00:00:00+01:00"
+date: "2022-07-30T00:00:00+01:00"
 external_link:
 bibliography: [cite.bib]
 banner:
   caption: ""
-  image: "featured.jpg"
+  image: ""
 image:
   caption: ""
   focal_point:

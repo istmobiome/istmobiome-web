@@ -5,7 +5,7 @@ active: true  # Activate this widget? true/false
 weight: 10
 
 # ... Put Your Section Options Here (title etc.) ...
-title: Recent Publications
+title: Publications
 subtitle: Use the radio buttons for quick access to publication material or click the title link for additional details. {{% callout note %}} Quickly discover relevant content by [filtering publications](/publication/).{{% /callout %}}
 
 

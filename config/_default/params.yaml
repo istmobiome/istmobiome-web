@@ -43,10 +43,10 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} metacrobe & the Istmobiome Project. This work is licensed under {license}. 
+    notice: '© {year} metacrobe & the Istmobiome Project. This work is licensed under {license}.
     <br/>
-    This work is funded by a grant from the Gordon and Betty Moore Foundation 
-    <a href="http://doi.org/10.37807/GBMF5603" target="_blank" rel="noopener">doi:10.37807/GBMF5603</a> 
+    This work is funded by a grant from the Gordon and Betty Moore Foundation
+    <a href="http://doi.org/10.37807/GBMF5603" target="_blank" rel="noopener">doi:10.37807/GBMF5603</a>
     <br/>
      Powered by
     <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a> &nbsp; &
@@ -55,8 +55,7 @@ footer:
     <a href="https://www.netlify.com/" target="_blank" rel="noopener">Netlify.</a>
     Hosted by
     <a href="https://github.com/" target="_blank" rel="noopener"><i class="fab fa-github"></i> </a> &nbsp; &
-    <a href="https://support.rbind.io/about/" target="_blank" rel="noopener"> Rbind.</a>
-'
+    <a href="https://support.rbind.io/about/" target="_blank" rel="noopener"> Rbind.</a>'
     license:
       enable: true
       allow_derivatives: true
@@ -74,8 +73,8 @@ locale:
 
 features:
   syntax_highlighter:
-    theme_light: github-light
-    theme_dark: dracula
+    theme_light: xcode-light
+    theme_dark: xcode-dark
   math:
     enable: false
   privacy_pack:

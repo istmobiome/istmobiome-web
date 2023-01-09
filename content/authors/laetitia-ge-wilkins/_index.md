@@ -11,12 +11,12 @@ authors:
 superuser: false
 
 # Role/position
-role: Postdoctoral Fellow
+role: Research Group Leader
 
 # Organizations/Affiliations
 organizations:
-- name:
-  url:
+- name: Max Planck Institute for Marine Microbiology
+  url: https://www.mpi-bremen.de/en/Laetitia-Wilkins.html
 
 # Short bio (displayed in user profile at end of posts)
 bio: Interested in host-microbe interactions, their evolution, and their role in ecosystem function and stability.
@@ -45,9 +45,9 @@ social:
 - icon: globe
   icon_pack: fa
   link: https://www.ecoevoint.ch/
-- icon: envelope
-  icon_pack: fas
-  link: mailto:megaptera.helvetiae@gmail.com
+#- icon: envelope
+#  icon_pack: fas
+#  link: 
 - icon: github
   icon_pack: fab
   link: https://github.com/megaptera-helvetiae

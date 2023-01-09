@@ -13,7 +13,7 @@ sections:
     #id: about   
     content:
       default_button_index: 0
-      title: "Istmobiome"
+      title: "A Brief Introduction to </br> the Istmobiome Project"
       subtitle: ''
       #text: >-
 
@@ -28,7 +28,7 @@ sections:
         #color: '#1f4e74'
         text_color_light: false
         image:
-          filename: banners/about_map.png
+          filename: banners/about_map.jpg
           #  Image fit. Options are `cover` (default), `contain`, or `actual` size.
           size: cover
           # Image focal point. Options include `left`, `center` (default), or `right`.
@@ -119,7 +119,7 @@ sections:
 
         ## Site Overview
 
-        This site is a gallery meant to capture and highlight the work we conducted during this grant.  Most of the site is pretty straightforward however the [PROJECTS]({{< ref "projects" >}}) section warrants a moment of explanation. Each individual PROJECT page contains a brief project overview plus quick links to the bioinformatic workflows, raw data and data products, GitHub repo, code, etc. In most cases, the **complete and reproducible bioinformatic workflows** are hosted on separate GitHub Pages websites. This has to do with the way each project is generated. Since we often use R code, many figures, tables, analyses, etc. are processed when the project site is built and rendered. Once a project is finished we can archive the final code and simply link to it from istmobiome.rbind.io. This allows us to continually update istmobiome.rbind.io without needing to re-render each project with every site build. It also makes istmobiome.rbind.io more lightweight and faster since it does not have to load every project.
+        The purpose of this site is to capture and highlight the work we conducted during this grant. The [TEAM]({{< ref "team" >}}) section contains biographical sketches of the Researchers and Principal Investigators involved in the project. On the [PAPERS]({{< ref "docs/publication" >}}) page you can find all of the publications produced during the project. Entries includes DOI links, citation information, access to PDFs, bioinformatic workflows, etc. The [WORKFLOWS]({{< ref "projects" >}}) section of the site contains bioinformatic workflows for several projects. Each individual WORKFLOW page contains a brief project overview plus quick links to the bioinformatic workflows, raw data and data products, GitHub repo, code, etc. In most cases, the **complete and reproducible bioinformatic workflows** are hosted on separate GitHub Pages websites. This has to do with the way each project is generated. Since we often use R code, many figures, tables, analyses, etc. are processed when the project site is built and rendered. Once a project is finished we can archive the final code and simply link to it from istmobiome.rbind.io. This allows us to continually update istmobiome.rbind.io without needing to re-render each project with every site build. It also makes istmobiome.rbind.io more lightweight and faster since it does not have to load every project. In the [FIELD GUIDES]({{< ref "docs/fieldguides" >}}) section you can find pictures of fishes and invertebrates from the Pacific and Atlantic coasts of Panama. The [WORKSHOPS]({{< ref "docs/workshops" >}}) page contains information on Symposia and Workshops we hosted in Panama during this project. The [MULTIMEDIA]({{< ref "docs/multimedia" >}}) section contains links to stories about Istmobiome science including press pieces, presentations, interviews, and more. 
 
         <hr>
 

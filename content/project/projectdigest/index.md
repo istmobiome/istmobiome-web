@@ -2,13 +2,14 @@
 title: ProjectDIGEST
 subtitle: Intestinal microbes as an axis of functional diversity among large marine consumers
 authors: [Jarrod J Scott, Thomas C Adam, Alain Duran, Deron E Burkepile, Douglas B Rasher]
+
 summary: Intestinal microbiomes of herbivorous fish from a Florida reef.
 tags: ["fish", "16S rRNA", "microbiome", "intestinal"]
 categories: []
 date: "2020-04-05T00:00:00+01:00"
 external_link:
 bibliography: [cite.bib]
-header:
+banner:
   caption: ""
   image: "banners/projectdigest.png"
 image:
@@ -44,6 +45,9 @@ url_slides: ""
 url_video: ""
 
 weight: 3
+design:
+  css_class: 'custom_banner'
+
 ---
 
 Welcome. This page provides a link to the website for our study on the intestinal microbiome of herbivorous reef fish entitled <em>Intestinal microbes: as axis of functional diversity among large marine consumers</em>. Microbes are ubiquitous throughout the world’s ocean yet the extent of their influence on the ecology and evolution of large, mobile fauna is poorly understood.
