@@ -76,8 +76,8 @@ highlight_name: true
 user_groups:
 - Researchers
 #- Visitors
-design:
-  css_class: 'fieldguide_class' 
+#design:
+#  css_class: 'fieldguide_class' 
 
 ---
 

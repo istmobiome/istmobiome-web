@@ -232,6 +232,8 @@ gallery_item:
 
 ---
 
+Photos from Maté et al. (2017) [^1], Veron et al. (2016) [^2], [Reef Life Survey](https://reeflifesurvey.com/), {{% mention matthieu-leray %}} & {{% mention arthur-anker %}}.
+
 {{< gallery album="fieldguideleray2020" >}}
 
 <br/>
@@ -281,3 +283,6 @@ readr::write_csv(data.frame(worms_results), "leray2020_worms_results.csv")
 
 <span data-badge-type="medium-donut" data-doi="10.6084/m9.figshare.11664045" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></span> <span class="__dimensions_badge_embed__" data-doi="10.6084/m9.figshare.11664045" data-hide-zero-citations="true" data-legend="hover-right"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 
+[^1]: Maté JJ, Brandt M, Grassian B & Chiriboga A (2017) Field Guide to Select Eastern Pacific Corals and Associated Coral Reef Biota, P.W. Glynn et al. (eds.), Coral Reefs of the Eastern Tropical Pacific, Coral Reefs of the World 8
+
+[^2]: Veron JEN, Stafford-Smith MG, Turak E. & DeVantier  L.M. (2016).  Corals of the World. Accessed 24 Jan 2019, version 0.01. http://www.coralsoftheworld.org/page/home/?version=0.01
