@@ -6,7 +6,7 @@ headless: true  # This file represents a page section.
 
 design:
   # Slide height is automatic unless you force a specific height (e.g. '400px')
-  slide_height: '300px'
+  slide_height: '300px' #40vh
   is_fullscreen: false
   # Automatically transition through slides?
   loop: true
@@ -14,8 +14,8 @@ design:
   interval: 0
 content:
   slides:
-    - title: The Istmobiome Project
-      content: a microbial tale told in two oceans #</br> and on one continent
+    - title: <small>The</small> Istmobiome <small>Project</small>
+      content: a microbial tale told in two oceans 
       align: center
       background:
         position: right
@@ -23,8 +23,8 @@ content:
         brightness: 1.0
         #media: coders.jpg
         #fit: cover
-    - title: The Isthmus of Panama Changed the World...
-      content: Three million years ago an experiment began
+    - title: ''
+      content: The Rise of the Panama Isthmus Changed the World. Three million years ago an experiment began...
       align: center
       background:
         position: center
@@ -56,7 +56,7 @@ content:
         media: site_banner/sea.jpg
         fit: cover
     - title: ''
-      content: Learn more about the website & the grant supporting the work.
+      content: Click here to learn more about the project.
       align: center
       link:
         icon: info

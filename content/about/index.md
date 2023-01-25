@@ -13,7 +13,7 @@ sections:
     #id: about   
     content:
       default_button_index: 0
-      title: "A Brief Introduction to </br> the Istmobiome Project"
+      title: "An Introduction to </br> the Istmobiome Project"
       subtitle: ''
       #text: >-
 
@@ -52,7 +52,7 @@ sections:
     id: the-story
     content:
       title: "<small>The</small> Great<br/>TransIsthmian<br/>Experiment"
-      subtitle: "### A bridge on land, a barrier in the sea <br/> <br/>  <small>[Click here](/media/the-isthmus/) and [here](/media/leray-03-2020/) for presentations on the <br/> rise of the Isthmus & how it changed the world.</small>. <br/> <br/>  For more information about the grant that funds the Istmobiome Project and this website, please [See below](#grant)."
+      subtitle: "### A bridge on land, a barrier in the sea <br/> <br/>  <small>[Click here](https://istmobiome.github.io/the-isthmus/the-isthmus.html#1) and [here](/files/leray_tupper_march_2020.pdf) for presentations on the <br/> rise of the Isthmus & how it changed the world.</small>. <br/> <br/>  For more information about the grant that funds the Istmobiome Project and this website, please [See below](#grant)."
       text: >-
         <div class="summary-text">
         <p>Some <span class="callout">three million years</span> ago, a spectacular natural experiment began when the <span class="callout">Isthmus</span> of <span class="callout">Panama</span> finally <span class="callout">closed</span>, a process that began several million years earlier.</p>
@@ -77,19 +77,18 @@ sections:
     design:
       columns: '2'
       
-
 ####################
-## About
+## Grant
 ####################
 
   - block: markdown
     id: grant   
     content:
       default_button_index: 0
-      title: "About the Grant & Website"
-      subtitle: ''
+      title: "About the Grant"
+      subtitle: >-
+        {{% callout note %}}The Istmobiome Project, formally known as the ***Divergence of Marine Symbiosis After the Rise of the Isthmus of Panama***, is a collaborative project funded by the Gordon and Betty Moore Foundation between the University of California---Davis and the Smithsonian Tropical Research Institute. The grant DOI is: <a href="http://doi.org/10.37807/GBMF5603" target="_blank">doi:10.37807/GBMF5603</a>.{{% /callout %}}
       text: |-
-        {{% callout note %}}The Istmobiome Project, more formally known as the ***Divergence of Marine Symbiosis After the Rise of the Isthmus of Panama***, is a collaborative project funded by the Gordon and Betty Moore Foundation between the University of California---Davis and the Smithsonian Tropical Research Institute. The grant DOI is: <a href="http://doi.org/10.37807/GBMF5603" target="_blank">doi:10.37807/GBMF5603</a>.{{% /callout %}}
         
         ## Grant Overview
 
@@ -107,7 +106,7 @@ sections:
 
         Based on a considerable wealth of knowledge gathered by STRI scientists and colleagues over many years, we have identified pairs of geminate species, which meet specific criteria for inclusion in this study, including: relative ease of collecting samples, phylogenetic evidence establishing geminate status, information on evolutionary divergence dates, and differences in trophic strategies (Table 1). The fish and echinoids are all locally available in Panama, while some crustaceans will require collecting further afield (Galapagos and Santa Marta, Colombia).
 
-        Using these species we will begin to address the following key questions:
+        Using these species we address the following key questions:
 
           - What were the evolutionary consequences for the microbiomes, in terms of community composition and function, following the evolutionary diversification of host taxa in new environments?
 
@@ -117,23 +116,9 @@ sections:
 
          - What are the key functional differences in geminate pairs that might be associated with divergent microbiomes?
 
-        ## Site Overview
-
-        The purpose of this site is to capture and highlight the work we conducted during this grant. The [TEAM]({{< ref "team" >}}) section contains biographical sketches of the Researchers and Principal Investigators involved in the project. On the [PAPERS]({{< ref "docs/publication" >}}) page you can find all of the publications produced during the project. Entries includes DOI links, citation information, access to PDFs, bioinformatic workflows, etc. The [WORKFLOWS]({{< ref "projects" >}}) section of the site contains bioinformatic workflows for several projects. Each individual WORKFLOW page contains a brief project overview plus quick links to the bioinformatic workflows, raw data and data products, GitHub repo, code, etc. In most cases, the **complete and reproducible bioinformatic workflows** are hosted on separate GitHub Pages websites. This has to do with the way each project is generated. Since we often use R code, many figures, tables, analyses, etc. are processed when the project site is built and rendered. Once a project is finished we can archive the final code and simply link to it from istmobiome.rbind.io. This allows us to continually update istmobiome.rbind.io without needing to re-render each project with every site build. It also makes istmobiome.rbind.io more lightweight and faster since it does not have to load every project. In the [FIELD GUIDES]({{< ref "docs/fieldguides" >}}) section you can find pictures of fishes and invertebrates from the Pacific and Atlantic coasts of Panama. The [WORKSHOPS]({{< ref "docs/workshops" >}}) page contains information on Symposia and Workshops we hosted in Panama during this project. The [MULTIMEDIA]({{< ref "docs/multimedia" >}}) section contains links to stories about Istmobiome science including press pieces, presentations, interviews, and more. 
-
-        <hr>
+        ## References
 
         <p><small>
-
-        **All banner images retrieved from** Wikimedia Commons and licenced under <a href="https://creativecommons.org/share-your-work/public-domain/cc0" target = "_blank">CC-0</a>.
-
-        Top row, from left to right: <a href="https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1793_Bahia_Almirante_and_Laguna_Chiriqui,_Published_1964.jpg" target = "_blank"> Nautical chart of Bahia Almirante and Laguna Chiriqui, Panama, at a scale of 1:103,280. Suerveyed by Commander E. Barnett 1839</a>; <a href="https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1799_Anchorages_on_the_North_Coast_of_Panama,_Published_1927.jpg" target = "_blank"> Nautical chart of Anchorages on the North Coast of Panama</a>; <a href="https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_657_Isthmus_of_Panama_Showing_The_Proposed_Panama_Canal_and_the_Railway_._._._,_Published_1885.jpg" target = "_blank"> 1885 Admiralty Chart - Isthmus of Panama Showing The Proposed Panama Canal and the Railway</a>; <a href="https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1299_Panama_Canal,_Published_1957.jpg" target = "_blank"> Nautical chart of the Panama Canal at a scale of 1/50,000</a>; <a href="https://commons.wikimedia.org/wiki/File:Darien_Nautical_Chart_1737.jpg" target = "_blank"> Darien Nautical Chart 1737. </a>
-
-        Bottom row, from left to right: <a href="https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1799_Anchorages_on_the_North_Coast_of_Panama,_Published_1927.jpg" target = "_blank"> Nautical chart of Anchorages on the North Coast of Panama</a>; <a href="https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_2261_Panama_Bay,_Published_1935.jpg" target = "_blank"> Admiralty Chart No 2261 Panama Bay, Published 1935</a>; <a href="https://commons.wikimedia.org/wiki/File:Panama_Nautical_Chart_1775.jpg" target = "_blank"> Panama Nautical Chart 1775</a>; <a href="https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_2145_Cabo_Mala_to_Bahia_Elena,_Published_1889.jpg" target = "_blank"> Nautical chart of Punta Mala to Santa Elena Bay</a>; <a href="https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1799_Anchorages_on_the_North_Coast_of_Panama,_Published_1927.jpg" target = "_blank"> Nautical chart of Anchorages on the North Coast of Panama. </a>
-
-        </small></p>
-
-        ## References
 
         [^1]: O’Dea A and 34 authors (2016). *Formation of the Isthmus of Panama*. [**Science Advances**, 2: e1600883](https://doi.org/10.1126/sciadv.1600883).
 
@@ -150,6 +135,50 @@ sections:
         [^7]: Sullam KE, Rubin BER, Dalton CM, Kilham SS, Flecker AS and Russell JA. (2015). *Divergence across diet, time and populations rules out parallel evolution in the gut microbiomes of Trinidadian guppies*. [**The ISME Journal** 9: 1508--1522](https://dx.doi.org/10.1038%2Fismej.2014.231).
 
         [^8]: Franchini P, Fruciano C, Frickey T, Jones JC, Meyer A (2014) The gut microbial community of Midas cichlid fish in repeatedly evolved limnetic-benthic species pairs. [**PLoS ONE** 9: e95027](https://doi.org/10.1371/journal.pone.0095027).
+
+        </small></p>
+
+      # Filter toolbar (optional).
+      # Add or remove as many filters (`filter_button` instances) as you like.
+      # To show all items, set `tag` to "*".
+      # To filter by a specific tag, set `tag` to an existing tag name.
+      # To remove the toolbar, delete the entire `filter_button` block.
+    design:
+      background:
+        #color: '#1f4e74'
+#        image:
+#          filename: banners/about_map.png
+          #  Image fit. Options are `cover` (default), `contain`, or `actual` size.
+#          size: contain
+          # Image focal point. Options include `left`, `center` (default), or `right`.
+#          position: center
+          # Use a fun parallax-like fixed background effect on desktop? true/false
+#          parallax: false
+          # Text color (true=light, false=dark, or remove for the dynamic theme color).
+#          text_color_light: true
+#          filters:
+            # Darken the image? Range 0-1 where 1 is transparent and 0 is opaque.
+#            brightness: 0.0
+#      spacing:
+#        padding: ["550px", "0", "100px", "0"]  
+      # Choose how many columns the section has. Valid values: '1' or '2'.
+      columns: '2'
+
+####################
+## Site
+####################
+
+  - block: markdown
+    id: site   
+    content:
+      default_button_index: 0
+      title: "About this Website"
+      subtitle: ''
+      text: |-
+        
+        ## Site Overview
+
+        The purpose of this site is to capture and highlight the work we conducted during this grant. The [TEAM]({{< ref "team" >}}) section contains biographical sketches of the Researchers and Principal Investigators involved in the project. On the [PAPERS]({{< ref "docs/publication" >}}) page you can find all of the publications produced during the project. Entries includes DOI links, citation information, access to PDFs, bioinformatic workflows, etc. The [WORKFLOWS]({{< ref "projects" >}}) section of the site contains bioinformatic workflows for several projects. Each individual WORKFLOW page contains a brief project overview plus quick links to the bioinformatic workflows, raw data and data products, GitHub repo, code, etc. In most cases, the **complete and reproducible bioinformatic workflows** are hosted on separate GitHub Pages websites. This has to do with the way each project is generated. Since we often use R code, many figures, tables, analyses, etc. are processed when the project site is built and rendered. Once a project is finished we can archive the final code and simply link to it from istmobiome.rbind.io. This allows us to continually update istmobiome.rbind.io without needing to re-render each project with every site build. It also makes istmobiome.rbind.io more lightweight and faster since it does not have to load every project. In the [FIELD GUIDES]({{< ref "docs/fieldguides" >}}) section you can find pictures of fishes and invertebrates from the Pacific and Atlantic coasts of Panama. The [WORKSHOPS]({{< ref "docs/workshops" >}}) page contains information on Symposia and Workshops we hosted in Panama during this project. The [MULTIMEDIA]({{< ref "docs/multimedia" >}}) section contains links to stories about Istmobiome science including press pieces, presentations, interviews, and more. 
 
       # Filter toolbar (optional).
       # Add or remove as many filters (`filter_button` instances) as you like.
@@ -177,29 +206,58 @@ sections:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
 
+####################
+## Credits
+####################
 
-####################
-## Metrics
-####################
-  - block: features
-    #id: about   
-    
+  - block: markdown
+    id: credits   
     content:
-      title: Istmobiome Metrics
-      subtitle: Some highlights of work to date
-      text: ''
-      items:
-        - name: Publications
-          description: 16
-          icon: newspaper
-          icon_pack: fas
-        - name: Co-Authors
-          description: 126
-          icon: handshake
-          icon_pack: fas
-        - name: Citations
-          description: 
-          icon: pen
-          icon_pack: fas      
+      default_button_index: 0
+      title: "Image credits"
+      subtitle: ''
+      text: |-
+        
+        <hr>
+
+        <p><small>
+
+        **All banner images retrieved from** Wikimedia Commons and licenced under <a href="https://creativecommons.org/share-your-work/public-domain/cc0" target = "_blank">CC-0</a>.
+
+        Top row, from left to right: <a href="https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1793_Bahia_Almirante_and_Laguna_Chiriqui,_Published_1964.jpg" target = "_blank"> Nautical chart of Bahia Almirante and Laguna Chiriqui, Panama, at a scale of 1:103,280. Suerveyed by Commander E. Barnett 1839</a>; <a href="https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1799_Anchorages_on_the_North_Coast_of_Panama,_Published_1927.jpg" target = "_blank"> Nautical chart of Anchorages on the North Coast of Panama</a>; <a href="https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_657_Isthmus_of_Panama_Showing_The_Proposed_Panama_Canal_and_the_Railway_._._._,_Published_1885.jpg" target = "_blank"> 1885 Admiralty Chart - Isthmus of Panama Showing The Proposed Panama Canal and the Railway</a>; <a href="https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1299_Panama_Canal,_Published_1957.jpg" target = "_blank"> Nautical chart of the Panama Canal at a scale of 1/50,000</a>; <a href="https://commons.wikimedia.org/wiki/File:Darien_Nautical_Chart_1737.jpg" target = "_blank"> Darien Nautical Chart 1737. </a>
+
+        Bottom row, from left to right: <a href="https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1799_Anchorages_on_the_North_Coast_of_Panama,_Published_1927.jpg" target = "_blank"> Nautical chart of Anchorages on the North Coast of Panama</a>; <a href="https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_2261_Panama_Bay,_Published_1935.jpg" target = "_blank"> Admiralty Chart No 2261 Panama Bay, Published 1935</a>; <a href="https://commons.wikimedia.org/wiki/File:Panama_Nautical_Chart_1775.jpg" target = "_blank"> Panama Nautical Chart 1775</a>; <a href="https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_2145_Cabo_Mala_to_Bahia_Elena,_Published_1889.jpg" target = "_blank"> Nautical chart of Punta Mala to Santa Elena Bay</a>; <a href="https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1799_Anchorages_on_the_North_Coast_of_Panama,_Published_1927.jpg" target = "_blank"> Nautical chart of Anchorages on the North Coast of Panama. </a>
+
+        </small></p>
+        
+        <hr>
+
+
+      # Filter toolbar (optional).
+      # Add or remove as many filters (`filter_button` instances) as you like.
+      # To show all items, set `tag` to "*".
+      # To filter by a specific tag, set `tag` to an existing tag name.
+      # To remove the toolbar, delete the entire `filter_button` block.
+    design:
+      background:
+        #color: '#1f4e74'
+#        image:
+#          filename: banners/about_map.png
+          #  Image fit. Options are `cover` (default), `contain`, or `actual` size.
+#          size: contain
+          # Image focal point. Options include `left`, `center` (default), or `right`.
+#          position: center
+          # Use a fun parallax-like fixed background effect on desktop? true/false
+#          parallax: false
+          # Text color (true=light, false=dark, or remove for the dynamic theme color).
+#          text_color_light: true
+#          filters:
+            # Darken the image? Range 0-1 where 1 is transparent and 0 is opaque.
+#            brightness: 0.0
+#      spacing:
+#        padding: ["550px", "0", "100px", "0"]  
+      # Choose how many columns the section has. Valid values: '1' or '2'.
+      columns: '1'
+
 ---
 
