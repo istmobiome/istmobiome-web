@@ -14,8 +14,8 @@ role: PhD Student
 
 # Organizations/Affiliations
 organizations:
-- name: Smithsonian Tropical Reseach Institute
-  url: "https://stri.si.edu/"
+- name: University of California at Santa Cruz
+  url: "https://www.ucsc.edu/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: 
