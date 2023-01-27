@@ -54,9 +54,9 @@ social:
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/media/resume.pdf`, enable `ai` icons in `params.toml`,
 # and uncomment the lines below.
-- icon: cv
-  icon_pack: ai
-  link: files/laetitia-ge-wilkins-cv.pdf
+#- icon: cv
+#  icon_pack: ai
+#  link: files/laetitia-ge-wilkins-cv.pdf
 - icon: orcid
   icon_pack: ai
   link: https://orcid.org/0000-0003-3632-2063
@@ -66,6 +66,9 @@ social:
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/M_helvetiae
+- icon: mastodon
+  icon_pack: fab
+  link: https://mastodon.social/@megaptera@tooting.ch
 
 
 # Email for Contact widget or Gravatar
