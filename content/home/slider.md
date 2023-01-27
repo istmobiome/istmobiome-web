@@ -24,7 +24,7 @@ content:
         #media: coders.jpg
         #fit: cover
     - title: ''
-      content: The Rise of the Panama Isthmus Changed the World. Three million years ago an experiment began...
+      content: The rise of the Panama Isthmus changed the world. Millions of years ago an experiment began...
       align: center
       background:
         position: center
